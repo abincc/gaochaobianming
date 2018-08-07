@@ -1,0 +1,55 @@
+<extend name="Common/body"/>
+<block name="body">
+	<!-- 个人信息 S-->
+	<div class="nav_zzypt">
+		<!-- 页面主体 S -->
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="<?=U("index")?>">个人资料</a></li>
+			<li><a href="<?=U("avatar")?>">头像照片</a></li>
+		</ul>
+		<div class="content_box clearfix ie7_mart45">
+			<form class="col-xs-8 js_form">
+				<label class="form-group clearfix">
+					<div class="control-label col-xs-3 text-right">昵称：</div>
+					<div class="col-xs-9">
+						<input type="text" class="form-control" datatype="*1-10" placeholder="请输入昵称" nullmsg="请输入昵称" errormsg="昵称为1到10个字符"  name='nickname' value="<?=$member_info['nickname']?>">
+					</div>
+				</label>
+				<label class="form-group clearfix">
+					<div class="control-label col-xs-3 text-right">真实姓名：</div>
+					<div class="col-xs-9">
+						<input type="text" class="form-control" datatype="s1-6" placeholder="请输入真实姓名" nullmsg="请输入真实姓名" errormsg="真实姓名为1到6个字符" name='realname' value="<?=$info['realname']?>">
+					</div>
+				</label>
+				<div class="form-group clearfix">
+					<div class="control-label col-xs-3 text-right">性别：</div>
+					<div class="col-xs-9 form-inline">
+						<label>
+							<input <?php if($info['gender']==1){echo "checked='checked'";}?> type="radio" name="gender" value="1" data-type="*"> 男
+						</label>
+						<label>
+							<input <?php if($info['gender']==2){echo "checked='checked'";}?>  type="radio" name="gender" value="2"> 女
+						</label>
+						<label>
+							<input <?php if($info['gender']==0){echo "checked='checked'";}?> type="radio" name="gender" value="0"> 保密
+						</label>
+					</div>
+				</div>
+				<label class="form-group clearfix">
+					<div class="control-label col-xs-3 text-right">生日：</div>
+					<div class="col-xs-9 brithday_pick">
+						<input type="text" class="form-control" id="d2" onclick="WdatePicker({maxDate:'1999-01-01'})" datatype="*" nullmsg="请选择您的生日" name='birthday' value="<?php if($info['birthday']){ echo date('Y-m-d',$info['birthday']);}else{echo '';}?>">
+						<span onclick="WdatePicker({el:'d2',maxDate:'<?=date('Y-m-d')?>'})" class="input-group-addon calendar"></span>
+					</div>
+				</label>
+				<div class="form-group clearfix">
+					<div class="col-xs-offset-3 col-xs-9">
+						<input type="submit" class="btn btn-orange pull-left" target-form="js_vaildform" value="保存" />
+						<div class="pull-left js_validTips" style="display:none;"><span class="js_tipContent Validform_checktip"></span></div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 个人信息 E-->	
+</block>

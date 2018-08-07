@@ -1,0 +1,87 @@
+<extend name="Public/body" />
+
+<block name="style">
+<style type="text/css">
+.tips_box div {
+	padding: 10px 30px;
+	float: left;
+	background: #ccc;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.tips_box div:hover {
+	background: #3287D0;
+	color: #fff;
+}
+
+.code_box div.clearfix {
+	background: #eee;
+	padding: 5px 10px;
+	margin-top: 5px;
+}
+</style>
+</block>
+<block name="script">
+<js href="__PLUGIN__/ueditor/third-party/SyntaxHighlighter/shCore.js" />
+<css href="__PLUGIN__/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" />
+</block>
+<block name="body">
+	<section class="content-header">
+		<h1>
+			文件上传使用说明
+		</h1>
+		<ol class="breadcrumb">
+			<li><a href="<?=U('/Backend')?>"><i class="iconfont">&#xe678;</i> 首页</a></li>
+			<li class="active">文件上传使用说明</li>
+		</ol>
+	</section>
+
+	<!-- Main content -->
+	<section class="content">
+		<div class="box">
+			<div class="box-body">
+				<h3 style="margin-top: 20px;">
+					示例<span style="font-size: 14px; font-weight: normal;">（图标类型：success,error,warn,ask,tips）</span>
+				</h3>
+				<hr />
+				<div class="tips_box clearfix">
+					<div onclick="tips('成功',1500,'success')">成功</div>
+					<div onclick="tips('错误/失败',1500,'error')">错误与失败</div>
+					<div onclick="tips('警告',1500,'warn')">警告</div>
+					<div href="<?=U('del',array('ids'=>1))?>" tips="" ico="ask"
+						class="confirm ajax-get">询问</div>
+					<div onclick="tips('提示',1500,'tips')">提示</div>
+				</div>
+
+				<h3 style="margin-top: 20px;">JS源码</h3>
+				<hr />
+				<div class="code_box clearfix">
+					<div class="clearfix">
+						<div class="pull-left" style="width: 100px; text-align: right;">成功：</div>
+						<div class="pull-left">tips('成功',1500,'success')</div>
+					</div>
+					<div class="clearfix">
+						<div class="pull-left" style="width: 100px; text-align: right;">错误/失败：</div>
+						<div class="pull-left">tips('错误/失败',1500,'error')</div>
+					</div>
+					<div class="clearfix">
+						<div class="pull-left" style="width: 100px; text-align: right;">警告：</div>
+						<div class="pull-left">tips('警告',1500,'warn')</div>
+					</div>
+					<div class="clearfix">
+						<div class="pull-left" style="width: 100px; text-align: right;">询问：</div>
+						<div class="pull-left">
+							请查看源码，关键元素[class:confirm ajax-get][tips:不写默认内容为
+							<确认要执行该操作吗?>]
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="pull-left" style="width: 100px; text-align: right;">提示：</div>
+						<div class="pull-left">tips('提示',1500,'tips')</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</block>

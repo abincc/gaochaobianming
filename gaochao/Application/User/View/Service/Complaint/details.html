@@ -1,0 +1,16 @@
+<extend name="User@Common/body"/>
+<block name="style">
+<script>
+	var cur_url="<?=U('User/Service/Complaint/index')?>";
+</script>
+</block>
+<block name="head_change">
+<?php
+	$crumbs="投诉详情";
+	$crumbs_array[]=array("title"=>"个人中心","url"=>U("/User"));
+	$crumbs_array[]=array("title"=>"投诉详情","url"=>U(""));
+?>
+</block>
+<block name="body">
+	<?=W('Mall/Complaint/detail',array('config'=>'member_id','tpl'=>'detail'))?>
+</block>

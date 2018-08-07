@@ -1,0 +1,131 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+        <div class="col-md-12">
+			<table class="table invoice-table">
+                <thead>
+                    <tr>
+                        <th width="10%" class="text-right"></th>
+                        <th width="80%" class="text-left"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div><strong>服务类型：</strong>
+                            </div>
+                        </td>
+                        <td><?=$service[$info['trifle_service_id']]['title']?></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><strong>所属小区：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['district_info']['title']?>						<?=$info['building_no']?>						<?=$info['room_no']?></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><strong>提交用户：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['member_info']['username']?></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><strong>内容说明：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['content']?></td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <div><strong>提交时间：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['add_time']?></td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <div><strong>处理状态：</strong>
+                            </div>
+                        </td>
+                        <td><?=$status[$info['status']]['title']?></td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <div><strong>处理时间：</strong>
+                            </div>
+                        </td>
+                        <td><?=($info['deal_time'] != '0000-00-00 00:00:00')?$info['deal_time']:''?></td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <div><strong>处&ensp;理&ensp;人：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['remember_info']['username']?></td>
+                    </tr>
+                      <tr>
+                        <td>
+                            <div><strong>图片说明：</strong>
+                            </div>
+                        </td>
+                        <td>
+						<div class="row " >
+						<?php
+							foreach ($info['images'] as $k => $v) {
+						?>
+						<div class="col-xs-6 col-md-3">
+						<a href="#" class="thumbnail">
+						  <img data-src="holder.js/100%x180" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="<?=thumb($v['image'], 171, 180, 'M')?>" data-holder-rendered="true">
+						</a>
+						</div>		
+						<?php
+							}
+						?>
+						</div>
+                        </td>
+                    </tr>
+                    <?php
+                        if($info['is_reply']){
+                    ?>
+                     <tr>
+                        <td>
+                            <div><strong>回复内容：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['reply']?></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><strong>回复图片：</strong>
+                            </div>
+                        </td>
+                        <td>
+                        <div class="row " >
+                        <?php
+                            foreach ($info['reply_image'] as $k => $v) {
+                        ?>
+                        <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                          <img data-src="holder.js/100%x180" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="<?=thumb($v['image'], 171, 180, 'M')?>" data-holder-rendered="true">
+                        </a>
+                        </div>      
+                        <?php
+                            }
+                        ?>
+                        </div>
+                        </td>
+                    </tr>
+                    <?php
+                        }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+	</div>
+	<div class="form-group">
+		<a href="<?=U('index',I())?>" class="btn btn-default cancel">返回列表</a>
+	</div>
+</block>

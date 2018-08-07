@@ -1,0 +1,109 @@
+<extend name="Public/body" />
+<block name="body">
+	<table class="table js_table table-bordered">
+		<thead>
+			<tr>
+				<th colspan="20" class="clearfix">
+					<form action="<?=U('index');?>" class="form-inline pull-left" method="get">
+						<input type="text" class="form-control input-md" style="width: 250px;" placeholder="用户名" name="keywords" value="<?=$keywords?>">
+						<select name="district_id" class="form-control input-sm">
+							<option value="">请选择小区</option>
+							<?=$pid?>
+						</select>
+
+						<input type="start_date" style="min-width:auto;width:140px!important" onclick="WdatePicker({skin:'backend',dateFmt:'yyyy-MM-dd'})" class="form-control input-sm wdate" placeholder="开始时间" name="start_date" value="<?=$start_date?>">
+						<input type="stop_date" style="min-width:auto;width:140px!important" onclick="WdatePicker({skin:'backend',dateFmt:'yyyy-MM-dd'})" class="form-control input-sm wdate" placeholder="结束时间" name="stop_date" value="<?=$stop_date?>">
+						
+						<button type="submit" class="btn btn-default btn-sm" target-form="operate_form">搜索</button>
+					</form>
+					<div class="pull-right">
+					<?=get_top_btn($menu_info['id'],I('pid'))?>
+					</div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr role="row">
+				<th width="2%"><input type="checkbox" class="js_check_all" data-target="ids" value=""></th>
+				<th width="2%" class="text-center">序号</th>
+				<th width="6%" class="text-center">小区</th>
+				<th width="6%" class="text-center">用户名</th>
+				<th width="6%" class="text-center">手机号</th>
+				<th width="5%" class="text-center">职位</th>
+				<th width="6%" class="text-center">入职时间</th>
+				<th width="3%" class="text-center">本月天数</th>
+				<th width="3%" class="text-center">应出勤天数</th>
+				<th width="3%" class="text-center">实际出勤天数</th>
+				<th width="5%" class="text-center">基本工资</th>
+				<th width="5%" class="text-center">绩效</th>
+				<th width="5%" class="text-center">岗位津贴</th>
+				<th width="5%" class="text-center">节日补助</th>
+				<th width="5%" class="text-center">加班工资</th>
+				<th width="5%" class="text-center">预发工资</th>
+				<th width="5%" class="text-center">应发工资</th>
+				<th width="5%" class="text-center">扣款</th>
+				<th width="5%" class="text-center">实发工资</th>
+				<th width="5%" class="text-center">薪资时间</th>
+				<th width="5%" class="text-center">详情</th>
+				<th width="4%" class="text-center">状态</th>
+				<th width="10%" class="text-center">操作</th>
+			</tr>
+			<?php
+				if(!$list){
+			?>
+			<tr>
+				<td colspan="80"><include file="Public/nodata" text="没有数据" /></td>
+			</tr>
+			<?php
+				}
+			?>
+			<?php
+				foreach($list as $row){
+			?>
+			<tr>
+				<td><input type="checkbox" class="ids" data-child="ids" name="ids[]" value="<?=$row['id']?>"></td>
+				<td class="text-center"><?=$row['uid']?></td>
+				<td class="text-center"><?=$row['district_title']?></td>
+				<td class="text-center"><?=$row['username']?></td>
+				<td class="text-center"><?=$row['mobile']?></td>
+				<td class="text-center"><?=$row['job']?></td>
+				<td class="text-center"><?=substr($row['entry_time'], 0, 10) == '1970-01-01'? '0000-00-00': substr($row['entry_time'], 0, 10)?></td>
+				<td class="text-center"><?=$row['day_num']?></td>
+				<td class="text-center"><?=$row['all_work']?></td>
+				<td class="text-center"><?=$row['in_work']?></td>
+				<td class="text-center"><?=$row['salary']?></td>
+				<td class="text-center"><?=$row['achievements']?></td>
+				<td class="text-center"><?=$row['allowance']?></td>
+				<td class="text-center"><?=$row['subsidy']?></td>
+				<td class="text-center"><?=$row['overtime_total']?></td>
+				<td class="text-center"><?=$row['ready_total']?></td>
+				<td class="text-center"><?=$row['total']?></td>
+				<td class="text-center"><?=$row['debit']?></td>
+				<td class="text-center"><?=$row['real_total']?></td>
+				<td class="text-center"><?=substr($row['salary_time'], 0, 10) == '1970-01-01'? '0000-00-00': substr($row['salary_time'], 0, 10)?></td>
+				<td class="text-center"><?=$row['remark']?></td>
+				<td class="text-center">
+					<img src="__IMG__/status_<?=$row['is_hid']?>.png" title=<?=$row['is_hid']==0?"未禁用":"已禁用"?>>
+				</td>
+				<td class="text-center">
+				<?php
+					get_list_btn($menu_info['id'],$row);
+				?>
+				</td>
+			</tr>
+			<?php
+				}
+			?>
+		</tbody>
+	</table>
+	<div class="pages">
+		<?=$page?>
+	</div>
+	<js href="__PLUGIN__/select2/select2.full.js" />
+	<js href="__PLUGIN__/select2/super_select2.js" />
+	<script type="text/javascript">
+		$(function(){
+			$('.super_select2').super_select2();
+		});
+	</script>		
+</block>

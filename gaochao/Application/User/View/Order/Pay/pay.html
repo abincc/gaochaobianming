@@ -1,0 +1,68 @@
+<!-- 购物车 余额支付   -->
+<extend name="Mall@Common/cart_top"/>
+<block name="body">
+	<css href="__CSS__/cart.css" />
+	<form class="pay_balance" action="<?=U('User/Order/Pay/pay_balance')?>" method="post">
+	<input name="id" type="hidden" value="<?=I('id')?>" />
+	<input name="step" type="hidden" value="<?=I('step')?>" />
+	<div class="container f14">
+		<!-- 购买 Step 3 -->
+		<div class="cart_top clearfix">
+			<div class="pull-left">
+				<a href="__ROOT__"><img onerror="nofind();" src="__IMG__/logo.png"></a>
+				<span>装修订单</span>
+			</div>
+		
+		</div>
+		<div class="shopbox">
+			<div class="toptitle clearfix">
+				<span class="pull-left">订单提交成功，请尽快支付！</span>
+			</div>
+
+			<div class="nav_top">
+				<ul class="clearfix paymode">
+					<li class="active"><a href="javascript:void(0);">余额支付</a></li>
+					<li><a href="<?=U('User/Order/Pay/pay_online',I())?>">在线支付</a></li>
+				</ul>
+				<ul class="paybox">
+					
+					<li><strong>支付金额：</strong><span style="color: #f60;">¥ <?=$total?></span></li>
+					<li><strong>账户余额：</strong><span>¥ <?=$member_info['balance']?></span><a href="<?=U('User/Capital/Recharge/index')?>" target="_blank">充值</a></li>
+				</ul>
+			</div>
+
+			<?php if($isset_pwd){ ?>
+				<!-- 输入支付密码 S -->
+				<div class="passwordbox">
+					<span>请输入支付密码</span>
+					<input type="password" name="password" value="" />
+					<a href="<?=U('User/Set/Safe/deal_password_mobile')?>" target="_blank">忘记密码？</a>
+				</div>
+				<!-- 输入支付密码 E -->
+			<?php }else{ ?>
+				<!-- 去设置支付密码的链接 S -->
+				<div class="passwordbox">
+				<span>您暂未设置支付密码</span>
+					<a href="<?=U('User/Set/Safe/deal_password_mobile')?>" class="hover">点我去设置支付密码</a>
+				</div>
+				<!-- 去设置支付密码的链接 E -->
+			<?php } ?>
+		</div>
+	</div>
+
+	<!-- 去支付 S -->
+	<div class="acountbox">
+		<div class="container clearfix">
+			<div class="pull-right">
+				<ul class="clearfix f14">
+					<li>应付总额：<span>¥ <?=$total?></span></li>
+					<li class="last">
+						<input type="submit" class="btn btn-orange ajax-post" target-form="pay_balance" value="去支付" >
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</form>
+	<!-- 去支付 E -->
+</block>

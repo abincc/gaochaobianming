@@ -1,0 +1,191 @@
+<extend name="Common/body"/>
+<block name="head_change">
+<?php
+	$crumbs="装修订单评论";
+	$crumbs_array[]=array("title"=>"订单管理","url"=>U("renovation"));
+	$crumbs_array[]=array("title"=>"订单评论","url"=>"");
+?>
+<script>
+	var cur_url="<?=U('User/Comment/Comment/service_comment')?>";
+</script>
+</block>
+<block name="style">
+<css href="__PLUGIN__/uploadify/uploadify.css" />
+</block>
+<block name="body">
+	<h5 class="form-group">房屋基本信息</h5>
+	<table class="table">
+		<tr>
+			<td style="border:none;width:300px;padding:8px 0;">
+				<a href="<?=U('renovation_details')?>">
+					<img src="<?=_thumb($info['cover'],'236','179','M')?>" style="max-width:100%;" class="img-responsive">
+				</a>
+			</td>
+			<td style="border:none;">
+				<div class="form-group clearfix">
+					<?php
+						$member_info=get_member_info($info['member_id']);
+						$_nickname=!empty($member_info['nickname'])?$member_info['nickname']:$member_info['mobile'];
+					?>
+					<div class="pull-left margin_r15">联系人：<?=$_nickname?></div>
+					<div class="pull-left">联系电话：<?=$info['user_telephone']?></div>
+				</div>
+				<div class="form-group clearfix">
+					<div class="pull-left margin_r15">户型：<?=$house_type[$info['type']]['title']?>  </div>
+					<div class="pull-left">面积：<?=$info['size']?><span>m<sup style="font-size:12px;">2</sup></span></div>
+				</div>
+				<div class="form-group clearfix">
+					<div class="pull-left margin_r15">城市：<?=$area[$info['province']]['title']?>&nbsp;&nbsp;&nbsp;<?=$area[$info['city']]['title']?>&nbsp;&nbsp;&nbsp;<?=$area[$info['area']]['title']?></div>
+				</div>
+				<div class="form-group clearfix">
+					<div class="pull-left margin_r15">风格：
+						<?php
+							$_style=explode(",",$info['style']);
+							foreach($_style as $h){
+								echo $house_style[$h]['title'];
+							}
+						?>
+					</div>
+				</div>
+				<div class="form-group clearfix">
+					<div class="pull-left margin_r15">装修方式：<?=$decoration_way[$info['decorate_style']]['title']?></div>
+				</div>
+				<div class="form-group clearfix">
+					<div class="pull-left margin_r15">小区名称：<?=$info['housing_estate']?></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<!-- 商品信息 S -->
+	<h5 class="margin_b10">装修订单信息</h5>
+	<table class="table table-bordered">
+		<tr>
+			<th class="col-xs-1 text-center">阶段</th>
+			<th class="col-xs-2 text-center">价格</th>
+			<th class="col-xs-2 text-center">状态</th>
+			<th class="col-xs-1 text-center">订单操作</th>
+		</tr>
+		
+		
+		<tr>
+			<td class="col-xs-1 text-center" ><?=$step[$info['step_id']]['title']?></td>
+			<td class="col-xs-2 text-center" >￥<?=$info['step_price']?></td>
+			<td class="col-xs-1 text-center" style="padding:10px 0;border-left:1px solid #ddd;" ><?=$status_code[$info['status']]['title']?></td>
+			
+			<td class="col-xs-1 text-center" style="vertical-align:middle;" rowspan="80" >
+				<a href="<?=U('User/Subject/Subject/add_diary')?>" class="btn btn-hover btn-xs">装修日记</a>
+			</td>
+			
+		</tr>
+	
+	</table>
+
+	</div>
+	<!-- 商品信息 E -->
+	<!--订单管理 S-->
+	<form action="<?=U('update_service_comment')?>" class="js_form clearfix">
+		<ul class="scorebox js_score">
+			<li class="clearfix">
+				<span>动态评分：</span>
+				<i class="star <?php if($info['star_speed']>=1){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_speed']>=2){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_speed']>=3){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_speed']>=4){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_speed']>=5){echo "add";}?>"></i>
+			</li>
+			<li class="clearfix">
+				<span>服务态度：</span>
+				<i class="star <?php if($info['star_serve']>=1){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_serve']>=2){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_serve']>=3){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_serve']>=4){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_serve']>=5){echo "add";}?>"></i>
+			</li>
+			<li class="clearfix">
+				<span>施工质量：</span>
+				<i class="star <?php if($info['star_quality']>=1){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_quality']>=2){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_quality']>=3){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_quality']>=4){echo "add";}?>"></i>
+				<i class="star <?php if($info['star_quality']>=5){echo "add";}?>"></i>
+			</li>
+			<!-- 隐藏表单域 S -->
+			<input name="id" value="<?=$info['id']?>" type="hidden">
+
+			<div class="js_hidden" style="display:none">
+				<input name="star_speed" type="hidden" value="<?=$info['star_speed']?>" />
+				<input name="star_serve" type="hidden" value="<?=$info['star_serve']?>" />
+				<input name="star_quality" type="hidden" value="<?=$info['star_quality']?>" />
+			</div>
+			<!-- 隐藏表单域 E -->
+		</ul>
+	  	<label class="form-group date_group">
+			<span class="control-label">评论内容：</span>
+		    <textarea name="content" class="form-control" datatype="*" nullmsg="请填写评论内容" cols="30" rows="6"><?=$info['content']?></textarea>
+	  	</label>
+
+
+	  	<div class="form-group form_btn_group">
+	  		<input type="submit" class="btn btn-orange" value="评论">
+			<span class="validTips js_validTips">
+				<span class="js_tipContent"></span>
+			</span>
+	  	</div>  	
+	</form>
+	<!--订单管理 E-->
+</block>
+<block name="script">
+<script type="text/javascript">
+$(function(){
+
+	var selectMode = function($){
+		function countselectNum($obj){
+			var count = 0;
+			$obj.find('i').each(function(){
+				if($(this).hasClass('add')){
+					count ++;
+				}
+			});
+			return count;
+		};
+
+		function prevOrNextObject($obj,classname) {
+			if(classname == "add") {
+				$obj.prevAll().addClass("add");
+				$obj.nextAll().removeClass("add");
+			}else{
+				$obj.addClass("add");
+				$obj.nextAll().removeClass("add");
+			}
+			$obj = null;
+		};
+		
+		return{
+			addEvent : function() {
+				var $obj = $('.js_score>li').find('i');
+				$obj.on('click',function(){
+					if($(this).hasClass("add")){
+						$(this).removeClass("add");
+						prevOrNextObject($(this),'');
+					}else{
+						$(this).addClass("add");
+						prevOrNextObject($(this),"add");
+					}
+					var val = countselectNum($(this).parent());
+					var $parent = $(this).parent();
+					var index = $parent.index();
+					$parent.parent().find('.js_hidden').find('input').eq(index).val(val);
+					$parent = null;
+				});
+				$obj = null;
+			},
+		}
+	}(jQuery);
+
+	//calling this function
+	$(window).ready(function(){
+		selectMode.addEvent();
+	});
+})
+</script>
+</block>

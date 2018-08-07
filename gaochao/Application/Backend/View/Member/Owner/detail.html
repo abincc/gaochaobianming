@@ -1,0 +1,86 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<div class="col-md-4">
+	      <div class="box box-primary">
+	        <div class="box-body box-profile">
+	          <img class="profile-user-img img-responsive img-circle" style="margin: 0 auto;" src="<?=get_avatar($info['id'])?>" alt="User profile picture">
+	          <h3 class="profile-username text-center"><?=$info['nickname']?></h3>
+	          <p class="text-muted text-center"><?=$info['username']?></p>
+
+	          <ul class="list-group list-group-unbordered">
+	            <li class="list-group-item">
+	            	<?php
+	            		$sex = array(1=>'男',2=>'女');
+	            	?>
+	              <b>性别</b> <a class="pull-right text-muted"><?=$sex[$info['sex']]?></a>
+	            </li>
+	            <li class="list-group-item">
+	              <b>年龄</b> <p class="pull-right text-muted"><?=$info['age']?></p>
+	            </li>
+	            <li class="list-group-item">
+	              <b>出生日期</b> <p class="pull-right text-muted"><?=$info['birthday']?></p>
+	            </li>
+	            <li class="list-group-item">
+	              <b>身份证号</b> <p class="pull-right text-muted"><?=$info['idcard']?></p>
+	            </li>
+	            <li class="list-group-item">
+	              <b>手机号</b> <p class="pull-right text-muted"><?=$info['mobile']?></p>
+	            </li>
+	            <li class="list-group-item">
+	              <b>小区</b>    <a class="pull-right"><?=$info['district_info']['title']?></a>
+	            </li>
+	            <li class="list-group-item">
+	              <b>楼层</b>    <p class="pull-right"><?=$info['building_no']?></p>
+	            </li>
+	            <li class="list-group-item">
+	              <b>房号</b>    <p class="pull-right"><?=$info['room_no']?></p>
+	            </li>
+	            <li class="list-group-item">
+	              <b>车牌号</b>    <p class="pull-right"><?=$info['car_num']?></p>
+	            </li>
+				<li class="list-group-item">
+	              <b>注册邀请码</b>    <p class="pull-right"><?=$info['register_code']?></p>
+	            </li>
+	          </ul>
+	          <!-- <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a> -->
+	          <strong><i class="fa fa-pencil margin-r-5"></i> 签名</strong>
+	          <p class="text-muted">
+	            <?=$info['signature']?>
+	          </p>
+	        </div><!-- /.box-body -->
+	      </div><!-- /.box -->
+	    </div>
+        <div class="col-md-8">
+<!-- 			<div class="bs-example" data-example-id="condensed-table">
+			    <table class="table table-condensed">
+			      <thead>
+			        <tr>
+			          <th>#</th>
+			          <th></th>
+			          <th></th>
+			          <th></th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <tr>
+			          <th scope="row">小区信息：</th>
+			          <td>Mark</td>
+			          <td>Otto</td>
+			          <td>@mdo</td>
+			        </tr>
+			        <tr>
+			          <th scope="row">楼层信息：</th>
+			          <td>Jacob</td>
+			          <td>Thornton</td>
+			          <td>@fat</td>
+			        </tr>
+			      </tbody>
+			    </table>
+		  	</div> -->
+        </div>
+	</div>
+	<div class="form-group">
+		<a href="<?=U('index',I())?>" class="btn btn-default cancel">返回列表</a>
+	</div>
+</block>

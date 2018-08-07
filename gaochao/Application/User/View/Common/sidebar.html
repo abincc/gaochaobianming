@@ -1,0 +1,50 @@
+<!-- 侧栏 -->
+<!-- 菜单切换按钮 E-->	
+<div class="col-xs-2" id="left-menu" style="position:static;padding:0;">
+
+<!-- head搜索模块 S-->
+<nav class="sidebar js_sidebar">
+	<div class="nav_top">
+		<div class="avatar">
+			<a href="<?=U("User/Set/Info/avatar")?>"><img src="<?=get_avatar('',200)?>" alt=""></a>
+		</div>
+<?php
+	$nickname = $member_info['nickname']?$member_info['nickname']:$member_info['mobile'];
+?>
+		<h4 class="title"><?=$nickname?></h4>
+	</div>
+	<ul>
+		<?php
+			foreach($sideMenu as $val){
+		?>
+		<li class="dropdown <?=isset($val['active'])?$val['active']:'';?>">
+			<a href="<?=$val['url']?>" class="dropdown-toggle <?=isset($val['class'])?$val['class']:'';?>">
+				<i class="iconfont" style="background-image:url(<?=$val['icon']?>)"></i><?=$val['title']?>
+				<i class="arrow"></i>
+			</a>
+			<?php
+				if(isset($val['_child'])){ 
+			?>
+			<ul class="dropdown-menu">
+				<?php
+					foreach($val['_child'] as $v){
+				?>
+				<li class="<?=isset($v['active'])?$v['active']:'';?>">
+					<a class=" <?=isset($v['class'])?$v['class']:'';?>"
+						href="<?=$v['url']?>"><?=$v['title']?></a>
+				</li>
+				<?php
+					}
+				?>
+			</ul>
+			<?php
+				} 
+			?>
+		</li>
+		<?php
+			}
+		?>
+	</ul>
+</nav>
+<!-- head搜索模块 E-->
+</div>

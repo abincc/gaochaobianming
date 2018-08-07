@@ -1,0 +1,2555 @@
+[ 2018-07-18T08:05:52+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003260s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:12:58+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006069s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T08:17:08+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:17:12+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseAdd?token=fnVyqrJ3dLCudXOuhHp5rYGccayDpnpngYejmLGFppV6dXZltJ14sbCbh6-IenmtgYWXp4OmmKeCh8XMsoW6mH6Fdmmzh3l6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002141s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0026s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T08:18:09+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0026s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:20:16+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001671s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:25:57+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002125s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:26:07+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0033s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:27:22+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001984s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T08:27:52+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002161s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0038s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:28:02+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:28:15+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:28:24+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0027s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:28:48+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0044s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:31:25+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:31:55+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001761s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:33:18+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001838s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:34:18+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0024s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:34:56+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0025s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:35:06+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002127s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:35:15+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0032s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T08:35:41+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0023s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:35:43+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/buy_detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0024s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_buy` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`reason`,`deliver_time`,`add_time`,`status` FROM `sr_ck_buy` WHERE `id` = 166 AND `district_id` = 13 AND `is_hid` = 0 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T08:59:04+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T08:59:06+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001923s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T09:08:36+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002482s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:11:25+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:11:27+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001982s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0023s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0022s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0003s ]
+
+[ 2018-07-18T10:12:06+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002078s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:12:31+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0025s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:12:42+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:12:59+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:13:12+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0025s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:13:32+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002025s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:14:03+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=199 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=199 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:16:33+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002553s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=198 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=198 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:16:35+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0038s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0034s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=198 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=198 )  [ RunTime:0.0004s ]
+
+[ 2018-07-18T10:22:08+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=198 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=198 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T10:22:10+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0025s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:40:21+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001633s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0030s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T11:40:38+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:40:41+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001993s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0020s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0009s ]
+
+[ 2018-07-18T11:43:40+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002529s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0026s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T11:43:42+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002700s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0023s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:44:41+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0031s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:44:43+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:46:24+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002540s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:46:26+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:46:28+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001893s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003085s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0022s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:47:01+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002258s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:47:12+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:47:21+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0038s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T11:47:50+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0023s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:47:52+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001682s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002971s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0024s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0024s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0003s ]
+
+[ 2018-07-18T11:48:08+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0032s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T11:48:10+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001824s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:48:20+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T11:48:21+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0009s ]
+
+[ 2018-07-18T11:48:36+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000570s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0031s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:48:38+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002083s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0020s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:48:43+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001888s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0029s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T11:48:45+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001925s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE ( id=166 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse_image` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sr_reimburse_image` WHERE ( pid=166 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T12:11:26+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0030s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-07-18T12:11:48+08:00 ] 192.168.1.109 /gaochao/Api/Common/CkUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002194s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`password`,`is_hid`,`is_del` FROM `sr_ck_member` WHERE `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT id as member_id,`username`,`nickname`,`mobile`,`sex`,`district_id` FROM `sr_ck_member` WHERE `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `sr_ck_member` SET `login_time`='2018-07-18 12:11:48' WHERE ( id=202 ) [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T12:11:48+08:00 ] 192.168.1.109 /gaochao/Api/Common/CkUser/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001858s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T12:11:50+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0001s ]
+
+[ 2018-07-18T12:12:58+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002067s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T12:13:10+08:00 ] 192.168.1.109 /gaochao/Api/Common/CkUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002296s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`password`,`is_hid`,`is_del` FROM `sr_ck_member` WHERE `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT id as member_id,`username`,`nickname`,`mobile`,`sex`,`district_id` FROM `sr_ck_member` WHERE `id` = 202 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `sr_ck_member` SET `login_time`='2018-07-18 12:13:10' WHERE ( id=202 ) [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-07-18T12:13:11+08:00 ] 192.168.1.109 /gaochao/Api/Common/CkUser/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0067s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T12:13:16+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T12:16:11+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0030s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T12:16:12+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0022s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T12:16:13+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001922s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T12:16:17+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002078s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T14:18:41+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-07-18T17:00:04+08:00 ] 192.168.1.108 /gaochao/Api/Common/CkUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002019s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0074s ]
+SQL: SELECT `id`,`password`,`is_hid`,`is_del` FROM `sr_ck_member` WHERE `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT id as member_id,`username`,`nickname`,`mobile`,`sex`,`district_id` FROM `sr_ck_member` WHERE `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `sr_ck_member` SET `login_time`='2018-07-18 17:00:04' WHERE ( id=202 ) [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-07-18T17:00:05+08:00 ] 192.168.1.108 /gaochao/Api/Common/CkUser/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001821s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:00:07+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/leave?token=fnVyqrJ3dLCudXOuhHp5rYGccayDpnpngYejmLGFppZ6dXZmtJ10sLCbc2eIenmtgYWXp4OmmKeCh8nMsoXEmH51cmmyd4l6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:00:10+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001853s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mobile' in 'field list'
+
+[ 2018-07-18T17:00:13+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001780s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mobile' in 'field list'
+
+[ 2018-07-18T17:07:04+08:00 ] ::1 /gaochao/Api/Common/CkUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`password`,`is_hid`,`is_del` FROM `sr_ck_member` WHERE `mobile` = '15170255839' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT id as member_id,`username`,`nickname`,`mobile`,`sex`,`district_id` FROM `sr_ck_member` WHERE `id` = 201 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `sr_ck_member` SET `login_time`='2018-07-18 17:07:04' WHERE ( id=201 ) [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:07:12+08:00 ] ::1 /gaochao/Api/Common/CkUser/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=201 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:08:03+08:00 ] ::1 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=201 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 201 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mobile' in 'field list'
+
+[ 2018-07-18T17:08:13+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0025s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:08:33+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:09:18+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003929s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0026s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:09:34+08:00 ] 192.168.1.109 /gaochao/Api/Common/CkUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001764s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`password`,`is_hid`,`is_del` FROM `sr_ck_member` WHERE `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT id as member_id,`username`,`nickname`,`mobile`,`sex`,`district_id` FROM `sr_ck_member` WHERE `id` = 202 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `sr_ck_member` SET `login_time`='2018-07-18 17:09:33' WHERE ( id=202 ) [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T17:09:34+08:00 ] 192.168.1.109 /gaochao/Api/Common/CkUser/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002468s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0063s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:09:43+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0024s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:10:36+08:00 ] ::1 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=201 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 201 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '15170255839' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '15170255839' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CkClockController.class.php 第 327 行.
+
+[ 2018-07-18T17:11:26+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001884s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0025s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:11:51+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002322s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:25:10+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0022s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0011s ]
+
+[ 2018-07-18T17:25:13+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0029s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0003s ]
+
+[ 2018-07-18T17:25:15+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:27:59+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0037s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:28:07+08:00 ] 192.168.1.108 /gaochao/Api/Common/CkUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`password`,`is_hid`,`is_del` FROM `sr_ck_member` WHERE `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT id as member_id,`username`,`nickname`,`mobile`,`sex`,`district_id` FROM `sr_ck_member` WHERE `id` = 202 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `sr_ck_member` SET `login_time`='2018-07-18 17:28:07' WHERE ( id=202 ) [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:28:07+08:00 ] 192.168.1.108 /gaochao/Api/Common/CkUser/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002257s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0023s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T17:28:09+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:28:44+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001843s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:29:09+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0030s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:29:37+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:30:23+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001960s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0023s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:30:39+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_range` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_ck_range` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13  [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:30:42+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/clock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001731s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0033s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_ck_model` WHERE ( district_id=13 ) ORDER BY clock_time asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0017s ]
+SQL: INSERT INTO `sr_ck_clock` (`district_id`,`status`,`type`,`member_id`,`add_time`) VALUES ('13','2','2','202','2018-07-18 17:30:42') [ RunTime:0.0005s ]
+
+[ 2018-07-18T17:30:44+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002718s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:30:49+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002144s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003254s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:30:55+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0022s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-07-18T17:31:10+08:00 ] 192.168.1.109 /gaochao/Api/Common/CkUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001820s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`password`,`is_hid`,`is_del` FROM `sr_ck_member` WHERE `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT id as member_id,`username`,`nickname`,`mobile`,`sex`,`district_id` FROM `sr_ck_member` WHERE `id` = 202 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `sr_ck_member` SET `login_time`='2018-07-18 17:31:10' WHERE ( id=202 ) [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:31:10+08:00 ] 192.168.1.109 /gaochao/Api/Common/CkUser/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:31:11+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002707s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:31:14+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/clock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:33:15+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/clock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002301s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0023s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:33:18+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/clock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:33:20+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/clock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001815s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002809s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:33:22+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/clock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0024s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:33:24+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:33:26+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/clock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:33:30+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:33:37+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/clock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:33:39+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/clock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001814s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_model` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_model` WHERE ( district_id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `district_id` = 13 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:34:15+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:34:27+08:00 ] 192.168.1.109 /gaochao/Api/Common/CkUser/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`password`,`is_hid`,`is_del` FROM `sr_ck_member` WHERE `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT id as member_id,`username`,`nickname`,`mobile`,`sex`,`district_id` FROM `sr_ck_member` WHERE `id` = 202 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `sr_ck_member` SET `login_time`='2018-07-18 17:34:27' WHERE ( id=202 ) [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:34:27+08:00 ] 192.168.1.109 /gaochao/Api/Common/CkUser/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0071s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T17:34:37+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0046s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:34:52+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0022s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:36:41+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001916s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003872s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0023s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:37:30+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:37:32+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003106s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0030s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:37:57+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:41:29+08:00 ] 192.168.1.108 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0038s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-07-18T17:42:27+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/leave?token=fnVyqrJ3dLCudXOuhHp5rYGccayDpnpngYejmLGFppZ6dXZmtJ2AabCbe2qIenmtgYWXp4OmmKeCh8nMsoXEmH6rgmmynZd6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T17:42:32+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/salaryList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0027s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mobile`,`district_id` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_salary` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as salary_id,`mobile`,`username`,`real_total`,`salary_time` FROM `sr_salary` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 AND `mobile` = '17512039105' ORDER BY salary_time desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_salary` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 AND `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_salary` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=339 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=338 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=340 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:42:34+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/salaryList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0023s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`mobile`,`district_id` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_salary` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as salary_id,`mobile`,`username`,`real_total`,`salary_time` FROM `sr_salary` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 AND `mobile` = '17512039105' ORDER BY salary_time desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_salary` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 AND `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_salary` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=339 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=338 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=340 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-18T17:42:41+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001812s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0023s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CkClockController.class.php 第 327 行.
+
+[ 2018-07-18T17:43:02+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/my_apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002639s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003483s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0029s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_leave` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`type`,`start_time`,`end_time`,`num_day`,`remark`,`status` FROM `sr_ck_leave` WHERE `member_id` = 202 AND `district_id` = 13 AND `is_del` = 0 AND `is_hid` = 0  [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:43:04+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/my_apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0022s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_buy` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`reason`,`deliver_time`,`status` FROM `sr_ck_buy` WHERE `member_id` = 202 AND `district_id` = 13 AND `is_del` = 0 AND `is_hid` = 0  [ RunTime:0.0011s ]
+
+[ 2018-07-18T17:43:06+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/buy_detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_buy` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`reason`,`deliver_time`,`add_time`,`status` FROM `sr_ck_buy` WHERE `id` = 36 AND `district_id` = 13 AND `is_hid` = 0 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_buy_detail` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`name`,`model_spec`,`num`,`money`,`remark`,`add_time` FROM `sr_ck_buy_detail` WHERE ( pid=36 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_ck_buy_image` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`image` FROM `sr_ck_buy_image` WHERE ( pid=36 )  [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:43:14+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0024s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CkClockController.class.php 第 327 行.
+
+[ 2018-07-18T17:43:18+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/leave?token=fnVyqrJ3dLCudXOuhHp5rYGccayDpnpngYejmLGFppZ6dXZmtJ2AabCbe2qIenmtgYWXp4OmmKeCh8nMsoXEmH6rgmmynZd6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001607s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002395s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0026s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:43:30+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_clock` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_ck_clock` WHERE `is_del` = 0 AND `is_hid` = 0 AND `member_id` = 202 AND `add_time` LIKE '2018-07-18%' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-18T17:43:33+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/reimburseAdd?token=fnVyqrJ3dLCudXOuhHp5rYGccayDpnpngYejmLGFppZ6dXZmtJ2AabCbe2qIenmtgYWXp4OmmKeCh8nMsoXEmH6rgmmynZd6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:43:36+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/reimburseAdd?token=fnVyqrJ3dLCudXOuhHp5rYGccayDpnpngYejmLGFppZ6dXZmtJ2AabCbe2qIenmtgYWXp4OmmKeCh8nMsoXEmH6rgmmynZd6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:43:38+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/salaryList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0024s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mobile`,`district_id` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_salary` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as salary_id,`mobile`,`username`,`real_total`,`salary_time` FROM `sr_salary` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 AND `mobile` = '17512039105' ORDER BY salary_time desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_salary` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 AND `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_salary` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=339 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=338 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=340 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T17:43:44+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001924s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0046s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CkClockController.class.php 第 327 行.
+
+[ 2018-07-18T17:43:48+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003325s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0021s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username`,`mobile`,`district_id` FROM `sr_ck_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 202 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_reimburse` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as reimburse_id,`district_id`,`username`,`mobile`,`type`,`reason`,`occur_time`,`cost`,`is_confirm`,`remark` FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 ORDER BY occur_time desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_reimburse` WHERE `is_del` = 0 AND `is_hid` = 0 AND `mobile` = '17512039105' AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CkClockController.class.php 第 327 行.
+
+[ 2018-07-18T17:43:51+08:00 ] 192.168.1.109 /gaochao/Api/User/CkClock/salaryList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mobile`,`district_id` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_salary` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as salary_id,`mobile`,`username`,`real_total`,`salary_time` FROM `sr_salary` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 AND `mobile` = '17512039105' ORDER BY salary_time desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_salary` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 13 AND `mobile` = '17512039105' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_salary` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=339 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=338 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_salary` WHERE ( id=340 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T18:07:22+08:00 ] ::1 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T18:07:29+08:00 ] ::1 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0019s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T18:07:51+08:00 ] ::1 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-18T18:08:20+08:00 ] ::1 /gaochao/Api/User/CkClock/reimburseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0018s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+

@@ -1,0 +1,3 @@
+<?php
+//000000000000a:3:{i:1;a:6:{s:2:"id";s:2:"40";s:7:"r_table";s:7:"message";s:7:"r_field";s:4:"type";s:7:"r_value";s:1:"1";s:5:"title";s:13:"物业消息 ";s:6:"remark";s:0:"";}i:2;a:6:{s:2:"id";s:2:"41";s:7:"r_table";s:7:"message";s:7:"r_field";s:4:"type";s:7:"r_value";s:1:"2";s:5:"title";s:12:"订单消息";s:6:"remark";s:0:"";}i:3;a:6:{s:2:"id";s:2:"42";s:7:"r_table";s:7:"message";s:7:"r_field";s:4:"type";s:7:"r_value";s:1:"3";s:5:"title";s:12:"欠费消息";s:6:"remark";s:0:"";}}
+?>

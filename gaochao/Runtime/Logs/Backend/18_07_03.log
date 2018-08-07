@@ -1,0 +1,1431 @@
+[ 2018-07-03T08:07:07+08:00 ] ::1 /gaochao/Backend/System/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003314s ]
+SQL: SHOW COLUMNS FROM `sr_menu` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0026s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Menu/index','admin','3','系统设置 &gt; 菜单管理 &gt; 菜单管理 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:07:07') [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`path`,`level`,`title`,`url`,`description`,`class`,`display_position`,`sort`,`is_hid`,`is_del`,`is_dev`,`addtime`,`updatetime` FROM `sr_menu` WHERE `pid` = 0 AND `is_del` = 0 ORDER BY sort desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index:  C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\3322c804277f7b3b885fa5133c82783b.php 第 195 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2018-07-03T08:07:08+08:00 ] ::1 /gaochao/Backend/Base/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001729s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002393s ]
+SQL: SHOW COLUMNS FROM `sr_capital_record` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0023s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Base/Index/index','admin','359','平台管理 &gt; 系统首页 &gt; 系统首页','浏览','0.0.0.0','1','2018-07-03 08:07:08') [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sr_order` [ RunTime:0.0020s ]
+SQL: SELECT count(id) tp_sum FROM `sr_order` WHERE `status` = 20 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(`money_total`) tp_sum FROM `sr_order` WHERE `status` > 20 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0019s ]
+SQL: SELECT count(id) tp_sum FROM `sr_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0029s ]
+SQL: SELECT count(id) tp_sum FROM `sr_product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT o.id AS id,o.order_no AS order_no,o.money_total AS money_total,o.add_time AS add_time,o.status AS status,m.username AS username FROM sr_order o LEFT JOIN sr_member m ON m.id=o.member_id WHERE o.is_del = 0 AND o.is_hid = 0 AND o.status IN (10,20,40,70) ORDER BY o.add_time desc LIMIT 7   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`username`,`mobile`,`register_ip`,`register_time` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY register_time desc LIMIT 7   [ RunTime:0.0006s ]
+SQL: SELECT count(*) as c,`status`,DATE_FORMAT(`add_time`, "%Y-%m-%d") as date FROM `sr_order` WHERE `is_del` = 0 AND `is_hid` = 0 AND `status` IN (5,10,20,30,40,50,60,70) AND (`add_time` LIKE '2018-06-03%' OR `add_time` LIKE '2018-06-04%' OR `add_time` LIKE '2018-06-05%' OR `add_time` LIKE '2018-06-06%' OR `add_time` LIKE '2018-06-07%' OR `add_time` LIKE '2018-06-08%' OR `add_time` LIKE '2018-06-09%' OR `add_time` LIKE '2018-06-10%' OR `add_time` LIKE '2018-06-11%' OR `add_time` LIKE '2018-06-12%' OR `add_time` LIKE '2018-06-13%' OR `add_time` LIKE '2018-06-14%' OR `add_time` LIKE '2018-06-15%' OR `add_time` LIKE '2018-06-16%' OR `add_time` LIKE '2018-06-17%' OR `add_time` LIKE '2018-06-18%' OR `add_time` LIKE '2018-06-19%' OR `add_time` LIKE '2018-06-20%' OR `add_time` LIKE '2018-06-21%' OR `add_time` LIKE '2018-06-22%' OR `add_time` LIKE '2018-06-23%' OR `add_time` LIKE '2018-06-24%' OR `add_time` LIKE '2018-06-25%' OR `add_time` LIKE '2018-06-26%' OR `add_time` LIKE '2018-06-27%' OR `add_time` LIKE '2018-06-28%' OR `add_time` LIKE '2018-06-29%' OR `add_time` LIKE '2018-06-30%' OR `add_time` LIKE '2018-07-01%' OR `add_time` LIKE '2018-07-02%' OR `add_time` LIKE '2018-07-03%') GROUP BY `date`,`status`  [ RunTime:0.0062s ]
+NOTIC: [8] Undefined index: 2018-06-03 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-04 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-05 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-06 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-07 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-08 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-09 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-11 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-12 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-13 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-14 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-15 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-16 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-17 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-18 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-19 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-22 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-23 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-24 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-25 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-26 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-27 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-28 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-29 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-06-30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-07-01 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-07-02 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined index: 2018-07-03 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 804 行.
+NOTIC: [8] Undefined offset: 5 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 5 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 808 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2018-07-03T08:07:38+08:00 ] ::1 /gaochao/Backend/Video/Video/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Video/index','admin','995','平台管理 &gt; 设备管理 &gt; 账号管理 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:07:38') [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`type`,`appkey`,`appsecret`,`access_token`,`expire_time`,`title`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\c03a09994ba2e8cf1aaf88629e14f6d1.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-07-03T08:07:39+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:07:39') [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2018-07-03T08:10:26+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001779s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:10:25') [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 0 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001716s ]
+
+[ 2018-07-03T08:10:27+08:00 ] ::1 /gaochao/Backend/Video/Device/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0027s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1002','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; 添加','添加','0.0.0.0','1','2018-07-03 08:10:27') [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title` FROM `sr_district` WHERE `is_del` = 0 AND `is_hid` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `is_del` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001199s ]
+
+[ 2018-07-03T08:11:22+08:00 ] ::1 /gaochao/Backend/Video/Device/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0019s ]
+SQL: INSERT INTO `sr_video_device` (`uid`,`district_id`,`ezopen`,`title`,`remark`,`update_time`,`add_time`) VALUES ('101','13','ezopen://open.ys7.com/C04910992/1.hd.live','测试账号','测试账号','2018-07-03 08:11:21','2018-07-03 08:11:21') [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0019s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1002','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; 添加','添加 | 101','0.0.0.0','1','2018-07-03 08:11:22') [ RunTime:0.0002s ]
+
+[ 2018-07-03T08:11:23+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001437s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:11:23') [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+NOTIC: [8] Undefined index: v_title C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 234 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2018-07-03T08:11:55+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0022s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:11:55') [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+NOTIC: [8] Undefined index: video C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 234 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2018-07-03T08:12:26+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:12:26') [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-03T08:20:16+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001850s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0023s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:20:16') [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0025s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-03T08:20:27+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:20:27') [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-03T08:20:39+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:20:39') [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+
+[ 2018-07-03T08:20:48+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001804s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:20:48') [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 28 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-03T08:21:33+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:21:33') [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0024s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-03T08:21:51+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:21:51') [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0017s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-03T08:21:59+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0023s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:21:59') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0019s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-03T08:22:06+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:22:06') [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'uid' C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid C:\xampp\htdocs\gaochao\Application\Backend\Controller\Video\DeviceController.class.php 第 29 行.
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-03T08:22:22+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0022s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:22:22') [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-03T08:22:27+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:22:27') [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-03T08:22:36+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:22:36') [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+NOTIC: [8] Undefined index: video C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 234 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2018-07-03T08:22:56+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003170s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0022s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:22:56') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2018-07-03T08:37:37+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001910s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 08:37:37') [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2018-07-03T17:12:38+08:00 ] ::1 /gaochao/Backend/Advert/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002982s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.025695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028849s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0182s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0472s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Advert/Index/index','admin','107','平台管理 &gt; 广告管理 &gt; 首页广告 &gt; ','浏览','0.0.0.0','1','2018-07-03 17:12:38') [ RunTime:0.0189s ]
+SQL: SHOW COLUMNS FROM `sr_adspace` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`type`,`page`,`title`,`cover`,`scale`,`sort`,`status`,`css_class`,`add_time` FROM `sr_adspace` WHERE `page` = 'home' ORDER BY sort desc,id asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 1 AND `start_time` < '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 1 AND `start_time` > '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 2 AND `start_time` < '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 2 AND `start_time` > '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 3 AND `start_time` < '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 3 AND `start_time` > '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 4 AND `start_time` < '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 4 AND `start_time` > '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 6 AND `start_time` < '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 6 AND `start_time` > '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 7 AND `start_time` < '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 7 AND `start_time` > '2018-07-03 17:12:38' AND `end_time` > '2018-07-03 17:12:38' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001358s ]
+
+[ 2018-07-03T17:12:40+08:00 ] ::1 /gaochao/Backend/Advert/Index/lists/adspace_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0374s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0287s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Advert/Index/index','admin','109','平台管理 &gt; 广告管理 &gt; 首页广告 &gt; 查看所有广告 &gt; ','查看所有广告','0.0.0.0','1','2018-07-03 17:12:40') [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_banner` WHERE `adspace_id` = '7' AND `is_del` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adspace_id`,`type`,`site_id`,`title`,`content`,`save_path`,`url`,`member_id`,`sort`,`start_time`,`end_time`,`add_time`,`is_hid`,`is_del` FROM `sr_banner` WHERE `adspace_id` = '7' AND `is_del` = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sr_adspace` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `sr_adspace` WHERE `id` = '7' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2018-07-03T17:12:42+08:00 ] ::1 /gaochao/Backend/Advert/Index/edit/adspace_id/7/ids/301.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0356s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0359s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Advert/Index/lists','admin','111','平台管理 &gt; 广告管理 &gt; 首页广告 &gt; 查看所有广告 &gt; 修改','浏览','0.0.0.0','1','2018-07-03 17:12:42') [ RunTime:0.0041s ]
+SQL: SELECT `id`,`adspace_id`,`type`,`site_id`,`title`,`content`,`save_path`,`url`,`member_id`,`sort`,`start_time`,`end_time`,`add_time`,`is_hid`,`is_del` FROM `sr_banner` WHERE `id` = 301 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Application\Backend\Controller\Advert\IndexController.class.php 第 107 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Application\Backend\Controller\Advert\IndexController.class.php 第 108 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: multi C:\xampp\htdocs\gaochao\Application\Common\Widget\ImgWidget.class.php 第 35 行.
+SQL: SELECT `save_path` FROM `sr_banner` WHERE `id` = 301 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009974s ]
+NOTIC: [2] Use of undefined constant name - assumed 'name' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\01077016f708a161e42f2b32e2c7c611.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2018-07-03T17:12:45+08:00 ] ::1 /gaochao/Backend/Advert/Index/ajaxDelete_banner.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0381s ]
+SQL: SELECT `id`,`adspace_id`,`type`,`site_id`,`title`,`content`,`save_path`,`url`,`member_id`,`sort`,`start_time`,`end_time`,`add_time`,`is_hid`,`is_del` FROM `sr_banner` WHERE `id` = 301 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0180s ]
+
+[ 2018-07-03T17:13:10+08:00 ] ::1 /gaochao/Backend/Advert/Index/uploadPicture/session_id/1e7ic2640k35tpg7707eimtk1bm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0437s ]
+NOTIC: [2] Use of undefined constant date - assumed 'date' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Core\Common\functions.php 第 665 行.
+SQL: SHOW COLUMNS FROM `sr_file` [ RunTime:0.0397s ]
+NOTIC: [8] Undefined index: sha1 C:\xampp\htdocs\gaochao\Application\Common\Model\FileModel.class.php 第 145 行.
+SQL: SELECT `id`,`file_name`,`save_path`,`ext`,`mime`,`size`,`width`,`height`,`md5`,`sha1`,`add_time` FROM `sr_file` WHERE `md5` = '00d2316d63b87292fd8a4b6ec9091588' AND `sha1` = null LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `sr_file` (`size`,`ext`,`md5`,`width`,`height`,`save_path`,`mime`,`add_time`) VALUES ('1270','png','19817b8bb82cd5d4578ca85635f68da1','47','47','Uploads/ImgTemp/5b3b3e26d8719.png','image/png','0') [ RunTime:0.0049s ]
+
+[ 2018-07-03T17:13:13+08:00 ] ::1 /gaochao/Backend/Advert/Index/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0164s ]
+SQL: SELECT `id`,`adspace_id`,`type`,`site_id`,`title`,`content`,`save_path`,`url`,`member_id`,`sort`,`start_time`,`end_time`,`add_time`,`is_hid`,`is_del` FROM `sr_banner` WHERE `id` = 301 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0041s ]
+SQL: UPDATE `sr_banner` SET `adspace_id`='7',`type`='image',`title`='变废为宝',`url`='1',`content`='',`sort`='7',`start_time`='2018-01-25',`end_time`='2018-01-26',`is_hid`='0' WHERE `id` = 301 [ RunTime:0.0294s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0619s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Advert/Index/lists','admin','111','平台管理 &gt; 广告管理 &gt; 首页广告 &gt; 查看所有广告 &gt; 修改','浏览','0.0.0.0','1','2018-07-03 17:13:13') [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sr_file` [ RunTime:0.0019s ]
+SQL: SELECT `file_name`,`save_path` FROM `sr_file` WHERE `id` IN ('792')  [ RunTime:0.0002s ]
+SQL: UPDATE `sr_banner` SET `save_path`='Uploads/Banner/5b3b3e26d8719.png' WHERE `id` = 301 [ RunTime:0.0032s ]
+SQL: DELETE FROM `sr_file` WHERE `id` IN ('792') [ RunTime:0.0033s ]
+
+[ 2018-07-03T17:13:13+08:00 ] ::1 /gaochao/Backend/Advert/Index/lists/adspace_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Advert/Index/index','admin','109','平台管理 &gt; 广告管理 &gt; 首页广告 &gt; 查看所有广告 &gt; ','查看所有广告','0.0.0.0','1','2018-07-03 17:13:13') [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_banner` WHERE `adspace_id` = '7' AND `is_del` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`adspace_id`,`type`,`site_id`,`title`,`content`,`save_path`,`url`,`member_id`,`sort`,`start_time`,`end_time`,`add_time`,`is_hid`,`is_del` FROM `sr_banner` WHERE `adspace_id` = '7' AND `is_del` = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sr_adspace` [ RunTime:0.0171s ]
+SQL: SELECT `title` FROM `sr_adspace` WHERE `id` = '7' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2018-07-03T17:14:55+08:00 ] ::1 /gaochao/Backend/Advert/Index/edit/adspace_id/7/ids/300.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0029s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Advert/Index/lists','admin','111','平台管理 &gt; 广告管理 &gt; 首页广告 &gt; 查看所有广告 &gt; 修改','浏览','0.0.0.0','1','2018-07-03 17:14:55') [ RunTime:0.0021s ]
+SQL: SELECT `id`,`adspace_id`,`type`,`site_id`,`title`,`content`,`save_path`,`url`,`member_id`,`sort`,`start_time`,`end_time`,`add_time`,`is_hid`,`is_del` FROM `sr_banner` WHERE `id` = 300 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Application\Backend\Controller\Advert\IndexController.class.php 第 107 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Application\Backend\Controller\Advert\IndexController.class.php 第 108 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined index: multi C:\xampp\htdocs\gaochao\Application\Common\Widget\ImgWidget.class.php 第 35 行.
+SQL: SELECT `save_path` FROM `sr_banner` WHERE `id` = 300 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.004356s ]
+NOTIC: [2] Use of undefined constant name - assumed 'name' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\01077016f708a161e42f2b32e2c7c611.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000612s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000003s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2018-07-03T17:14:58+08:00 ] ::1 /gaochao/Backend/Advert/Index/ajaxDelete_banner.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0466s ]
+SQL: SELECT `id`,`adspace_id`,`type`,`site_id`,`title`,`content`,`save_path`,`url`,`member_id`,`sort`,`start_time`,`end_time`,`add_time`,`is_hid`,`is_del` FROM `sr_banner` WHERE `id` = 300 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0144s ]
+
+[ 2018-07-03T17:15:07+08:00 ] ::1 /gaochao/Backend/Advert/Index/uploadPicture/session_id/1e7ic2640k35tpg7707eimtk1bm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0393s ]
+NOTIC: [2] Use of undefined constant date - assumed 'date' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Core\Common\functions.php 第 665 行.
+SQL: SHOW COLUMNS FROM `sr_file` [ RunTime:0.0223s ]
+NOTIC: [8] Undefined index: sha1 C:\xampp\htdocs\gaochao\Application\Common\Model\FileModel.class.php 第 145 行.
+SQL: SELECT `id`,`file_name`,`save_path`,`ext`,`mime`,`size`,`width`,`height`,`md5`,`sha1`,`add_time` FROM `sr_file` WHERE `md5` = 'ff9d0a35bd5a905c42dfba545be9c57e' AND `sha1` = null LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `sr_file` (`size`,`ext`,`md5`,`width`,`height`,`save_path`,`mime`,`add_time`) VALUES ('1420','png','8760d101844fb77c1c103455a188607a','47','47','Uploads/ImgTemp/5b3b3e9befcd2.png','image/png','0') [ RunTime:0.0100s ]
+
+[ 2018-07-03T17:15:09+08:00 ] ::1 /gaochao/Backend/Advert/Index/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`adspace_id`,`type`,`site_id`,`title`,`content`,`save_path`,`url`,`member_id`,`sort`,`start_time`,`end_time`,`add_time`,`is_hid`,`is_del` FROM `sr_banner` WHERE `id` = 300 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `sr_banner` SET `adspace_id`='7',`type`='image',`title`='政务公开',`url`='2',`content`='',`sort`='1',`start_time`='2018-01-25',`end_time`='2018-01-26',`is_hid`='0' WHERE `id` = 300 [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0107s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Advert/Index/lists','admin','111','平台管理 &gt; 广告管理 &gt; 首页广告 &gt; 查看所有广告 &gt; 修改','浏览','0.0.0.0','1','2018-07-03 17:15:09') [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `sr_file` [ RunTime:0.0018s ]
+SQL: SELECT `file_name`,`save_path` FROM `sr_file` WHERE `id` IN ('793')  [ RunTime:0.0002s ]
+SQL: UPDATE `sr_banner` SET `save_path`='Uploads/Banner/5b3b3e9befcd2.png' WHERE `id` = 300 [ RunTime:0.0035s ]
+SQL: DELETE FROM `sr_file` WHERE `id` IN ('793') [ RunTime:0.0033s ]
+
+[ 2018-07-03T17:15:10+08:00 ] ::1 /gaochao/Backend/Advert/Index/lists/adspace_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0313s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Advert/Index/index','admin','109','平台管理 &gt; 广告管理 &gt; 首页广告 &gt; 查看所有广告 &gt; ','查看所有广告','0.0.0.0','1','2018-07-03 17:15:10') [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_banner` WHERE `adspace_id` = '7' AND `is_del` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`adspace_id`,`type`,`site_id`,`title`,`content`,`save_path`,`url`,`member_id`,`sort`,`start_time`,`end_time`,`add_time`,`is_hid`,`is_del` FROM `sr_banner` WHERE `adspace_id` = '7' AND `is_del` = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_adspace` [ RunTime:0.0019s ]
+SQL: SELECT `title` FROM `sr_adspace` WHERE `id` = '7' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000563s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000608s ]
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+NOTIC: [8] Only variables should be passed by reference C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\0b0e7c461636afaf643dc56486c1fc53.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2018-07-03T17:17:34+08:00 ] ::1 /gaochao/Backend/Advert/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `sr_banner` [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0180s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Advert/Index/index','admin','107','平台管理 &gt; 广告管理 &gt; 首页广告 &gt; ','浏览','0.0.0.0','1','2018-07-03 17:17:34') [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_adspace` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`type`,`page`,`title`,`cover`,`scale`,`sort`,`status`,`css_class`,`add_time` FROM `sr_adspace` WHERE `page` = 'home' ORDER BY sort desc,id asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 1 AND `start_time` < '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 1 AND `start_time` > '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 2 AND `start_time` < '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 2 AND `start_time` > '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 3 AND `start_time` < '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 3 AND `start_time` > '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 4 AND `start_time` < '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 4 AND `start_time` > '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 6 AND `start_time` < '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 6 AND `start_time` > '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 7 AND `start_time` < '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_banner` WHERE `adspace_id` = 7 AND `start_time` > '2018-07-03 17:17:34' AND `end_time` > '2018-07-03 17:17:34' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2018-07-03T17:19:33+08:00 ] ::1 /gaochao/Backend/Video/Video/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0323s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0425s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Video/index','admin','995','平台管理 &gt; 设备管理 &gt; 账号管理 &gt; ','浏览','0.0.0.0','1','2018-07-03 17:19:32') [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`type`,`appkey`,`appsecret`,`access_token`,`expire_time`,`title`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\c03a09994ba2e8cf1aaf88629e14f6d1.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001309s ]
+
+[ 2018-07-03T17:19:34+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0061s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 17:19:34') [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0434s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2018-07-03T17:24:50+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0344s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 17:24:50') [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`image`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2018-07-03T17:24:53+08:00 ] ::1 /gaochao/Backend/Video/Device/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0381s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1002','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; 添加','添加','0.0.0.0','1','2018-07-03 17:24:53') [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0347s ]
+SQL: SELECT `id`,`title` FROM `sr_district` WHERE `is_del` = 0 AND `is_hid` = 0  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `is_del` = 0  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2018-07-03T17:25:08+08:00 ] ::1 /gaochao/Backend/Article/Government/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+SQL: SHOW COLUMNS FROM `sr_government` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0320s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Article/Government/index','admin','893','平台管理 &gt; 政务公开 &gt; 政务列表 &gt; ','浏览','0.0.0.0','1','2018-07-03 17:25:08') [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_government` WHERE `is_del` = 0 AND `add_time` BETWEEN 0 AND '2018-07-03 17:25:08' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`content`,`is_hid`,`is_del`,`add_time`,`district_id`,`cover`,`description` FROM `sr_government` WHERE `is_del` = 0 AND `add_time` BETWEEN 0 AND '2018-07-03 17:25:08' ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\045716586c3f24f855991bdda21e795d.php 第 198 行.
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`title` FROM `sr_district` WHERE `is_del` IN (0,1)  [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2018-07-03T17:25:10+08:00 ] ::1 /gaochao/Backend/Article/Government/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `sr_government` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0183s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Article/Government/index','admin','907','平台管理 &gt; 政务公开 &gt; 政务列表 &gt; 添加','添加','0.0.0.0','1','2018-07-03 17:25:09') [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0494s ]
+SQL: SELECT `id`,`title` FROM `sr_district` WHERE `is_hid` = 0 AND `is_del` = 0  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `sr_government` [ RunTime:0.0821s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.085981s ]
+NOTIC: [2] Use of undefined constant name - assumed 'name' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\01077016f708a161e42f2b32e2c7c611.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000003s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2018-07-03T17:25:10+08:00 ] ::1 /gaochao/Backend/Article/Government/ueditor.html?action=config&&noCache=1530609910366
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `sr_government` [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0436s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Article/Government/ueditor','admin','0','','浏览','0.0.0.0','1','2018-07-03 17:25:10') [ RunTime:0.0122s ]
+
+[ 2018-07-03T17:33:20+08:00 ] ::1 /gaochao/Backend/Video/Video/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0370s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Video/index','admin','995','平台管理 &gt; 设备管理 &gt; 账号管理 &gt; ','浏览','0.0.0.0','1','2018-07-03 17:33:20') [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`type`,`appkey`,`appsecret`,`access_token`,`expire_time`,`title`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\c03a09994ba2e8cf1aaf88629e14f6d1.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2018-07-03T17:33:22+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0206s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0434s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 17:33:22') [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`image`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2018-07-03T17:33:23+08:00 ] ::1 /gaochao/Backend/Video/Device/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0062s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1002','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; 添加','添加','0.0.0.0','1','2018-07-03 17:33:22') [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title` FROM `sr_district` WHERE `is_del` = 0 AND `is_hid` = 0  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `is_del` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0670s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.070929s ]
+NOTIC: [2] Use of undefined constant name - assumed 'name' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\01077016f708a161e42f2b32e2c7c611.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000003s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2018-07-03T17:33:26+08:00 ] ::1 /gaochao/Backend/Video/Device/uploadPicture/session_id/1e7ic2640k35tpg7707eimtk1bm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0219s ]
+NOTIC: [2] Use of undefined constant date - assumed 'date' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Core\Common\functions.php 第 665 行.
+SQL: SHOW COLUMNS FROM `sr_file` [ RunTime:0.0371s ]
+NOTIC: [8] Undefined index: sha1 C:\xampp\htdocs\gaochao\Application\Common\Model\FileModel.class.php 第 145 行.
+SQL: SELECT `id`,`file_name`,`save_path`,`ext`,`mime`,`size`,`width`,`height`,`md5`,`sha1`,`add_time` FROM `sr_file` WHERE `md5` = 'ff9d0a35bd5a905c42dfba545be9c57e' AND `sha1` = null LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `sr_file` (`size`,`ext`,`md5`,`width`,`height`,`save_path`,`mime`,`add_time`) VALUES ('1420','png','efc14cf1844b2a7a8e52d878cef585fe','47','47','Uploads/ImgTemp/5b3b42e65bc37.png','image/png','0') [ RunTime:0.0047s ]
+
+[ 2018-07-03T17:33:42+08:00 ] ::1 /gaochao/Backend/Video/Device/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0231s ]
+SQL: INSERT INTO `sr_video_device` (`uid`,`district_id`,`ezopen`,`title`,`remark`,`update_time`,`add_time`) VALUES ('101','13','ezopen://open.ys7.com/C04910992/1.hd.live','测试账号','测试账号','2018-07-03 17:33:42','2018-07-03 17:33:42') [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0394s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1002','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; 添加','添加 | 100','0.0.0.0','1','2018-07-03 17:33:42') [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `sr_file` [ RunTime:0.0516s ]
+SQL: SELECT `file_name`,`save_path` FROM `sr_file` WHERE `id` IN ('794')  [ RunTime:0.0223s ]
+SQL: UPDATE `sr_video_device` SET `image`='Uploads/Video/5b3b42e65bc37.png',`update_time`='2018-07-03 17:33:42' WHERE `id` = 100 [ RunTime:0.0368s ]
+SQL: DELETE FROM `sr_file` WHERE `id` IN ('794') [ RunTime:0.0002s ]
+
+[ 2018-07-03T17:33:44+08:00 ] ::1 /gaochao/Backend/Video/Device/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0299s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1001','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; ','浏览','0.0.0.0','1','2018-07-03 17:33:44') [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`image`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `is_del` = 0 AND `is_hide` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\27b0ea3082f2e2ca9d52b05cdf5e7d72.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001148s ]
+
+[ 2018-07-03T17:48:08+08:00 ] ::1 /gaochao/Backend/Video/Device/edit/ids/100.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002421s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0074s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Video/Device/index','admin','1003','平台管理 &gt; 设备管理 &gt; 设备信息 &gt; 修改','修改','0.0.0.0','1','2018-07-03 17:48:08') [ RunTime:0.0332s ]
+SQL: SELECT `id`,`uid`,`district_id`,`member_id`,`ezopen`,`title`,`remark`,`image`,`is_hide`,`is_del`,`update_time`,`add_time` FROM `sr_video_device` WHERE `id` = 100 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title` FROM `sr_district` WHERE `is_del` = 0 AND `is_hid` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_video` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`title` FROM `sr_video` WHERE `is_del` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `sr_video_device` [ RunTime:0.0093s ]
+SQL: SELECT `image` FROM `sr_video_device` WHERE `id` = 100 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016455s ]
+NOTIC: [2] Use of undefined constant name - assumed 'name' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\01077016f708a161e42f2b32e2c7c611.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001441s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+

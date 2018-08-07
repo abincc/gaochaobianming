@@ -1,0 +1,124 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<form action="" method="post" class="js_form">
+			<input type="hidden" name="ids" value="<?=$info['id']?>" />
+			<div class="control-label">
+				<span class="required">*</span>
+				用户名
+			</div>
+			<div>
+				<input type="text" class="form-control width_auto" name="username" value="<?=$info['username']?>" datatype="*0-250" nullmsg="请输入用户名" errormsg="请输入用户名" placeholder="请输入用户名"/>
+				<span class="Validform_checktip">0-250个字符</span>
+			</div>
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					小区
+				</div>
+				<div>
+					<select name="district_id" class="form-control width_auto super_select2" data-placeholder="请选择小区" datatype="n" nullmsg="请选择小区" errormsg="请选择小区">
+						<option value="">请选择小区</option>
+						<?=$pid?>
+					</select>
+					<span class="Validform_checktip"></span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					费用类型
+				</div>
+				<div>
+					<select name="type" class="form-control width_auto super_select2" data-placeholder="费用类型" datatype="n" nullmsg="请选择费用类型" errormsg="请选择费用类型">
+						<option value="">请选择费用类型</option>
+						<?=$option?>
+					</select>
+					<span class="Validform_checktip"></span>
+				</div>
+			</div>
+
+
+			<div class="control-label">
+				<span class="required">*</span>
+				费用
+			</div>
+			<div>
+				<input type="text" class="form-control width_auto" name="cost" value="<?=$info['cost']?>" datatype="*0-9999999" nullmsg="请输入费用" errormsg="请输入费用" placeholder="请输入费用"/>
+				<span class="Validform_checktip">0-9999999</span>
+			</div>
+
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					费用日期
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto" name="cost_time" value="<?=substr($info['cost_time'], 0, 10)?>" datatype="*10-10" nullmsg="请输入费用日期" errormsg="请输入费用日期" placeholder="请输入费用日期"/>
+					<span class="Validform_checktip">格式：2018-01-03</span>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					备注
+				</div>
+				<div>
+					<textarea class="form-control width_auto" name="remark"/>
+						<?=trim($info['remark'])?>
+					</textarea>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					其他/图片
+				</div>
+				<div>
+					<?php
+						$config = array(
+						    'index'     => 1,					// 在当前页面中，调用的第几个文件上传插件，默认为1
+						    'table'     => 'comprehensive',		// 数据保存在哪张表，此项必填
+						    'table_id'  => 'id',				// 数据所在表的主键，默认为id
+						    'name'      => 'image',				// 此配置项主要用于设置表单提交时的name，非特殊情况下可以和val_key的配置值保持一致
+						    'multi'     => 'false',				// 是否允许多文件上传，允许为true（前后需要添加引号），不允许为false（默认）
+						    'val_key'   => 'image'				// 存储在数据表中的字段
+						);
+						echo W('Common/Img/index', array($config, $info['id']));
+					?>
+					<span class="Validform_checktip">图片尺寸：750 * 450</span>
+				</div>
+			</div>
+
+			<div class="form-btn clearfix">
+				<input type="submit" class="pull-left btn btn-primary" value="提交" />
+				<a href="<?=U('index')?>" class="pull-left btn btn-default">取消返回</a>
+				<div class="js_validTips pull-left" style="height:34px;line-height:34px;">
+					<span class="js_tipContent Validform_checktip"></span>
+				</div>
+			</div>
+
+			<?php
+				if(!empty($info['id'])){
+			?>
+			<div  style="height: 1000px; width: 1500px;>
+				<a href="#" class="thumbnail">
+				  <img style="height: 1000px; width: 1500px; display: block;" src="<?=thumb($info['image'], 280, 200, 'M')?>" data-holder-rendered="true">
+				</a>
+			</div>
+			<?php
+				}
+			?>
+		
+		</form>
+	</div>
+	<js href="__PLUGIN__/select2/select2.full.js" />
+	<js href="__PLUGIN__/select2/super_select2.js" />
+	<script type="text/javascript">
+		$(function(){
+			$('.super_select2').super_select2();
+		});
+	</script>	
+</block>

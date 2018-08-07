@@ -1,0 +1,61 @@
+<!-- 消息中心 >> 其它消息 -->
+<extend name="Common/body"/>
+<block name="head_change">
+<?php
+$crumbs="消息中心";
+$crumbs_array[]=array("title"=>"个人中心","url"=>U("/User"));
+$crumbs_array[]=array("title"=>"其它消息","url"=>U("User/Message/other"));
+?>
+<script>
+var cur_url="<?=U('User/Message/other')?>";
+</script>
+</block>
+<block name="body">
+	<table class="message_table table">
+		<thead class="noboder">
+			<tr>
+				<th class="col-xs-10">标题</th>
+				<th class="col-xs-2 text-right">时间</th>
+			</tr>
+		</thead>
+		<tr class="mini_title">
+			<td colspan="2" class="clearfix">
+				<div class="pull-left">
+					<span style="margin-right:10px;"><input type="checkbox" class="js_check_all" data-target="ids" /></span>
+					<a href="javascript:;" class="btn btn-default btn-xs">删除所选</a>
+					<a href="javascript:;" class="btn btn-default btn-xs">标记所选为已读</a>
+				</div>
+				<div class="pull-right">
+				    <a href="#">未读（2）</a> - <a href="#" class="hover">全部</a>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="col-xs-10 clearfix">
+				<input type="checkbox" data-child="ids" class="pull-left" />
+				<div style="margin-left:25px;">
+					<a href="<?=U('User/Message/other_detial')?>">特价越南惠安沉香手工切割插烟片烟丝特价越南惠安沉香手工切割插烟片烟丝特价越南惠安沉香手工切割插烟片烟丝特价越南惠安沉香手工切割插烟片烟丝特价越南惠安沉香手工切割插烟片烟丝</a>
+				</div>
+			</td>
+			<td class="col-xs-2 text-right">2016-05-24</td>
+		</tr>
+		<tr>
+			<td class="col-xs-10">
+				<input type="checkbox" data-child="ids" class="pull-left" />
+				<div style="margin-left:25px;">
+					<a href="<?=U('User/Message/other_detial')?>">特价越南惠安沉香手工切割插烟片烟丝</a>
+				</div>
+			</td>
+			<td class="col-xs-2 text-right">2016-05-24</td>
+		</tr>
+		<tr class="mini_title">
+			<td colspan="2">
+				<span style="margin-right:10px;"><input type="checkbox" class="js_check_all" data-target="ids" /></span>
+				<a href="javascript:;" class="btn btn-default btn-xs">删除所选</a>
+				<a href="javascript:;" class="btn btn-default btn-xs">标记所选为已读</a>
+			</td>
+		</tr>
+	</table>
+	
+	<?=$page?>
+</block>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<include layout="@layout/layout_header"/>
+
+	<FrameLayout android:layout_width="match_parent"
+	             android:layout_height="@dimen/blockHeight44"
+	             android:background="@color/white"
+	             android:paddingLeft="@dimen/bordePadding125"
+	             android:paddingRight="@dimen/bordePadding125">
+
+		<TextView style="@style/baseTextView"
+		          android:layout_height="match_parent"
+		          android:gravity="center_vertical"
+		          android:text="小区名称"
+		          android:textColor="@color/gray333"
+		          android:textSize="@dimen/tv_xm_14"/>
+
+		<TextView android:id="@+id/tv_select_area"
+		          style="@style/baseTextView"
+		          android:layout_height="match_parent"
+		          android:layout_gravity="right"
+		          android:drawablePadding="16.5dp"
+		          android:drawableRight="@drawable/selector_btn_loc_black"
+		          android:gravity="center_vertical"
+		          android:text=""
+				  android:paddingLeft="5dp"
+		          android:textColor="@color/selector_gray666_blue"
+		          android:textSize="@dimen/tv_xm_14"/>
+	</FrameLayout>
+
+	<FrameLayout android:layout_width="match_parent"
+	             android:layout_height="@dimen/blockHeight44"
+	             android:layout_marginTop="1dp"
+	             android:background="@color/white"
+	             android:paddingLeft="@dimen/bordePadding125"
+	             android:paddingRight="@dimen/bordePadding125">
+
+		<TextView style="@style/baseTextView"
+		          android:layout_height="match_parent"
+		          android:gravity="center_vertical"
+		          android:text="服务类型"
+		          android:textColor="@color/gray333"
+		          android:textSize="@dimen/tv_xm_14"/>
+
+		<TextView android:id="@+id/tv_select_type"
+		          style="@style/baseTextView"
+		          android:layout_height="wrap_content"
+		          android:layout_gravity="right|center"
+				  android:paddingTop="@dimen/dp_8"
+				  android:paddingBottom="2dp"
+		          android:drawablePadding="16.5dp"
+		          android:drawableRight="@drawable/selector_drop_down"
+		          android:gravity="center_vertical"
+		          android:text=""
+		          android:textColor="@color/selector_gray666_blue"
+		          android:textSize="@dimen/tv_xm_14"/>
+	</FrameLayout>
+
+	<EditText android:id="@+id/et_desc"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_marginTop="1dp"
+	          android:background="@color/white"
+	          android:gravity="top"
+	          android:hint="请输入您要帮忙的具体事件"
+	          android:maxLength="300"
+	          android:minLines="7"
+	          android:paddingLeft="@dimen/bordePadding125"
+	          android:paddingRight="@dimen/bordePadding125"
+	          android:paddingTop="17.5dp"
+	          android:textColor="@color/gray333"
+	          android:textColorHint="@color/gray999"
+	          android:textSize="@dimen/tv_xm_14"/>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recycler"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:paddingLeft="7.5dp"
+		android:paddingRight="7.5dp"/>
+
+	<TextView style="@style/baseTextView"
+	          android:layout_width="match_parent"
+	          android:background="@color/white"
+	          android:paddingBottom="15dp"
+	          android:paddingLeft="@dimen/bordePadding125"
+	          android:paddingTop="6dp"
+	          android:text="最多可上传9张图片"
+	          android:textColor="@color/gray999"
+	          android:textSize="@dimen/tv_xs_11"/>
+
+</LinearLayout>

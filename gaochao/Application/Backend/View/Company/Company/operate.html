@@ -1,0 +1,29 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<form action="" method="post" class="js_form">
+			<input type="hidden" name="id" value="<?=$info['id']?>" />
+			
+			<label class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					公司名称
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto"
+						datatype="*" nullmsg="填写公司名称"
+						name="name" value="<?=$info['name']?>"/>
+					<span class="Validform_checktip">公司名称不能重复</span>
+				</div>
+			</label>
+			
+			<div class="form-btn clearfix">
+				<input type="submit" class="pull-left btn btn-primary" value="提交" />
+				<a href="<?=U('index')?>" class="pull-left btn btn-default">取消并返回</a>
+				<div class="js_validTips pull-left" style="height:34px;line-height:34px;">
+					<span class="js_tipContent Validform_checktip"></span>
+				</div>
+			</div>
+		</form>
+	</div>
+</block>

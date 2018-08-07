@@ -1,0 +1,118 @@
+<extend name="Common/body"/>
+<block name="style">
+<script>
+var cur_url="<?=U('User/Order/lottery')?>";
+</script>
+</block>
+<block name="script">
+</block>
+<block name="head_change">
+<?php
+$crumbs="中奖详情";
+$crumbs_array[]=array("title"=>"订单管理","url"=>U("lottery"));
+$crumbs_array[]=array("title"=>"中奖详情","url"=>U("details_lottery"));
+?>
+</block>
+<block name="body">
+	<!-- 物流信息 S-->
+	<h5 class="margin_b10">物流信息</h5>
+	<div class="table-responsive logistics_info">
+		<table class="table">
+			<thead>
+				<tr>
+					<th class="col-xs-3">处理时间</th>
+					<th class="col-xs-8">订单状态</th>
+					<th class="col-xs-1">操作人</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2016-03-07 23:43:20</td>
+					<td>您已确认收货,订单完成<br />感谢在平台购物，欢迎您再次光临</td>
+					<td>买家</td>
+				</tr>
+				<tr>
+					<td>2016-03-04 11:15:10</td>
+					<td>卖家已发货，等待收货中，39天内订单将会自动确认收货，请及时关注该订单<br />
+					快递单位：顺丰快递<br />快递单号：854158471724</td>
+					<td>卖家</td>
+				</tr>
+				<tr>
+					<td>2016-03-03 19:50:33</td>
+					<td>您的订单卖家已收到，卖家正在准备发货</td>
+					<td>卖家</td>
+				</tr>
+				<tr>
+					<td>2016-03-03 19:42:32</td>
+					<td>您的订单已支付成功，请等待卖家发货</td>
+					<td>系统</td>
+				</tr>
+				<tr>
+					<td>2016-03-03 19:39:32</td>
+					<td>您提交了订单，等待买家支付</td>
+					<td>系统</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- 物流信息 E-->
+	<!-- 商品信息 S -->
+	<h5 class="margin_b10">商品信息</h5>
+	<table class="table table-bordered">
+		<thead>
+			<tr class="title">
+				<th class="col-xs-4 text-center">商品</th>
+				<th class="col-xs-1 text-center">领取时间</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="product_info clearfix">
+					<a href="#" class="col-xs-2 cover">
+						<img src="__USER__/img/order_default.png" class="img-responsive">
+					</a>
+					<div class="col-xs-10 title">
+						<a href="#">特价越南惠安沉香手工切割插烟片烟丝</a>
+					</div>
+				</td>
+				<td>2016-06-01 － 2016-06-08</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- 商品信息 E -->
+	<!-- 买家信息 S-->
+	<div class="details_con">
+		<h5 class="margin_b10">收获地址：</h5>
+		<!-- 选择之后 －S -->
+		<p class="tips receipt_info js_select_address">赵，15387133178，湖北省武汉市武昌区XX栋XX室，443100</p>
+		<!-- 选择之后 －E -->
+		<div style="margin:20px 0;padding:10px;background:#eee;color:#666;">
+			<!-- 选择之前 －S -->
+			<form action="" class="">
+				<div class="js_address_list">
+					<label class="js_address"><input type="radio" name="address" value="1" checked="checked"> 赵，15387133178，湖北省武汉市武昌区XX栋XX室，443100</label>
+					<label class="js_address"><input type="radio" name="address" value="2"> 钱，15387133178，湖北省武汉市武昌区XX栋XX室，443100</label>
+					<label class="js_address"><input type="radio" name="address" value="3"> 孙，15387133178，湖北省武汉市武昌区XX栋XX室，443100</label>
+					<label class="js_address"><input type="radio" name="address" value="4"> 李，15387133178，湖北省武汉市武昌区XX栋XX室，443100</label>
+				</div>
+				<input type="submit" class="btn btn-orange btn-xs" value="确认收货地址" />
+				<!-- 弹框触发按钮 S -->
+				<a  class="btn btn-default btn-xs dialog" href="<?=U('User/Address/Address/add')?>" title="添加收货地址">添加收货地址</a>
+				<!-- 弹框触发按钮 E -->
+			</form>
+			<!-- 选择之前 －E -->
+		</div>
+	</div>
+	<!-- 买家信息 E-->
+</block>
+<block name="script">
+<script type="text/javascript">
+$(function(){
+	$(".js_address").on("change","input",function(){
+		if(this.checked){
+			$(".js_select_address").text($(this).parent().text());
+		}
+	})
+})
+</script>
+</block>

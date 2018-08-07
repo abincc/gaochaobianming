@@ -1,0 +1,65 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<table class="table table-bordered">
+			<tbody><tr>
+				<th colspan="20" class="clearfix" style="background:#eee">
+					帖子信息
+				</th>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					内&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;容：<?=$info['content']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					所属版块：<?=$forum[$info['forum_id']]['title']?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					发布用户：<?=$info['member_nickname']?> 
+				</td>
+			</tr>				
+			<tr>
+				<td class="text-left" colsplan="2">
+					点赞总数：<?=$info['likes']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					发布时间：<?=$info['update_time']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					更新时间：<?=$info['update_time']?> 
+				</td>
+			</tr>
+
+	    	</tbody>
+    	</table>
+
+	</div>
+	<div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+					<?php
+						foreach ($info['images'] as $k => $v) {
+					?>	
+                        <a class="fancybox" href="__ROOT__/<?=$v['image']?>" target="_blank" title="图片">
+                            <img alt="image" src="<?=thumb($v['image'])?>">
+                        </a>
+					<?php
+						}
+					?>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</block>

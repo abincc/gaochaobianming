@@ -1,0 +1,25 @@
+<extend name="Common/body"/>
+<block name="head_change">
+<?php
+?>
+</block>
+<block name="style">
+<css href="__PLUGIN__/avatar/css/Jcrop-min.css"/>
+<css href="__PLUGIN__/avatar/css/upload_head.css"/>
+</block>
+<block name="body">
+    <!-- 个人信息 S-->
+    <div class="nav_zzypt">
+        <!-- 页面主体 S -->
+        <ul class="nav nav-tabs">
+            <li><a href="<?=U("index")?>">个人资料</a></li>
+            <li class="active"><a href="<?=U("avatar")?>">头像照片</a></li>
+        </ul>
+        <div class="person_content">
+            <include file="Common@Avatar/index" />
+        </div>
+    </div>
+    <!-- 个人信息 E-->
+</block>
+<block name="script">
+</block>

@@ -1,0 +1,255 @@
+[ 2018-08-02T10:20:43+08:00 ] 192.168.0.110 /gaochao/Api/Common/Index/index?district_id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002686s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0098s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0071s ]
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\gaochao\Application\Common\Common\extend.php 第 746 行.
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0077s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 AND `district_id` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0209s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0094s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('1081','1082','1079','1080','1075','1074') ORDER BY id asc  [ RunTime:0.0029s ]
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+
+[ 2018-08-02T10:20:43+08:00 ] 192.168.0.110 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002693s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0125s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 0,6   [ RunTime:0.0430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0073s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('1081','1082','1079','1080','1075','1074') ORDER BY id asc  [ RunTime:0.0031s ]
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+NOTIC: [8] Undefined offset: 43 C:\xampp\htdocs\gaochao\Application\Api\Org\Forum\Forum.class.php 第 767 行.
+
+[ 2018-08-02T10:20:51+08:00 ] 192.168.0.110 /gaochao/Api/Common/Product/categroy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001850s ]
+
+[ 2018-08-02T10:20:53+08:00 ] 192.168.0.110 /gaochao/Api/Common/Product/index?order_sales=0&p=1&order_price=0&categroy_id=9&keyword=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0038s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `is_del` = 0 AND `is_hid` = 0 AND `is_sale` = 1 AND `sub_category_id` = 9 ORDER BY sort desc,sales desc,collect desc LIMIT 0,12   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_product` WHERE `is_del` = 0 AND `is_hid` = 0 AND `is_sale` = 1 AND `sub_category_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-08-02T10:20:54+08:00 ] 192.168.0.110 /gaochao/Api/Common/Product/comment?product_id=98
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `sr_order_comment` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0048s ]
+SQL: SELECT v.id as comment_id,username as nickname,v.content AS content,v.star AS star,v.member_id AS member_id,v.reply AS reply,v.add_time AS add_time FROM sr_order_comment v LEFT JOIN sr_member m ON m.id=v.member_id WHERE v.product_id = 98 AND v.is_del = 0 AND v.is_hid = 0 ORDER BY v.add_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sr_order_comment v LEFT JOIN sr_member m ON m.id=v.member_id WHERE v.product_id = 98 AND v.is_del = 0 AND v.is_hid = 0 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-08-02T10:20:54+08:00 ] 192.168.0.110 /gaochao/Api/Common/Product/info?token=fnVyqrJ3dLCudXOuhHp5rYF2cayDpnpngYejmbGFott6dXaqtJ14bbCbc7CIenmtgYWXp4OmnKeCd6vMsoWimH6FmGmyd316roWZroR3bXM&product_id=98
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0397s ]
+SQL: SELECT id as product_id,`title`,`price`,`description`,image as cover,`content`,`spec`,`spec_value`,`inventory` FROM `sr_product` WHERE `id` = 98 AND `is_del` = 0 AND `is_hid` = 0 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sr_product_sku` [ RunTime:0.0175s ]
+SQL: SELECT id as sku_id,`spec_value`,`price` FROM `sr_product_sku` WHERE ( product_id=98 )  [ RunTime:0.0008s ]
+NOTIC: [2] array_keys() expects parameter 1 to be array, boolean given C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\ProductController.class.php 第 156 行.
+NOTIC: [2] implode(): Invalid arguments passed C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\ProductController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0027s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sr_product_collection` [ RunTime:0.0047s ]
+SQL: SELECT `id` FROM `sr_product_collection` WHERE `member_id` = 0 AND `product_id` = 98 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_product_image` [ RunTime:0.0053s ]
+SQL: SELECT id as image_id,`image` FROM `sr_product_image` WHERE ( product_id=98 ) ORDER BY add_time desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sr_order_comment` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_order_comment` WHERE ( product_id=98 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-08-02T10:20:58+08:00 ] 192.168.0.110 /gaochao/Api/User/Order/buy_now?sku_id=115&token=fnVyqrJ3dLCudXOuhHp5rYF2cayDpnpngYejmbGFott6dXaqtJ14bbCbc7CIenmtgYWXp4OmnKeCd6vMsoWimH6FmGmyd316roWZroR3bXM&num=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011728s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0029s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-08-02T10:21:07+08:00 ] 192.168.0.110 /gaochao/Api/Common/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002556s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`type`,`password`,`is_hid`,`is_del` FROM `sr_member` WHERE `mobile` = '15170255838' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT id as member_id,`type`,`state`,`username`,`nickname`,`mobile`,`sex`,`district_id` FROM `sr_member` WHERE `id` = 209 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `sr_member` SET `login_time`='2018-08-02 10:21:07' WHERE ( id=209 ) [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-08-02T10:21:07+08:00 ] 192.168.0.110 /gaochao/Api/Common/Public/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0033s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-08-02T10:21:08+08:00 ] 192.168.0.110 /gaochao/Api/Common/Product/index?order_sales=0&p=1&order_price=0&categroy_id=9&keyword=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0028s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `is_del` = 0 AND `is_hid` = 0 AND `is_sale` = 1 AND `sub_category_id` = 9 ORDER BY sort desc,sales desc,collect desc LIMIT 0,12   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_product` WHERE `is_del` = 0 AND `is_hid` = 0 AND `is_sale` = 1 AND `sub_category_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-08-02T10:21:08+08:00 ] 192.168.0.110 /gaochao/Api/Common/Product/info?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYejmbGFott6dXaqtJ18sbCbc2qIenmtgYWXp4OmnKeCd6vMsoWimH6bdmmyd5d6roWZroR3bXM&product_id=98
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0035s ]
+SQL: SELECT id as product_id,`title`,`price`,`description`,image as cover,`content`,`spec`,`spec_value`,`inventory` FROM `sr_product` WHERE `id` = 98 AND `is_del` = 0 AND `is_hid` = 0 AND `is_sale` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_product_sku` [ RunTime:0.0027s ]
+SQL: SELECT id as sku_id,`spec_value`,`price` FROM `sr_product_sku` WHERE ( product_id=98 )  [ RunTime:0.0004s ]
+NOTIC: [2] array_keys() expects parameter 1 to be array, boolean given C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\ProductController.class.php 第 156 行.
+NOTIC: [2] implode(): Invalid arguments passed C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\ProductController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0029s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_product_collection` [ RunTime:0.0026s ]
+SQL: SELECT `id` FROM `sr_product_collection` WHERE `member_id` = 209 AND `product_id` = 98 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_product_image` [ RunTime:0.0030s ]
+SQL: SELECT id as image_id,`image` FROM `sr_product_image` WHERE ( product_id=98 ) ORDER BY add_time desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_order_comment` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sr_order_comment` WHERE ( product_id=98 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-08-02T10:21:10+08:00 ] 192.168.0.110 /gaochao/Api/User/Order/buy_now?sku_id=115&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYejmbGFott6dXaqtJ18sbCbc2qIenmtgYWXp4OmnKeCd6vMsoWimH6bdmmyd5d6roWZroR3bXM&num=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0030s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_product_sku` [ RunTime:0.0030s ]
+SQL: SELECT id as sku_id,`product_id`,`price`,`inventory`,`image`,`spec_value` FROM `sr_product_sku` WHERE ( id=115 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0029s ]
+SQL: SELECT id as product_id,`title`,`freight`,`is_sale` FROM `sr_product` WHERE `id` = 98 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0052s ]
+SQL: SELECT id as address_id,`province`,`city`,`area`,`address_detail`,`mobile`,`name` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_default` = 1 AND `is_hid` = 0 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] implode(): Invalid arguments passed C:\xampp\htdocs\gaochao\Application\Api\Controller\User\OrderController.class.php 第 492 行.
+SQL: SHOW COLUMNS FROM `sr_coupon_card` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `sr_coupon_card` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sr_coupon` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sr_coupon_card c LEFT JOIN sr_coupon p ON p.id=c.coupon_id LEFT JOIN sr_member m ON m.id=c.member_id WHERE c.member_id = 209 AND c.status = 1 AND c.is_del = 0 AND c.is_hid = 0 AND p.minimum < 130 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-08-02T10:21:11+08:00 ] 192.168.0.110 /gaochao/Api/User/Order/buy_now
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002022s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0030s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_product_sku` [ RunTime:0.0034s ]
+SQL: SELECT id as sku_id,`product_id`,`price`,`inventory`,`image`,`spec_value` FROM `sr_product_sku` WHERE ( id=115 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0034s ]
+SQL: SELECT id as product_id,`title`,`freight`,`is_sale` FROM `sr_product` WHERE `id` = 98 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0032s ]
+SQL: SELECT id as address_id,`province`,`city`,`area`,`address_detail`,`mobile`,`name` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_hid` = 0 AND `is_del` = 0 AND `id` = 225 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: remark C:\xampp\htdocs\gaochao\Application\Api\Controller\User\OrderController.class.php 第 387 行.
+SQL: SHOW COLUMNS FROM `sr_order` [ RunTime:0.0061s ]
+SQL: INSERT INTO `sr_order` (`freight`,`money_total`,`money_reduction`,`order_no`,`detail_title`,`receipt_mobile`,`receipt_address`,`member_id`,`status`,`add_time`,`update_time`) VALUES ('0.00','130.00','0','2018080255514852','烟熏火腿130/块（约1250g）','18296640717','a:10:{s:10:\"address_id\";s:3:\"225\";s:8:\"province\";s:1:\"1\";s:4:\"city\";s:1:\"2\";s:4:\"area\";s:1:\"4\";s:14:\"address_detail\";s:12:\"交流交流\";s:6:\"mobile\";s:11:\"18296640717\";s:4:\"name\";s:6:\"啊嘞\";s:14:\"province_title\";s:9:\"北京市\";s:10:\"city_title\";s:9:\"北京市\";s:10:\"area_title\";s:9:\"西城区\";}','209','10','2018-08-02 10:21:11','2018-08-02 10:21:11') [ RunTime:0.0006s ]
+SQL: INSERT INTO `sr_order_detail` (`status`,`order_id`,`product_id`,`product_title`,`product_price`,`product_num`,`product_spec_value`,`product_image`,`add_time`,`update_time`) VALUES (10,902,98,'烟熏火腿130/块（约1250g）',130.00,1,'','Uploads/Product/Product/Cover/2018-01-28/5a6d8172a5318.png','2018-08-02 10:21:11','2018-08-02 10:21:11') [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: card_id C:\xampp\htdocs\gaochao\Application\Api\Controller\User\OrderController.class.php 第 415 行.
+SQL: SHOW COLUMNS FROM `sr_order_log` [ RunTime:0.0048s ]
+SQL: INSERT INTO `sr_order_log` (`order_id`,`member_id`,`status`,`remark`,`add_time`) VALUES ('902','209','10','客户下单','2018-08-02 10:21:11') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_message` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0050s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"member_id\":209,\"type\":2,\"title\":\"订单的生成成功\",\"content\":\"生成订单，订单编号为：2018080255514852\"}','消息数据3','2018-08-02 10:21:11') [ RunTime:0.0023s ]
+SQL: INSERT INTO `sr_message` (`member_id`,`type`,`title`,`content`,`add_time`) VALUES ('209','2','订单的生成成功','生成订单，订单编号为：2018080255514852','2018-08-02 10:21:11') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sr_member_count` [ RunTime:0.0048s ]
+SQL: UPDATE `sr_member_count` SET `message_order`=message_order+1 WHERE `member_id` = 209 [ RunTime:0.0036s ]
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\gaochao\Core\Library\Org\JPush\PushPayload.class.php 第 298 行.
+
+[ 2018-08-02T10:21:13+08:00 ] 192.168.0.110 /gaochao/Api/User/Order/wx_ios_pay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001643s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0041s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0035s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('-------','请求微信预支付ID--被请求了','2018-08-02 10:21:13') [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sr_order` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sr_order` WHERE `id` = 902 AND `member_id` = 209 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('2018080255514852','请求微信预支付ID','2018-08-02 10:21:13') [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sr_wechat_config` [ RunTime:0.0053s ]
+SQL: SELECT `token`,`appid`,`appsecret`,`encodingaeskey`,`mch_id`,`partnerkey`,`ssl_cer`,`ssl_key`,`qrc_img` FROM `sr_wechat_config` WHERE `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8192] Function create_function() is deprecated C:\xampp\htdocs\gaochao\Core\Library\Vendor\Wechat\Lib\Tools.php 第 109 行.
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"return_code\":\"SUCCESS\",\"return_msg\":\"OK\",\"appid\":\"wx0008eb3738042cc7\",\"mch_id\":\"1493988612\",\"nonce_str\":\"Q0I56aYQpjtO8uG8\",\"sign\":\"AC52A72B6DE877E723A62ED609A0FD60\",\"result_code\":\"SUCCESS\",\"prepay_id\":\"wx021021144524123aa057488f3478539195\",\"trade_type\":\"APP\"}','微信预支','2018-08-02 10:21:13') [ RunTime:0.0035s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"appid\":\"wx0008eb3738042cc7\",\"partnerid\":\"1493988612\",\"prepayid\":\"wx021021144524123aa057488f3478539195\",\"package\":\"Sign=WXPay\",\"noncestr\":\"j95nkwg62u0pnl3nqvtotee0er28nn0n\",\"timestamp\":\"1533176473\",\"sign\":\"ECFBBD0A7ACB728E9577DAEADA4C3B80\"}','微信支付签名','2018-08-02 10:21:13') [ RunTime:0.0036s ]
+

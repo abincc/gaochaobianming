@@ -1,0 +1,108 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<table class="table table-bordered">
+			<tbody><tr>
+				<th colspan="20" class="clearfix" style="background:#eee">
+					主题信息
+				</th>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					主题名称：<?=$info['title']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					所属版块：<?=$forum[$info['forum_id']]['title']?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					发布用户：<?=$info['member_nickname']?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					最后发帖人：<?=$info['lastposter']?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					最后发帖时间：<?=$info['lastpost_time']?> 
+				</td>
+			</tr>
+
+			<tr>
+				<td class="text-left" colsplan="2">
+					主题浏览总量：<?=$info['views']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					主题回复总量：<?=$info['replies']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					主题点赞总数：<?=$info['likes']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					主题是否高亮：<?=$info['highlight']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					主题是否精华：<?=$info['digest']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					主题是否推荐：<?=$info['recommend']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					主题推荐时间：<?=$info['recommend_time']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					主题发布时间：<?=$info['update_time']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					最后更新时间：<?=$info['update_time']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					<div class="wrapper wrapper-content">
+				        <div class="row">
+				            <div class="col-sm-12">
+				                <div class="ibox float-e-margins">
+				                    <div class="ibox-content">
+									<?php
+										foreach ($info['images'] as $k => $v) {
+									?>	
+				                        <a class="fancybox" href="__ROOT__/<?=$v['image']?>" target="_blank" title="图片">
+				                            <img alt="image" src="<?=thumb($v['image'])?>" style="margin-bottom: 5px;width: 24%;">
+				                        </a>
+									<?php
+										}
+									?>
+				                    </div>
+				                </div>
+				            </div>
+
+				        </div>
+				    </div>
+		    	</td>
+			</tr>
+	    	</tbody>
+    	</table>
+	</div>
+</block>

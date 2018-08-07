@@ -1,0 +1,66 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<form role="form" action="" method="post" class="product_form js_form">
+		<input name="ids" type="hidden" value="<?=$info['id']?>" />
+		<div class="form-group">
+			<div class="control-label">
+				商品名称：
+			</div>
+			<div>
+				<input type="text" class="form-control width_auto" value="<?=$info['title']?>" readonly="readonly" />
+			</div>
+		</div>	
+
+<?php
+	$i = 1;
+	foreach($spec_value as $v) {
+?>
+		<div class="form-group">
+			<div class="control-label">
+				<span class="required">*</span>
+				<?=$spec_title?>：<?=$v['title']?>
+			</div>
+			<div>
+<?php
+				$config = array(
+					'index'		=> $i++,			   
+					'table'		=> 'product_sku',    
+					'name'		=> 'spec_value_'.$v['id'],      
+					'val_key'	=> 'image',
+					'tpl'		=> 'product'
+				);
+				echo W('Common/Img/index', array($config, $v['sku_id']));
+?>				
+			</div>
+		</div>
+<?php
+	}
+?>
+		<div class="form-group">
+			<div class="control-label">
+				商品图片：
+			</div>
+			<div>
+<?php
+				$config = array(
+					'index'		=> $i,			   
+					'table'		=> 'product_image',
+					'table_id'  => 'product_id',  
+					'name'		=> 'image',      
+					'val_key'	=> 'image',
+					'multi'		=> 'true',
+				);
+				echo W('Common/Img/index', array($config, $info['id']));
+?>				
+			</div>
+		</div>
+		<div class="form-btn clearfix">
+			<input type="submit" class="pull-left btn btn-primary" value="提交" />
+			<div class="js_validTips pull-left" style="height:34px;line-height:34px;">
+				<span class="js_tipContent Validform_checktip"></span>
+			</div>
+		</div>
+		</form>
+	</div>
+</block>

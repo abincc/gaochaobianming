@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+	<include layout="@layout/layout_header"/>
+	<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+	                                            android:layout_height="match_parent">
+
+		<LinearLayout android:layout_width="match_parent"
+		              android:layout_height="match_parent"
+		              android:background="@color/white"
+		              android:gravity="center_horizontal"
+
+		              android:orientation="vertical">
+
+			<android.support.v7.widget.RecyclerView android:id="@+id/recycle_order"
+			                                        android:layout_width="match_parent"
+			                                        android:layout_height="wrap_content"
+			/>
+			<com.iarcuschin.simpleratingbar.SimpleRatingBar android:layout_width="wrap_content"
+			                                                android:layout_height="wrap_content"
+			                                                android:layout_marginTop="9.5dp"
+			                                                app:paddingStart="10dp"
+			                                                app:srb_borderColor="#e5e5e5"
+			                                                app:srb_fillColor="#ffc821"
+			                                                app:srb_numberOfStars="5"
+			                                                android:id="@+id/ratingbar"
+			                                                app:srb_starBackgroundColor="#e5e5e5"
+			                                                app:srb_starBorderWidth="0.1"
+			                                                app:srb_starSize="20dp"
+			                                                app:srb_starsSeparation="5dp"
+			                                                app:srb_stepSize="1"
+
+			/>
+			<TextView style="@style/baseTextView"
+			          android:layout_marginTop="14.5dp"
+			          android:text="评论星级"
+			          android:textColor="@color/gray666"
+			          android:textSize="@dimen/sp_12"
+			/>
+			<View android:layout_width="match_parent"
+			      android:layout_height="@dimen/dp_1"
+			      android:layout_marginTop="20.5dp"
+			      android:background="@color/grayF4"
+			/>
+			<EditText android:id="@+id/et_desc"
+			          android:layout_width="match_parent"
+			          android:layout_height="wrap_content"
+			          android:layout_marginTop="1dp"
+			          android:background="@color/white"
+			          android:gravity="top"
+			          android:hint="请输入相应内容"
+			          android:maxLength="300"
+			          android:minLines="6"
+			          android:paddingLeft="@dimen/bordePadding125"
+			          android:paddingRight="@dimen/bordePadding125"
+			          android:paddingTop="17.5dp"
+			          android:textColor="@color/gray333"
+			          android:textColorHint="@color/gray999"
+			          android:textSize="@dimen/tv_xm_14"/>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recycler"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:paddingLeft="7.5dp"
+				android:paddingRight="7.5dp"/>
+
+			<TextView style="@style/baseTextView"
+			          android:layout_width="match_parent"
+			          android:background="@color/white"
+			          android:paddingBottom="15dp"
+			          android:paddingLeft="@dimen/bordePadding125"
+			          android:paddingTop="6dp"
+			          android:text="最多可上传9张图片"
+			          android:textColor="@color/gray999"
+			          android:textSize="@dimen/tv_xs_11"/>
+			<View android:layout_width="match_parent"
+			      android:layout_height="40dp"
+			      android:background="@color/grayF4"
+			/>
+		</LinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<!-- 消息中心 >> 收件箱 -->
+<extend name="Common/body"/>
+<block name="head_change">
+<?php
+	$crumbs="消息中心";
+	$crumbs_array[]=array("title"=>"个人中心","url"=>U("Index/Index"));
+	$crumbs_array[]=array("title"=>"我的私信","url"=>U(""));
+?>
+<script>
+var cur_url="<?=U('User/Message/Message/index')?>";
+</script>
+</block>
+<block name="body">
+	<table class="message_table table">
+		<thead class="noboder">
+			<tr>
+				<th class="col-xs-2 ">发件人</th>
+				<th class="col-xs-8">标题</th>
+				<th class="col-xs-2 text-right">时间</th>
+			</tr>11
+		</thead>
+		<?php
+			if(!empty($list)){ 
+		?>
+			<tr class="mini_title">
+				<td colspan="3" class="clearfix">
+					<div class="pull-left">
+						<span style="margin-right:10px;"><input type="checkbox" class="js_check_all" data-target="ids" /></span>
+						<a href="<?=U('del_memssage')?>" class="btn btn-default btn-xs ajax-post confirm" target-form="ids">删除所选</a>
+						<a href="<?=U('inbox_all_read')?>" class="btn btn-default btn-xs ajax-post" target-form="ids">标记所选为已读</a>
+					</div>
+					<div class="pull-right">
+					<?php
+						if($status){
+							foreach($status as $v){
+								if($v['status']=='0') $wd_num = $v['count(*)'];
+								if($v['status']=='1') $yd_num = $v['count(*)'];	
+							}
+						}else{
+							$wd_num = '0';$yd_num = '0';
+						}
+					?>
+					 <?php if($wd_num > 0){?>
+					    <a href="<?=U('index',array('status'=>0))?>" class="hover">未读（<?=($wd_num)?$wd_num:'0'?>）</a><?php }else{?>
+					    <span>未读（0）</span>	
+					    	<?php } ?> 
+					     - <a href="<?=U('index')?>" class="hover">全部（<?=$wd_num+$yd_num?>）</a>
+					</div>
+				</td>
+			</tr>
+			<?php 
+				foreach($list as $v){
+			?>
+			<tr>
+				<td class="col-xs-2">
+					<label>
+						<span style="margin-right:10px;">
+							<input type="checkbox" data-child="ids" class="pull-left ids" name='ids[]' value="<?=$v['msg_table_id']?>"/>
+						</span>
+						<?=$v['title']?>
+					</label>
+				</td>
+				<td class="col-xs-8">
+					<a href="<?=U('index_detial',array('id'=>$v['msg_table_id']))?>" class="message_ico message_<?=$v['status']?>"><?=msubstr($v['title'],20)?></a>
+				</td>
+				<td class="col-xs-2 text-right"><?=date('Y-m-d H:m:s',$v['addtime'])?></td>
+			</tr>
+			<?php 
+				}
+			?>
+
+		<?php 
+			}else{
+		?>
+		<tr>
+			<td colspan="5" style="background:#fff;"><include file="Common@Plugins/nodata" text="您还没有收到过私信哦" sumbt='' url=""/></td>
+		</tr>
+		<?php 
+			}
+		?>
+	</table>
+	<div class="pages">
+	<?=$page?>
+	</div>
+</block>

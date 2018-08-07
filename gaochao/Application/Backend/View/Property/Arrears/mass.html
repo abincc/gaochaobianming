@@ -1,0 +1,74 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<form action="<?=U()?>" method="post" class="js_form">
+
+            <div class="form-group">
+                <div class="control-label">
+                    <span class="required">*</span>
+                    选择小区
+                </div>
+                <div>
+                <select name="district_id" class="form-control input-md super_select2 width_auto" data-placeholder="请选择小区">
+                    <option value="">请选择小区</option>
+                    <?=$district?>
+                </select>
+                </div>
+            </div>
+
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>用户类型
+				</div>
+				<div>
+					<input type="radio" name="type" checked="checked" value="0"> 全部类型
+					<input type="radio" name="type" value="1"> 住户
+					<input type="radio" name="type" value="2"> 业主
+					<input type="radio" name="type" value="3"> 物业
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					消息标题
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto" name="title" value="<?=$info['title']?>" datatype="*1-20" placeholder="消息标题" nullmsg="请输入消息标题" errormsg="请输入消息标题" />
+					<span class="Validform_checktip">1-20个字符</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					消息内容
+				</div>
+				<div>
+					<textarea rows="8" class="form-control width_auto" name="content" datatype="*1-200" nullmsg="请输入消息内容" placeholder="消息内容" errormsg="请输入消息内容"></textarea>
+				</div>
+				<span class="Validform_checktip">1-200字符以内</span>
+			</div>
+
+			<div class="form-btn clearfix">
+				<input type="submit" class="pull-left btn btn-primary confirm" value="发送" />
+				<a href="<?=U('index')?>" class="pull-left btn btn-default">取消并返回</a>
+				<div class="js_validTips pull-left" style="height:34px;line-height:34px;">
+					<span class="js_tipContent Validform_checktip"></span>
+				</div>
+			</div>
+		</form>
+	</div>
+	<js href="__PLUGIN__/select2/select2.full.js" />
+	<js href="__PLUGIN__/select2/super_select2.js" />
+	<script type="text/javascript">
+		$(function(){
+			$('.super_select2').super_select2();
+			$('.select2-selection__placeholder').html('输入用户手机号');
+			$('.js_form').super_validform({"set":{tiptype:3}});
+			$('.js_tab_btns a').click(function(event) {
+				$(this).addClass('active').siblings('a').removeClass('active');
+				var index=$('.js_tab_btns a').index(this);
+				$('.js_tab_div').eq(index).addClass('tab_div_show').siblings('.js_tab_div').removeClass('tab_div_show')
+			});
+		});
+	</script>	
+</block>

@@ -1,0 +1,128 @@
+<!-- 搜索结果 S -->
+<?php
+	$array = array_diff_key(I('get.'), array('p'=> ''));
+	$ev=explode('@',$array['ev']);
+?>
+<div class="crumbs margin_b10 clearfix js_result">
+	<span class="filter_title">筛选项：</span>
+	<?php
+		if($category['list']) {
+	?>
+		<span><?=$category['list']['title']?> ></span>
+	<?php
+		}else {
+	?>
+		<span>全部分类 > "<?=I('get.search', '')?>" > </span>
+	<?php 
+		}
+	?>
+
+	<?php
+
+		$count=count($category['category']);
+		$_child=$category['list']['_child'];
+		
+		for($i=1;$i<$count;$i++){
+			$_key=$category['category'][$i];
+			$t = $_child[$_key]['title'];
+			
+	?>
+	<ul class="select">	
+		<span><?=$t?> ></span>
+		<ul class="sel_list clearfix">
+			<?php
+				foreach($_child as $v){
+					$cat=implode(array_filter(explode('-',$v['path'])),',').",".$v['id'];
+			?>
+				<a href="<?=U('index',array('cat'=>$cat))?>"><?=$v['title']?></a>
+			<?php 	
+				}
+			?>
+		</ul>
+	</ul>	
+	<?php 
+			$_child=$_child[$_key]['_child'];
+		}
+	?>
+
+<?php if($search_list){ ?>	
+	<?php 
+		$i=0;
+		foreach($search_list as $v){
+			$e=$ev;
+			unset($e[$i]);
+			$array['ev']=implode($e,'@');
+	?>
+		<ul class="selectbrand">
+		<div class="brands clearfix">
+			<span><?=$v['title']?>：<?=$v['value']?></span>
+			<a href="<?=U('index',$array)?>" class="close_mini"></a>
+		</div>
+		</ul>
+	<?php 
+			$i++;
+		}
+	?>
+<?php } ?>
+</div>
+
+<!-- 搜索结果 E -->
+
+<div class="filter_box">
+	<?php 
+	
+		if(!isset($search['exbrand']) && $brank_list && count($brank_list) > 1) {
+	?>
+	<div class="sortbox clearfix">
+		<span>品牌：</span>
+		<div class="typelist clearfix">
+			<!-- <a href="#" class="current">TOTO</a> -->
+			<?php
+				foreach($brank_list as $v ){
+					$_brand=array("exbrand_".$v['id']);
+					$array['ev']=implode(array_filter(array_merge($ev,$_brand)),'@');
+
+			?>
+				<a href="<?=U('index',$array)?>"><?=$v['title']?></a>
+			<?php 
+				}
+			?>
+		</div>
+	</div>
+	<?php 
+		}
+	?>
+	<?php 
+		foreach($attr_list as $v ){ 
+			//已选中的属性就隐藏
+			foreach($search as $s){
+				$_vid[]=explode("_",$s)['0'];
+			}
+			if(in_array($v['id'],$_vid,true)){
+				continue;
+			}
+	?>
+	
+	<div class="sortbox clearfix">
+		<span><?=$v['title']?>：</span>
+		<div class="typelist one_line clearfix">
+			<div class="list clearfix">
+				<?php 
+					foreach($v['list'] as $val ){
+						$_attr=array($v['id']."_".$val['id']);
+						$array['ev']=implode(array_filter(array_merge($ev,$_attr)),'@');
+				?>	
+					<a href="<?=U('index',$array)?>"><?=$val['title']?></a>
+				<?php 
+					}
+				?>
+			</div>
+			<!-- <div class="more js_more">
+				<i class="iconfont">&#xe623;</i>
+			</div> -->
+		</div>
+	</div>
+	<?php
+		}
+	 ?>
+</div>

@@ -1,0 +1,137 @@
+<extend name="Common/body"/>
+<block name="head_change">
+<?php
+	$crumbs="评论修改";
+	$crumbs_array[]=array("title"=>"订单管理","url"=>U("index"));
+	$crumbs_array[]=array("title"=>"订单评论","url"=>"");
+?>
+<script>
+	var cur_url="<?=U('User/Comment/Comment/index')?>";
+</script>
+</block>
+<block name="style">
+	<css href="__PLUGIN__/uploadify/uploadify.css" />
+</block>
+<block name="body">
+	
+	<!--订单管理 S-->
+	<form action="<?=U('edit')?>" class="js_form clearfix">
+		<ul class="scorebox js_score">
+			<li class="clearfix">
+				<span>描述相符：</span>
+				<i class="star <?php if($info['star_quality']>=1){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_quality']>=2){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_quality']>=3){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_quality']>=4){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_quality']>=5){echo 'add';} ?>"></i>
+			</li>
+			<li class="clearfix">
+				<span>服务态度：</span>
+				<i class="star <?php if($info['star_serve']>=1){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_serve']>=2){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_serve']>=3){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_serve']>=4){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_serve']>=5){echo 'add';} ?>"></i>
+			</li>
+			<li class="clearfix">
+				<span>发货速度：</span>
+				<i class="star <?php if($info['star_speed']>=1){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_speed']>=2){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_speed']>=3){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_speed']>=4){echo 'add';} ?>"></i>
+				<i class="star <?php if($info['star_speed']>=5){echo 'add';} ?>"></i>
+			</li>
+			<!-- 隐藏表单域 S -->
+			<input name="id" value="<?=$info['order_detail_id']?>" type="hidden">
+			<input name="comment_id" value="<?=$info['id']?>" type="hidden">
+			<div class="js_hidden" style="display:none">
+				<input name="star_quality" type="hidden" value="<?=$info['star_quality']?>" />
+				<input name="star_serve" type="hidden" value="<?=$info['star_serve']?>" />
+				<input name="star_speed" type="hidden" value="<?=$info['star_speed']?>" />
+			</div>
+			<!-- 隐藏表单域 E -->
+		</ul>
+	  	<label class="form-group date_group">
+			<span class="control-label">评论内容：</span>
+		    <textarea name="content" class="form-control" datatype="*" nullmsg="请填写评论内容" cols="30" rows="6"><?=$info['content']?></textarea>
+	  	</label>
+
+	  	<div class="form-group date_group">
+			<span class="control-label">晒图：</span>
+		    <?php
+				$config = array(
+					'index'		=> 1,			   
+					'table'		=> 'comment_image',  
+					'table_id'	=> 'comment_id', 
+					'name'		=> 'image',      
+					'val_key'	=> 'image',
+					'multi'		=> 'true',
+					'tpl'		=> 'index',
+				);
+				echo W('Common/Img/index', array($config, $info['id']));
+			?>
+	  	</div>
+	  	<div class="form-group form_btn_group">
+	  		<input type="submit" class="btn btn-orange" value="评论">
+			<span class="validTips js_validTips">
+				<span class="js_tipContent"></span>
+			</span>
+	  	</div>  	
+	</form>
+	<!--订单管理 E-->
+</block>
+<block name="script">
+<script type="text/javascript">
+$(function(){
+
+	var selectMode = function($){
+		function countselectNum($obj){
+			var count = 0;
+			$obj.find('i').each(function(){
+				if($(this).hasClass('add')){
+					count ++;
+				}
+			});
+			return count;
+		};
+
+		function prevOrNextObject($obj,classname) {
+			if(classname == "add") {
+				$obj.prevAll().addClass("add");
+				$obj.nextAll().removeClass("add");
+			}else{
+				$obj.addClass("add");
+				$obj.nextAll().removeClass("add");
+			}
+			$obj = null;
+		};
+		
+		return{
+			addEvent : function() {
+				var $obj = $('.js_score>li').find('i');
+				$obj.on('click',function(){
+					if($(this).hasClass("add")){
+						$(this).removeClass("add");
+						prevOrNextObject($(this),'');
+					}else{
+						$(this).addClass("add");
+						prevOrNextObject($(this),"add");
+					}
+					var val = countselectNum($(this).parent());
+					var $parent = $(this).parent();
+					var index = $parent.index();
+					$parent.parent().find('.js_hidden').find('input').eq(index).val(val);
+					$parent = null;
+				});
+				$obj = null;
+			},
+		}
+	}(jQuery);
+
+	//calling this function
+	$(window).ready(function(){
+		selectMode.addEvent();
+	});
+})
+</script>
+</block>

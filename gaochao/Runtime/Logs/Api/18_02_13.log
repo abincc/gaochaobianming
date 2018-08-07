@@ -1,0 +1,1971 @@
+[ 2018-02-13T08:17:02+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:4.3542s ]
+NOTIC: [8] Undefined index: token C:\xampp\htdocs\gaochao\Application\Common\Model\MemberModel.class.php 第 238 行.
+
+[ 2018-02-13T08:17:24+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.034002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: token C:\xampp\htdocs\gaochao\Application\Common\Model\MemberModel.class.php 第 238 行.
+
+[ 2018-02-13T08:17:55+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: token C:\xampp\htdocs\gaochao\Application\Common\Model\MemberModel.class.php 第 238 行.
+
+[ 2018-02-13T08:18:04+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.013000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014000s ]
+ERR: syntax error, unexpected '$O' (T_VARIABLE)
+
+[ 2018-02-13T08:18:52+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.1880s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.9281s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 263 行.
+
+[ 2018-02-13T08:21:31+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0300s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 263 行.
+
+[ 2018-02-13T08:21:33+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 263 行.
+
+[ 2018-02-13T08:21:38+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0150s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 263 行.
+
+[ 2018-02-13T08:21:40+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 263 行.
+
+[ 2018-02-13T08:21:43+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 263 行.
+
+[ 2018-02-13T08:50:13+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.056003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.053003s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.099005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.152008s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T08:50:14+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.056003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.053003s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.070004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.123007s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.1630s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.4120s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0950s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0540s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.1560s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0710s ]
+
+[ 2018-02-13T08:50:15+08:00 ] 192.168.1.100 /gaochao/Api/Common/Public/get_clean_service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-02-13T08:50:19+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0270s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 08:50:19' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.1140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 08:50:19' LIMIT 1   [ RunTime:0.1240s ]
+
+[ 2018-02-13T08:50:24+08:00 ] 192.168.1.100 /gaochao/Api/User/Address/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0110s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0310s ]
+SQL: SELECT id as address_id,`name`,`mobile`,`province`,`city`,`area`,`address_detail`,`is_default` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc  [ RunTime:0.5190s ]
+
+[ 2018-02-13T08:51:04+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0370s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"date\":\"2018-02-13 08:50:09\",\"address_id\":\"215\",\"token\":\"fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM\",\"details\":\"今年\"}','废品下单提交参数','2018-02-13 08:51:03') [ RunTime:0.8350s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0180s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2018-02-13T08:51:08+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0090s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"date\":\"2018-02-13 08:50:09\",\"address_id\":\"215\",\"token\":\"fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM\",\"details\":\"今年\"}','废品下单提交参数','2018-02-13 08:51:08') [ RunTime:0.1010s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0130s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2018-02-13T08:51:12+08:00 ] 192.168.1.100 /gaochao/Api/User/Address/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0100s ]
+SQL: SELECT id as address_id,`name`,`mobile`,`province`,`city`,`area`,`address_detail`,`is_default` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc  [ RunTime:0.0000s ]
+
+[ 2018-02-13T08:51:57+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0110s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"date\":\"2018-02-13 08:50:09\",\"address_id\":\"215\",\"token\":\"fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM\",\"details\":\"今年\"}','废品下单提交参数','2018-02-13 08:51:56') [ RunTime:0.1470s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0140s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2018-02-13T08:52:08+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0080s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"date\":\"2018-02-13 08:50:09\",\"address_id\":\"215\",\"token\":\"fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM\",\"details\":\"今年\"}','废品下单提交参数','2018-02-13 08:52:08') [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2018-02-13T08:52:11+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T08:52:11+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T08:52:13+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/deal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T08:52:14+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T08:52:15+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T08:52:37+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 08:52:37' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 08:52:37' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T08:52:42+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T08:52:42+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T08:52:45+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/deal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T08:52:45+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T08:52:47+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T08:52:48+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T08:53:00+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T08:53:04+08:00 ] 192.168.1.100 /gaochao/Api/User/Address/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0090s ]
+SQL: SELECT id as address_id,`name`,`mobile`,`province`,`city`,`area`,`address_detail`,`is_default` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc  [ RunTime:0.0000s ]
+
+[ 2018-02-13T08:53:23+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0110s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0100s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"date\":\"2018-02-13 08:52:50\",\"address_id\":\"215\",\"token\":\"fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM\",\"details\":\"破网速\"}','废品下单提交参数','2018-02-13 08:53:16') [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`district_id`,`building_no`,`room_no` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0120s ]
+SQL: SELECT id as address_id,`province`,`city`,`area`,`address_detail`,`mobile`,`name` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_hid` = 0 AND `is_del` = 0 AND `id` = 215 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\gaochao\Core\Library\Think\Db\Driver.class.php 第 881 行.
+SQL: INSERT INTO `sr_waste_order` (`order_no`,`details`,`date`,`mobile`,`district_id`,`building_no`,`room_no`,`add_time`,`member_id`) VALUES ('2018021310049551','破网速','2018-02-13 08:52:50','15170255838','14','30','402','2018-02-13 08:53:17','209') [ RunTime:0.0530s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+SQL: INSERT INTO `sr_waste_image` (`pid`,`image`,`add_time`) VALUES (1005,'Uploads/Waste/20180213/5a8236fe18ce4.png','2018-02-13 08:53:19'),(1005,'Uploads/Waste/20180213/5a8236fe41945.jpg','2018-02-13 08:53:19') [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `sr_message` [ RunTime:0.0950s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"member_id\":209,\"type\":2,\"title\":\"废品订单生成成功\",\"content\":\"生成订单，订单编号为：2018021310049551\"}','消息数据3','2018-02-13 08:53:19') [ RunTime:0.0590s ]
+SQL: INSERT INTO `sr_message` (`member_id`,`type`,`title`,`content`,`add_time`) VALUES ('209','2','废品订单生成成功','生成订单，订单编号为：2018021310049551','2018-02-13 08:53:19') [ RunTime:0.4280s ]
+SQL: SHOW COLUMNS FROM `sr_member_count` [ RunTime:0.0360s ]
+SQL: UPDATE `sr_member_count` SET `message_order`=message_order+1 WHERE `member_id` = 209 [ RunTime:0.3640s ]
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\gaochao\Core\Library\Org\JPush\PushPayload.class.php 第 298 行.
+
+[ 2018-02-13T08:53:24+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0080s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"date\":\"2018-02-13 08:52:50\",\"address_id\":\"215\",\"token\":\"fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM\",\"details\":\"破网速\"}','废品下单提交参数','2018-02-13 08:53:23') [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0550s ]
+SQL: SELECT `id`,`district_id`,`building_no`,`room_no` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0080s ]
+SQL: SELECT id as address_id,`province`,`city`,`area`,`address_detail`,`mobile`,`name` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_hid` = 0 AND `is_del` = 0 AND `id` = 215 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\gaochao\Core\Library\Think\Db\Driver.class.php 第 881 行.
+SQL: INSERT INTO `sr_waste_order` (`order_no`,`details`,`date`,`mobile`,`district_id`,`building_no`,`room_no`,`add_time`,`member_id`) VALUES ('2018021351574810','破网速','2018-02-13 08:52:50','15170255838','14','30','402','2018-02-13 08:53:23','209') [ RunTime:0.1920s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+SQL: INSERT INTO `sr_waste_image` (`pid`,`image`,`add_time`) VALUES (1006,'Uploads/Waste/20180213/5a823703c38a2.png','2018-02-13 08:53:23'),(1006,'Uploads/Waste/20180213/5a823703c4842.jpg','2018-02-13 08:53:23') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_message` [ RunTime:0.0170s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"member_id\":209,\"type\":2,\"title\":\"废品订单生成成功\",\"content\":\"生成订单，订单编号为：2018021351574810\"}','消息数据3','2018-02-13 08:53:23') [ RunTime:0.1770s ]
+SQL: INSERT INTO `sr_message` (`member_id`,`type`,`title`,`content`,`add_time`) VALUES ('209','2','废品订单生成成功','生成订单，订单编号为：2018021351574810','2018-02-13 08:53:24') [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `sr_member_count` [ RunTime:0.0170s ]
+SQL: UPDATE `sr_member_count` SET `message_order`=message_order+1 WHERE `member_id` = 209 [ RunTime:0.0560s ]
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\gaochao\Core\Library\Org\JPush\PushPayload.class.php 第 298 行.
+
+[ 2018-02-13T08:59:54+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021002s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.046002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.068004s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 08:59:54' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 08:59:54' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T08:59:56+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0060s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T08:59:56+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0650s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0110s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:00:00+08:00 ] 192.168.1.100 /gaochao/Api/User/Address/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0080s ]
+SQL: SELECT id as address_id,`name`,`mobile`,`province`,`city`,`area`,`address_detail`,`is_default` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc  [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:00:14+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0080s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"date\":\"2018-02-13 08:59:46\",\"address_id\":\"215\",\"token\":\"fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM\",\"details\":\"亲╭(╯3╰)╮\"}','废品下单提交参数','2018-02-13 09:00:13') [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`district_id`,`building_no`,`room_no` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0090s ]
+SQL: SELECT id as address_id,`province`,`city`,`area`,`address_detail`,`mobile`,`name` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_hid` = 0 AND `is_del` = 0 AND `id` = 215 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: INSERT INTO `sr_waste_order` (`order_no`,`details`,`date`,`mobile`,`district_id`,`building_no`,`room_no`,`add_time`,`member_id`,`address`) VALUES ('2018021310050545','亲╭(╯3╰)╮','2018-02-13 08:59:46','15170255838','14','30','402','2018-02-13 09:00:13','209','a:10:{s:10:\"address_id\";s:3:\"215\";s:8:\"province\";s:4:\"1263\";s:4:\"city\";s:4:\"1324\";s:4:\"area\";s:4:\"1325\";s:14:\"address_detail\";s:9:\"111乐乐\";s:6:\"mobile\";s:11:\"15170255838\";s:4:\"name\";s:6:\"肖斌\";s:14:\"province_title\";s:9:\"江西省\";s:10:\"city_title\";s:9:\"吉安市\";s:10:\"area_title\";s:9:\"吉州区\";}') [ RunTime:0.0480s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+SQL: INSERT INTO `sr_waste_image` (`pid`,`image`,`add_time`) VALUES (1007,'Uploads/Waste/20180213/5a82389d3e95d.png','2018-02-13 09:00:13'),(1007,'Uploads/Waste/20180213/5a82389d3fce6.jpg','2018-02-13 09:00:13') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_message` [ RunTime:0.0080s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"member_id\":209,\"type\":2,\"title\":\"废品订单生成成功\",\"content\":\"生成订单，订单编号为：2018021310050545\"}','消息数据3','2018-02-13 09:00:13') [ RunTime:0.0530s ]
+SQL: INSERT INTO `sr_message` (`member_id`,`type`,`title`,`content`,`add_time`) VALUES ('209','2','废品订单生成成功','生成订单，订单编号为：2018021310050545','2018-02-13 09:00:14') [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `sr_member_count` [ RunTime:0.0140s ]
+SQL: UPDATE `sr_member_count` SET `message_order`=message_order+1 WHERE `member_id` = 209 [ RunTime:0.0960s ]
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\gaochao\Core\Library\Org\JPush\PushPayload.class.php 第 298 行.
+
+[ 2018-02-13T09:00:19+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0060s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:00:19+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:00:21+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/info?id=1007&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0720s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 262 行.
+
+[ 2018-02-13T09:00:21+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/imagesInfo?id=1007&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0810s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_image` [ RunTime:0.0180s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT `image`,`id`,`pid` FROM `sr_waste_image` WHERE `pid` = 1007 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,9   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_image` WHERE `pid` = 1007 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:00:29+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/imagesInfo?id=1007&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_image` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT `image`,`id`,`pid` FROM `sr_waste_image` WHERE `pid` = 1007 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,9   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_image` WHERE `pid` = 1007 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:00:29+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/info?id=1007&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 262 行.
+
+[ 2018-02-13T09:00:39+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/info?id=1006&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0540s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 262 行.
+
+[ 2018-02-13T09:00:39+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/imagesInfo?id=1006&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0130s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0590s ]
+SQL: SHOW COLUMNS FROM `sr_waste_image` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT `image`,`id`,`pid` FROM `sr_waste_image` WHERE `pid` = 1006 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,9   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_image` WHERE `pid` = 1006 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:00:44+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/imagesInfo?id=1005&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_image` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT `image`,`id`,`pid` FROM `sr_waste_image` WHERE `pid` = 1005 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,9   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_image` WHERE `pid` = 1005 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:00:44+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/info?id=1005&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 262 行.
+
+[ 2018-02-13T09:00:49+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:00:50+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=2&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 12,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:00:52+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/deal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0070s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:00:52+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/imagesInfo?id=1007&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_image` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT `image`,`id`,`pid` FROM `sr_waste_image` WHERE `pid` = 1007 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,9   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_image` WHERE `pid` = 1007 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:00:52+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/info?id=1007&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0060s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.1670s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 262 行.
+
+[ 2018-02-13T09:00:59+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/cancel?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:01:00+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/info?id=1004&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0130s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 262 行.
+
+[ 2018-02-13T09:01:00+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/imagesInfo?id=1004&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_image` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT `image`,`id`,`pid` FROM `sr_waste_image` WHERE `pid` = 1004 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,9   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_image` WHERE `pid` = 1004 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:01:03+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/cancel?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:01:04+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/imagesInfo?id=1000&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0160s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_image` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT `image`,`id`,`pid` FROM `sr_waste_image` WHERE `pid` = 1000 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,9   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_image` WHERE `pid` = 1000 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:01:04+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/info?id=1000&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0140s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 262 行.
+
+[ 2018-02-13T09:01:12+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/info?id=1006&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0150s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 262 行.
+
+[ 2018-02-13T09:01:12+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/imagesInfo?id=1006&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0130s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_image` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT `image`,`id`,`pid` FROM `sr_waste_image` WHERE `pid` = 1006 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,9   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_image` WHERE `pid` = 1006 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:02:02+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 262 行.
+
+[ 2018-02-13T09:02:03+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] unserialize(): Error at offset 270 of 275 bytes C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\WasteController.class.php 第 262 行.
+
+[ 2018-02-13T09:02:29+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1000 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:24:53+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034002s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.013001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.047003s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0830s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 09:24:53' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 09:24:53' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:24:56+08:00 ] 192.168.1.100 /gaochao/Api/User/Address/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0090s ]
+SQL: SELECT id as address_id,`name`,`mobile`,`province`,`city`,`area`,`address_detail`,`is_default` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc  [ RunTime:0.0860s ]
+
+[ 2018-02-13T09:25:11+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0090s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"date\":\"2018-02-13 09:24:41\",\"address_id\":\"215\",\"token\":\"fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM\",\"details\":\"婆婆嘴\"}','废品下单提交参数','2018-02-13 09:25:07') [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`district_id`,`building_no`,`room_no` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0070s ]
+SQL: SELECT id as address_id,`province`,`city`,`area`,`address_detail`,`mobile`,`name` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_hid` = 0 AND `is_del` = 0 AND `id` = 215 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: INSERT INTO `sr_waste_order` (`order_no`,`details`,`date`,`mobile`,`district_id`,`building_no`,`room_no`,`add_time`,`member_id`,`address`) VALUES ('2018021351579810','婆婆嘴','2018-02-13 09:24:41','15170255838','14','30','402','2018-02-13 09:25:07','209','a:10:{s:10:\"address_id\";s:3:\"215\";s:8:\"province\";s:4:\"1263\";s:4:\"city\";s:4:\"1324\";s:4:\"area\";s:4:\"1325\";s:14:\"address_detail\";s:9:\"111乐乐\";s:6:\"mobile\";s:11:\"15170255838\";s:4:\"name\";s:6:\"肖斌\";s:14:\"province_title\";s:9:\"江西省\";s:10:\"city_title\";s:9:\"吉安市\";s:10:\"area_title\";s:9:\"吉州区\";}') [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+SQL: INSERT INTO `sr_waste_image` (`pid`,`image`,`add_time`) VALUES (1006,'Uploads/Waste/20180213/5a823e73b0b74.png','2018-02-13 09:25:07'),(1006,'Uploads/Waste/20180213/5a823e73b2e9d.jpg','2018-02-13 09:25:07') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_message` [ RunTime:0.0100s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"member_id\":209,\"type\":2,\"title\":\"废品订单生成成功\",\"content\":\"生成订单，订单编号为：2018021351579810\"}','消息数据3','2018-02-13 09:25:07') [ RunTime:0.0680s ]
+SQL: INSERT INTO `sr_message` (`member_id`,`type`,`title`,`content`,`add_time`) VALUES ('209','2','废品订单生成成功','生成订单，订单编号为：2018021351579810','2018-02-13 09:25:07') [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `sr_member_count` [ RunTime:0.0110s ]
+SQL: UPDATE `sr_member_count` SET `message_order`=message_order+1 WHERE `member_id` = 209 [ RunTime:0.1150s ]
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\gaochao\Core\Library\Org\JPush\PushPayload.class.php 第 298 行.
+
+[ 2018-02-13T09:25:11+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0090s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"date\":\"2018-02-13 09:24:41\",\"address_id\":\"215\",\"token\":\"fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM\",\"details\":\"婆婆嘴\"}','废品下单提交参数','2018-02-13 09:25:05') [ RunTime:0.1060s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`district_id`,`building_no`,`room_no` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0110s ]
+SQL: SELECT id as address_id,`province`,`city`,`area`,`address_detail`,`mobile`,`name` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_hid` = 0 AND `is_del` = 0 AND `id` = 215 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0110s ]
+SQL: INSERT INTO `sr_waste_order` (`order_no`,`details`,`date`,`mobile`,`district_id`,`building_no`,`room_no`,`add_time`,`member_id`,`address`) VALUES ('2018021350495310','婆婆嘴','2018-02-13 09:24:41','15170255838','14','30','402','2018-02-13 09:25:06','209','a:10:{s:10:\"address_id\";s:3:\"215\";s:8:\"province\";s:4:\"1263\";s:4:\"city\";s:4:\"1324\";s:4:\"area\";s:4:\"1325\";s:14:\"address_detail\";s:9:\"111乐乐\";s:6:\"mobile\";s:11:\"15170255838\";s:4:\"name\";s:6:\"肖斌\";s:14:\"province_title\";s:9:\"江西省\";s:10:\"city_title\";s:9:\"吉安市\";s:10:\"area_title\";s:9:\"吉州区\";}') [ RunTime:0.0310s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+SQL: INSERT INTO `sr_waste_image` (`pid`,`image`,`add_time`) VALUES (1005,'Uploads/Waste/20180213/5a823e72c247f.png','2018-02-13 09:25:06'),(1005,'Uploads/Waste/20180213/5a823e72cefa2.jpg','2018-02-13 09:25:06') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_message` [ RunTime:0.0120s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"member_id\":209,\"type\":2,\"title\":\"废品订单生成成功\",\"content\":\"生成订单，订单编号为：2018021350495310\"}','消息数据3','2018-02-13 09:25:07') [ RunTime:0.0340s ]
+SQL: INSERT INTO `sr_message` (`member_id`,`type`,`title`,`content`,`add_time`) VALUES ('209','2','废品订单生成成功','生成订单，订单编号为：2018021350495310','2018-02-13 09:25:07') [ RunTime:0.1140s ]
+SQL: SHOW COLUMNS FROM `sr_member_count` [ RunTime:0.0110s ]
+SQL: UPDATE `sr_member_count` SET `message_order`=message_order+1 WHERE `member_id` = 209 [ RunTime:0.4120s ]
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\gaochao\Core\Library\Org\JPush\PushPayload.class.php 第 298 行.
+
+[ 2018-02-13T09:26:57+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.098006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.099006s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 105 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:27:09+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 105 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:27:09+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 105 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:27:20+08:00 ] 192.168.1.103 /gaochao/Api/Common/Waste/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1005 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:40:02+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T09:40:06+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0090s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.2400s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0110s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.4180s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.1150s ]
+
+[ 2018-02-13T09:40:09+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 09:40:09' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 09:40:09' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:40:11+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0110s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0290s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:40:11+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0220s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:40:12+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/imagesInfo?id=1006&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0170s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_image` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT `image`,`id`,`pid` FROM `sr_waste_image` WHERE `pid` = 1006 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,9   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_image` WHERE `pid` = 1006 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:40:12+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/info?id=1006&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFopd6dXJotJ2IsrCbd7CIenmtgYWXp4OmfqeCd83MsnXMmH-Femmyh4F6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1006 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T09:44:33+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0130s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0130s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2018-02-13T09:44:34+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.034002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036002s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T13:27:48+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.096005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.071004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.099005s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T13:27:56+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.063003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.077005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.108006s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:2.6732s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.5210s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.1140s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.1760s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0160s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.3280s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0560s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0430s ]
+
+[ 2018-02-13T13:27:57+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T13:27:57+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0690s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0140s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:28:01+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.1040s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:28:00' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.1150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:28:00' LIMIT 1   [ RunTime:0.0680s ]
+
+[ 2018-02-13T13:28:32+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0240s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:28:32' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:28:32' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:28:36+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T13:28:36+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.2250s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0120s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:28:36+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.021002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022002s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0090s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0090s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:28:36+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T13:28:50+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:28:49' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:28:49' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T13:28:55+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.1230s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:28:55' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:28:55' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:28:57+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0480s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:28:57+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.2670s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:29:02+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/deal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0460s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T13:29:04+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/cancel?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T13:29:18+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:29:18+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0180s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T13:29:20+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/deal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 0 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T13:38:35+08:00 ] 192.168.1.100 /gaochao/Api/Common/Notice/info?notice_id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0090s ]
+SQL: SELECT id as notice_id,`title`,`content`,`add_time` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 7 LIMIT 1   [ RunTime:0.0260s ]
+
+[ 2018-02-13T13:38:45+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.1070s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0300s ]
+
+[ 2018-02-13T13:40:12+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T13:42:04+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T13:42:04+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0170s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0060s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:42:08+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXastJ14bLCbc2yIenmtgYWXp4OmfqeCh6_MsoWqmH6FlGmyd596roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T13:42:34+08:00 ] 192.168.1.100 /gaochao/Api/Common/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`type`,`password`,`is_hid`,`is_del` FROM `sr_member` WHERE `mobile` = '15170255838' LIMIT 1   [ RunTime:0.1090s ]
+SQL: SELECT id as member_id,`type`,`state`,`username`,`nickname`,`mobile`,`sex` FROM `sr_member` WHERE `id` = 209 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `sr_member` SET `login_time`='2018-02-13 13:42:34' WHERE ( id=209 ) [ RunTime:0.0790s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0440s ]
+NOTIC: [8] Undefined index: district_id C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\UserController.class.php 第 32 行.
+SQL: SELECT * FROM `sr_district` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0760s ]
+
+[ 2018-02-13T13:42:34+08:00 ] 192.168.1.100 /gaochao/Api/Common/Public/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T13:42:35+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0100s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0120s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:42:35+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.022001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T13:42:39+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:42:39' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:42:39' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:45:32+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.1920s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0220s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:45:32+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.1080s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.4510s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:45:33+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/deal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (20) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T13:45:34+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/cancel?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0140s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:46:32+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T13:46:32+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0090s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0070s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:46:37+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:46:37' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:46:37' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:54:56+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0090s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0640s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:54:59+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T13:54:59+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:54:59' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:54:59' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T13:58:33+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0700s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0100s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0000s ]
+
+[ 2018-02-13T13:58:35+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T13:58:36+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:58:36' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 13:58:36' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T14:01:48+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/recommend_thread?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:recommend_thread
+
+[ 2018-02-13T14:01:48+08:00 ] 192.168.1.100 /gaochao/Api/Common/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0090s ]
+SQL: SELECT id as product_id,`title`,`image`,`price`,`description` FROM `sr_product` WHERE `recommend` = 1 AND `is_sale` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY sort desc,sales desc,collect desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_notice` [ RunTime:0.0090s ]
+SQL: SELECT id as notice_id,`title` FROM `sr_notice` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`forum_id`,`member_id`,`member_nickname`,`title`,`views`,`replies`,`likes`,`lastpost_time`,`add_time` FROM `sr_forum_thread` WHERE `recommend` = 1 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY recommend_time desc,add_time desc,id desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_forum_thread_image` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`thread_id`,`image`,`width`,`height` FROM `sr_forum_thread_image` WHERE `thread_id` IN ('362','259','311','360','359','350') ORDER BY id asc  [ RunTime:0.0000s ]
+
+[ 2018-02-13T14:01:52+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0090s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 14:01:52' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 14:01:52' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T14:02:40+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: r C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 36 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 14:02:40' ORDER BY sort desc,add_time desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste` WHERE `is_del` = 0 AND `is_hid` = 0 AND `add_time` BETWEEN 0 AND '2018-02-13 14:02:40' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-02-13T14:02:49+08:00 ] 192.168.1.100 /gaochao/Api/User/Address/index?token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.1820s ]
+SQL: SELECT id as address_id,`name`,`mobile`,`province`,`city`,`area`,`address_detail`,`is_default` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc  [ RunTime:0.1770s ]
+
+[ 2018-02-13T14:03:02+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0070s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_debug` [ RunTime:0.0270s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"date\":\"2018-02-13 14:02:35\",\"address_id\":\"215\",\"token\":\"fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM\",\"details\":\"\"}','废品下单提交参数','2018-02-13 14:02:57') [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`district_id`,`building_no`,`room_no` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_member_address` [ RunTime:0.0070s ]
+SQL: SELECT id as address_id,`province`,`city`,`area`,`address_detail`,`mobile`,`name` FROM `sr_member_address` WHERE `member_id` = 209 AND `is_hid` = 0 AND `is_del` = 0 AND `id` = 215 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0080s ]
+SQL: INSERT INTO `sr_waste_order` (`order_no`,`details`,`date`,`mobile`,`district_id`,`building_no`,`room_no`,`add_time`,`member_id`,`address`) VALUES ('2018021350481025','','2018-02-13 14:02:35','15170255838','14','30','402','2018-02-13 14:02:58','209','a:10:{s:10:\"address_id\";s:3:\"215\";s:8:\"province\";s:4:\"1263\";s:4:\"city\";s:4:\"1324\";s:4:\"area\";s:4:\"1325\";s:14:\"address_detail\";s:9:\"111乐乐\";s:6:\"mobile\";s:11:\"15170255838\";s:4:\"name\";s:6:\"肖斌\";s:14:\"province_title\";s:9:\"江西省\";s:10:\"city_title\";s:9:\"吉安市\";s:10:\"area_title\";s:9:\"吉州区\";}') [ RunTime:0.0690s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+SQL: INSERT INTO `sr_waste_image` (`pid`,`image`,`add_time`) VALUES (1007,'Uploads/Waste/20180213/5a827f922a123.png','2018-02-13 14:02:58'),(1007,'Uploads/Waste/20180213/5a827f9249142.jpg','2018-02-13 14:02:58') [ RunTime:0.1110s ]
+SQL: SHOW COLUMNS FROM `sr_message` [ RunTime:0.0280s ]
+SQL: INSERT INTO `sr_debug` (`content`,`item`,`addtime`) VALUES ('{\"member_id\":209,\"type\":2,\"title\":\"废品订单生成成功\",\"content\":\"生成订单，订单编号为：2018021350481025\"}','消息数据3','2018-02-13 14:02:58') [ RunTime:0.0300s ]
+SQL: INSERT INTO `sr_message` (`member_id`,`type`,`title`,`content`,`add_time`) VALUES ('209','2','废品订单生成成功','生成订单，订单编号为：2018021350481025','2018-02-13 14:02:58') [ RunTime:0.0850s ]
+SQL: SHOW COLUMNS FROM `sr_member_count` [ RunTime:0.0310s ]
+SQL: UPDATE `sr_member_count` SET `message_order`=message_order+1 WHERE `member_id` = 209 [ RunTime:0.4480s ]
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\gaochao\Core\Library\Org\JPush\PushPayload.class.php 第 298 行.
+
+[ 2018-02-13T14:03:07+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/all?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10,20,30) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T14:03:07+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/undeal?p=1&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`order_no`,`add_time`,`details`,`status`,`date` FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_order` WHERE `member_id` = 209 AND `status` IN (10) AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-13T14:03:09+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/info?id=1007&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_waste_order` [ RunTime:0.0310s ]
+SQL: SELECT `id`,`order_no`,`member_id`,`mobile`,`waste_type`,`district_id`,`building_no`,`room_no`,`address`,`add_time`,`details`,`status` FROM `sr_waste_order` WHERE `member_id` = 209 AND `id` = 1007 LIMIT 1   [ RunTime:0.0290s ]
+
+[ 2018-02-13T14:03:09+08:00 ] 192.168.1.100 /gaochao/Api/Common/Waste/imagesInfo?id=1007&token=fnVyqrJ3dLCudXOuhHp5rYOGcayDpnpngYej3rGFptx6dXattJ2EsrCbf2eIenmtgYWXp4OmfqeCh6_MsoWumH91emmyrYV6roWZroR3bXM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0190s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_waste_image` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT `image`,`id`,`pid` FROM `sr_waste_image` WHERE `pid` = 1007 AND `is_del` = 0 AND `is_hid` = 0 ORDER BY add_time desc LIMIT 0,9   [ RunTime:0.0670s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_waste_image` WHERE `pid` = 1007 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+

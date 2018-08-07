@@ -1,0 +1,123 @@
+<extend name="Public/body" />
+<block name="body"> 
+	<table class="table js_table table-bordered">
+		<thead>
+			<tr>
+				<th colspan="20" class="text-right clearfix">
+					<form action="<?=U('index');?>" class="form-inline pull-left" method="get">
+						<input type="text" class="form-control input-md" placeholder="订单编号|手机|用户名" name="keywords" value="<?=$keywords?>">
+
+						<select name="status" class="form-control input-sm">
+							<option value=''>请选择处理状态</option>
+							<?php
+								foreach ($status as $k => $v) {
+							?>
+							<option value="<?=$v['r_value']?>" <?=(I('status') == $v['r_value'])?'selected="selected"':''?> ><?=$v['title']?></option>
+							<?php
+								}
+							?>
+						</select>
+						<input type="start_date" style="min-width:auto;width:140px!important" onclick="WdatePicker({skin:'backend',dateFmt:'yyyy-MM-dd'})" class="form-control input-sm wdate" placeholder="开始时间" name="start_date" value="<?=$start_date?>">
+						<input type="stop_date" style="min-width:auto;width:140px!important" onclick="WdatePicker({skin:'backend',dateFmt:'yyyy-MM-dd'})" class="form-control input-sm wdate" placeholder="结束时间" name="stop_date" value="<?=$stop_date?>">
+						<label>
+							<input type="checkbox" name="is_cod" <?=I('is_cod')?'checked=true':''?> > 到付订单
+						</label>
+						<button type="submit" class="btn btn-primary btn-sm" target-form="operate_form">提交</button>
+					</form>
+					<div class="pull-right">
+
+					<?=get_top_btn($menu_info['id'],I('pid'))?>
+					</div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr role="row">
+				<th width="2%"><input type="checkbox" class="js_check_all" data-target="ids" value=""></th>
+				<th width="20%" class="text-left">订单编号</th>
+				<th width="12%" >下单用户</th>
+				<th width="12%" class="text-center" >客户联系方式</th>
+				<th width="12%" class="text-center">订单状态</th>
+				<th width="16%" class="text-center">下单时间</th>
+				<th width="12%" class="text-center">操作</th>
+			</tr>
+			<?php
+				if(!$list){
+			?>
+			<tr>
+				<td colspan="80"><include file="Public/nodata" text="没有数据" /></td>
+			</tr>
+			<?php
+				}
+			?>
+			<?php
+				foreach($list as $row){
+			?>
+			<tr>
+				<td width="2%"><input type="checkbox" class="ids" data-child="ids" name="ids[]" value="<?=$row['id']?>"></td>
+				<td class="text-left">
+					<?=$row['order_no']?>
+	<?php
+		if(1 == $row['type']){
+	?>
+	&nbsp;<span style="display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #6bc58f;
+    border-radius: 6px;">到付</span>
+    <?php }?>
+				</td>
+				<td>
+					<?=$row['username']?>
+				</td>
+				<td class="text-center">
+					<?=$row['mobile']?>
+				</td>
+				<td class="text-center">
+					<?=$status[$row['status']]['remark']?>
+					<?php if(3 == $row['pay_type']){?>
+					<span style="color:red">(未实付)</span>
+					<?php } ?>
+				</td>
+				<td class="text-center">
+					<?=$row['add_time']?>
+				</td>
+				<td class="text-center">
+					<?php
+						get_list_btn($menu_info['id'],$row);
+					?>
+					<?php
+						if($row['status'] == 10){
+					?>
+					<a href="<?=U('cancel',array('ids'=>$row['id']))?>" class="btn btn-xs btn-danger ajax-get confirm" title="确定取消">确定取消</a>
+					<?php
+						}
+						if($row['status'] == 20){
+					?>
+					<a href="#" class="btn btn-xs bg-purple" title="已回收">已回收</a>
+					<?php
+						}
+						if($row['status'] == 30){
+					?>
+					<a href="#" class="btn btn-xs btn-warning " title="已取消">已取消</a>
+					<?php
+						}
+					?>
+				</td>
+			</tr>
+			<?php
+				}
+			?>
+		</tbody>
+	</table>
+	<div class="pages">
+		<?=$page?>
+	</div>
+</block>

@@ -1,0 +1,96 @@
+<!-- 消息中心 >> 写信 -->
+<extend name="Common/body"/>
+<block name="head_change">
+<?php
+$crumbs="消息中心";
+$crumbs_array[]=array("title"=>"个人中心","url"=>U("/User"));
+$crumbs_array[]=array("title"=>"发消息","url"=>U(""));
+?>
+<script>
+var cur_url="<?=U('User/Message/Message/write')?>";
+</script>
+</block>
+<block name="style">
+	<css href="__PLUGIN__/select2/select2.min.css" />
+	<style>
+		.select2-container,
+		.select2-selection--single{
+			height:34px!important;
+		}
+		.select2-selection__rendered{
+			line-height:34px!important;
+		}
+	</style>
+</block>
+<block name="body">
+	<include file="Common@Plugins/editor" />
+	<div class="writebox">
+		<form method="post" class="js_form" action="<?=U('write')?>" func="Message">
+			<div class="form-group">
+				<label>收件人</label>
+				<select class="form-control super_select2 js_super_select" name="to_member_id" datatype="*" nullmsg="请选择收件人" data-select2-key="send_id" data-select2-limit="1">
+				</select>
+			</div>
+			<div class="form-group">
+				<label>标题</label>
+				<input type="text" datatype="*" nullmsg="请输入标题" class="form-control" name="title">
+			</div>
+			<div class="form-group">
+				<label>内容</label>
+				<!-- 百度编辑器 S -->
+				<?php $time=time(); ?>
+				<script id="<?='editor_'.$time?>" type="text/plain" name="content"><?=$info['content']?></script>
+				<script type="text/javascript">
+					var config_2={
+						initialFrameWidth:"100%",
+						initialFrameHeight:300,
+						pasteplain:true,
+						toolbars: [[
+				            'bold','removeformat','indent','link','unlink','insertimage','attachment'
+						]]
+					};
+					//合并配置文件，config为默认配置，config_2为自定义的配置
+					var new_config=array_merge({},[config,config_2]);
+					var editor_<?=$time?>=UE.getEditor('editor_<?=$time?>',new_config);
+				</script>
+				<!-- 百度编辑器 E -->
+			</div>
+			<div class="form-group">
+				<div style="height:30px;text-align:center;">
+					<div class="validTips js_validTips" style="display:none!important;">
+		                <span class="Validform_checktip js_tipContent f14"></span>
+		            </div>
+				</div>
+				<div class="text-center">
+					<input type="hidden" name="is_to_home" value="2"/>
+					<input type="submit" class="btn btn-sm btn-orange" value="提交" />
+					<a href="<?=('outbox')?>" class="btn btn-sm btn-default">取消并返回</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</block>
+<block name="script">
+	<js href="__PLUGIN__/select2/select2.min.js" />
+	<js href="__PLUGIN__/select2/i18n/zh-CN.js" />
+	<js href="__STATIC__/js/super_select2.js" />
+	<script type="text/javascript">
+		$('.js_super_select').super_select2({
+			'placeholder':'收件人手机或者邮箱'
+		});
+		function beforeCallbackMessage(curform){
+			var content=editor_<?=$time?>.hasContents();
+			if(!content){
+				$(curform).find(".js_validTips").stop(true,true).fadeIn(500).find(".js_tipContent").html("<span class='error'>请输入内容</span>");
+				return false;
+			}
+			return true;
+		}
+		function afterCallbackMessage(curform,data){
+			$(curform).find(".js_validTips").stop(true,true).fadeIn(500).find(".js_tipContent").html("<span class='success'>"+data.info+"</span>");
+			tips(data.info,1500,"success");
+			curform.find("input[type=submit]").removeClass('disable').attr('autocomplete', 'off').prop('disabled',false);
+			return false;
+		}
+	</script>
+</block>

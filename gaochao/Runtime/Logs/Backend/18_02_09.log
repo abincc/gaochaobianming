@@ -1,0 +1,353 @@
+[ 2018-02-09T10:36:44+08:00 ] 192.168.1.113 /gaochao/backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.331019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.334019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.297074s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.297074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.063003s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.020002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.084005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.057003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.057003s ]
+
+[ 2018-02-09T10:36:53+08:00 ] 192.168.1.113 /gaochao/Backend/Base/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_capital_record` [ RunTime:0.1280s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0550s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Base/Index/index','admin','359','平台管理 &gt; 系统首页 &gt; 系统首页','浏览','192.168.1.113','1','2018-02-09 10:36:45') [ RunTime:0.5740s ]
+SQL: SHOW COLUMNS FROM `sr_order` [ RunTime:0.1470s ]
+SQL: SELECT count(id) tp_sum FROM `sr_order` WHERE `status` = 20 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:2.8122s ]
+SQL: SELECT SUM(`money_total`) tp_sum FROM `sr_order` WHERE `status` > 20 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0150s ]
+SQL: SELECT count(id) tp_sum FROM `sr_member` LIMIT 1   [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.0120s ]
+SQL: SELECT count(id) tp_sum FROM `sr_product` LIMIT 1   [ RunTime:0.1260s ]
+SQL: SELECT o.id AS id,o.order_no AS order_no,o.money_total AS money_total,o.add_time AS add_time,o.status AS status,m.username AS username FROM sr_order o LEFT JOIN sr_member m ON m.id=o.member_id WHERE o.is_del = 0 AND o.is_hid = 0 AND o.status IN (10,20,40,70) ORDER BY o.add_time desc LIMIT 7   [ RunTime:0.1770s ]
+SQL: SELECT `id`,`username`,`mobile`,`register_ip`,`register_time` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY register_time desc LIMIT 7   [ RunTime:0.1770s ]
+SQL: SELECT count(*) as c,`status`,DATE_FORMAT(`add_time`, "%Y-%m-%d") as date FROM `sr_order` WHERE `is_del` = 0 AND `is_hid` = 0 AND `status` IN (5,10,20,30,40,50,60,70) AND (`add_time` LIKE '2018-01-10%' OR `add_time` LIKE '2018-01-11%' OR `add_time` LIKE '2018-01-12%' OR `add_time` LIKE '2018-01-13%' OR `add_time` LIKE '2018-01-14%' OR `add_time` LIKE '2018-01-15%' OR `add_time` LIKE '2018-01-16%' OR `add_time` LIKE '2018-01-17%' OR `add_time` LIKE '2018-01-18%' OR `add_time` LIKE '2018-01-19%' OR `add_time` LIKE '2018-01-20%' OR `add_time` LIKE '2018-01-21%' OR `add_time` LIKE '2018-01-22%' OR `add_time` LIKE '2018-01-23%' OR `add_time` LIKE '2018-01-24%' OR `add_time` LIKE '2018-01-25%' OR `add_time` LIKE '2018-01-26%' OR `add_time` LIKE '2018-01-27%' OR `add_time` LIKE '2018-01-28%' OR `add_time` LIKE '2018-01-29%' OR `add_time` LIKE '2018-01-30%' OR `add_time` LIKE '2018-01-31%' OR `add_time` LIKE '2018-02-01%' OR `add_time` LIKE '2018-02-02%' OR `add_time` LIKE '2018-02-03%' OR `add_time` LIKE '2018-02-04%' OR `add_time` LIKE '2018-02-05%' OR `add_time` LIKE '2018-02-06%' OR `add_time` LIKE '2018-02-07%' OR `add_time` LIKE '2018-02-08%' OR `add_time` LIKE '2018-02-09%') GROUP BY `date`,`status`  [ RunTime:0.4000s ]
+NOTIC: [8] Undefined index: 2018-01-10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-11 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-12 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-13 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-21 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-22 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-23 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-24 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-25 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-26 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-27 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-28 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-29 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-03 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-08 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-09 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 5 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:3.471198s ]
+INFO: [ view_parse ] --END-- [ RunTime:3.471198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-09T10:37:04+08:00 ] 192.168.1.113 /gaochao/Backend/Property/District/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Property/District/index','admin','725','物业管理 &gt; 小区管理 &gt; 小区列表 &gt; ','浏览','192.168.1.113','1','2018-02-09 10:37:02') [ RunTime:0.1030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_district` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`cloud_id`,`title`,`contacts`,`contact_number`,`province`,`city`,`area`,`address`,`longitude`,`latitude`,`is_hid`,`is_del`,`add_time`,`update_time`,`sort` FROM `sr_district` WHERE `is_del` = 0 ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\ae7e032b08467d77d061af228de0f084.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.497029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.497029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019001s ]
+
+[ 2018-02-09T10:37:07+08:00 ] 192.168.1.113 /gaochao/Backend/Property/Trifle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_trifle` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Property/Trifle/index','admin','749','物业管理 &gt; 小事帮忙 &gt; 小事列表 &gt; ','浏览','192.168.1.113','1','2018-02-09 10:37:06') [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `sr_trifle` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sr_trifle t LEFT JOIN sr_member m ON m.id=t.member_id LEFT JOIN sr_district d ON d.id=t.district_id WHERE t.is_del = 0 AND t.add_time BETWEEN 0 AND '2018-02-09 10:37:06' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT t.id AS id,t.trifle_service_id AS trifle_service_id,t.member_id AS member_id,t.district_id AS district_id,t.content AS content,t.status AS status,t.is_hid AS is_hid,t.is_del AS is_del,t.add_time AS add_time,t.deal_time AS deal_time,t.remember_id AS remember_id,t.building_no AS building_no,t.room_no AS room_no,t.reply AS reply,t.is_reply AS is_reply,m.username AS username,m.mobile AS mobile,d.title AS title FROM sr_trifle t LEFT JOIN sr_member m ON m.id=t.member_id LEFT JOIN sr_district d ON d.id=t.district_id WHERE t.is_del = 0 AND t.add_time BETWEEN 0 AND '2018-02-09 10:37:06' ORDER BY t.add_time desc LIMIT 0,10   [ RunTime:0.2030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\8ea3b32592355b8efc382742d6e03232.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T10:37:11+08:00 ] 192.168.1.113 /gaochao/Backend/Property/Trifle/detail/ids/91.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_trifle` [ RunTime:0.3220s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Property/Trifle/index','admin','761','物业管理 &gt; 小事帮忙 &gt; 小事列表 &gt; 详情','详情','192.168.1.113','1','2018-02-09 10:37:10') [ RunTime:0.0680s ]
+SQL: SELECT `id`,`trifle_service_id`,`member_id`,`district_id`,`content`,`status`,`is_hid`,`is_del`,`add_time`,`deal_time`,`remember_id`,`building_no`,`room_no`,`reply`,`is_reply` FROM `sr_trifle` WHERE `id` = 91 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_trifle` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sr_trifle_image` [ RunTime:0.0090s ]
+SQL: SELECT id as image_id,`image` FROM `sr_trifle_image` WHERE ( pid=91 ) ORDER BY add_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: remember_info C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\d5ca7647a7e197fd2b0a4f13caf3f6ca.php 第 256 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.920053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.920053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T10:37:16+08:00 ] 192.168.1.113 /gaochao/Backend/Property/TrifleService/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_trifle_service` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Property/TrifleService/index','admin','755','物业管理 &gt; 小事帮忙 &gt; 小事类型 &gt; ','浏览','192.168.1.113','1','2018-02-09 10:37:16') [ RunTime:0.0520s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_trifle_service` WHERE `is_del` = 0 AND `add_time` BETWEEN 0 AND '2018-02-09 10:37:16' LIMIT 1   [ RunTime:0.0730s ]
+SQL: SELECT `id`,`title`,`is_hid`,`is_del`,`add_time`,`sort` FROM `sr_trifle_service` WHERE `is_del` = 0 AND `add_time` BETWEEN 0 AND '2018-02-09 10:37:16' LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\281231c7d5ce6ec5a946a75dca0f976f.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T10:37:18+08:00 ] 192.168.1.113 /gaochao/Backend/Property/Trifle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_trifle` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Property/Trifle/index','admin','749','物业管理 &gt; 小事帮忙 &gt; 小事列表 &gt; ','浏览','192.168.1.113','1','2018-02-09 10:37:18') [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `sr_trifle` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sr_trifle t LEFT JOIN sr_member m ON m.id=t.member_id LEFT JOIN sr_district d ON d.id=t.district_id WHERE t.is_del = 0 AND t.add_time BETWEEN 0 AND '2018-02-09 10:37:18' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT t.id AS id,t.trifle_service_id AS trifle_service_id,t.member_id AS member_id,t.district_id AS district_id,t.content AS content,t.status AS status,t.is_hid AS is_hid,t.is_del AS is_del,t.add_time AS add_time,t.deal_time AS deal_time,t.remember_id AS remember_id,t.building_no AS building_no,t.room_no AS room_no,t.reply AS reply,t.is_reply AS is_reply,m.username AS username,m.mobile AS mobile,d.title AS title FROM sr_trifle t LEFT JOIN sr_member m ON m.id=t.member_id LEFT JOIN sr_district d ON d.id=t.district_id WHERE t.is_del = 0 AND t.add_time BETWEEN 0 AND '2018-02-09 10:37:18' ORDER BY t.add_time desc LIMIT 0,10   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\8ea3b32592355b8efc382742d6e03232.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T10:37:21+08:00 ] 192.168.1.113 /gaochao/Backend/Property/Trifle/detail/ids/91.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_trifle` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0110s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Property/Trifle/index','admin','761','物业管理 &gt; 小事帮忙 &gt; 小事列表 &gt; 详情','详情','192.168.1.113','1','2018-02-09 10:37:21') [ RunTime:0.0720s ]
+SQL: SELECT `id`,`trifle_service_id`,`member_id`,`district_id`,`content`,`status`,`is_hid`,`is_del`,`add_time`,`deal_time`,`remember_id`,`building_no`,`room_no`,`reply`,`is_reply` FROM `sr_trifle` WHERE `id` = 91 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sr_trifle` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sr_trifle_image` [ RunTime:0.0090s ]
+SQL: SELECT id as image_id,`image` FROM `sr_trifle_image` WHERE ( pid=91 ) ORDER BY add_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: remember_info C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\d5ca7647a7e197fd2b0a4f13caf3f6ca.php 第 256 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

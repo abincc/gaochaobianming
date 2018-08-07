@@ -1,0 +1,23 @@
+<extend name="Home@Common/body"/>
+<block name="body">
+<style>
+.text_detail .content p{ font-size: 14px; color: #333;line-height: 20px; }
+</style>
+<div class="text_detail">
+    <div class="content">
+		<?=html_entity_decode(C('PRIVACY_STATEMENT'))?>
+    </div>
+</div>
+</block>
+<block name="script">
+    <script>
+        $(function(){
+            var val=$(window).width()/7.5;
+            $('html').css('font-size',val);
+            $(window).resize(function(event) {
+               var val=$(window).width()/7.5;
+                $('html').css('font-size',val);
+            });
+        })
+    </script>
+</block>

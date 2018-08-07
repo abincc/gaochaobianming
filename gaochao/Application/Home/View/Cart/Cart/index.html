@@ -1,0 +1,366 @@
+<!-- 购物车   -->
+<extend name="Cart/Common/body"/>
+<block name="body">
+	<css href="__CSS__/cart.css" />
+	<form action="<?=U('Home/Cart/Order/confirm')?>" method="post" class='form'>
+		<div class="container f14">
+			<div class="shopbox">
+				<div class="toptitle clearfix">
+					<span class="pull-left">全部商品（<span class="js_all_num">0</span>）</span>
+				</div>
+				<div class="table-responsive">
+					<div style="min-width:970px;">
+						<ul class="shop_row col_name clearfix">
+							<li class="shop_col_1">
+								<input name="" type="checkbox" class="check_all" value="" />
+								<span>全选</span>
+							</li>
+							<li class="shop_col_2">商品</li>
+							<li class="shop_col_3"></li>
+							<li class="shop_col_4 align_c">单价</li>
+							<li class="shop_col_6 align_c">数量</li>
+							<li class="shop_col_7 align_c">小计</li>
+							<li class="shop_col_8 align_c">操作</li>
+						</ul>
+						<ul class="shoplist js_shop">
+							<!--Shop  list S -->
+							<li>
+								<div class="shopname">
+									<input name="" type="checkbox" value="" class="child_check_all" />
+									<strong class="margin_l20">武汉名仕装饰设计有限公司</strong>
+								</div>
+								<div class="col_list">
+									<!-- list S -->
+									<ul class="content clearfix">
+										<li class="shop_col_1 clearfix check_product">
+											<input name="id[]" type="checkbox" value="<?=$v_product['id']?>" class="ids" />
+											<img onerror="nofind();" src="http://test.cnsunrun.com/baiji/Public/Home/img/shop/single_list.jpg" width="100%" height="100%" alt="" />
+										</li>
+										<li class="shop_col_2 pr_desc">
+											<div class="name">绿诺 NANOLEAF boom LED球灯泡</div>
+											<div class="desc">造型奇特新颖、光线明亮柔和、使用方便节能。</div>
+										</li>
+										<li class="shop_col_3 attribute">
+											<div><span>型号：</span>石墨黑1200流明  白光</div>
+										</li>
+										<li class="shop_col_4 align_c js_singel">￥<span>178</span></li>
+										<li class="shop_col_6 number" style="padding-left:19px;">
+											<ul class="clearfix" data-id="<?=$v_product['id']?>" data-url="<?=U('/Cart/Cart/edit')?>">
+												<span class="reduce<?=$num_class?> js_reduce pull-left">-</span>
+												<input name="count" type="text" value="3" />
+												<span class="add js_add">+</span>
+											</ul>
+										</li>
+										<li class="shop_col_7 align_c js_price">￥<span>534</span></li>
+										<li class="shop_col_8 align_c">
+											<div><a class="js_collect" href="<?=U('collect', array('id'=> $v_product['id']))?>">移入收藏夹</a></div>
+											<div><a class="ajax-get" href="<?=U('delete', array('id'=> $v_product['id']))?>">删除</a></div>
+										</li>
+									</ul>
+									<!-- list E -->
+									<!-- list S -->
+									<ul class="content clearfix">
+										<li class="shop_col_1 clearfix check_product">
+											<input name="id[]" type="checkbox" value="<?=$v_product['id']?>" class="ids" />
+											<img onerror="nofind();" src="http://test.cnsunrun.com/baiji/Public/Home/img/shop/single_list.jpg" width="100%" height="100%" alt="" />
+										</li>
+										<li class="shop_col_2 pr_desc">
+											<div class="name">绿诺 NANOLEAF boom LED球灯泡</div>
+											<div class="desc">造型奇特新颖、光线明亮柔和、使用方便节能。</div>
+										</li>
+										<li class="shop_col_3 attribute">
+											<div><span>型号：</span>石墨黑1200流明  白光</div>
+										</li>
+										<li class="shop_col_4 align_c js_singel">￥<span>178</span></li>
+										<li class="shop_col_6 number" style="padding-left:19px;">
+											<ul class="clearfix" data-id="<?=$v_product['id']?>" data-url="<?=U('/Cart/Cart/edit')?>">
+												<span class="reduce<?=$num_class?> js_reduce pull-left">-</span>
+												<input name="count" type="text" value="3" />
+												<span class="add js_add">+</span>
+											</ul>
+										</li>
+										<li class="shop_col_7 align_c js_price">￥<span>534</span></li>
+										<li class="shop_col_8 align_c">
+											<div><a class="js_collect" href="<?=U('collect', array('id'=> $v_product['id']))?>">移入收藏夹</a></div>
+											<div><a class="ajax-get" href="<?=U('delete', array('id'=> $v_product['id']))?>">删除</a></div>
+										</li>
+									</ul>
+									<!-- list E -->
+								</div>
+							</li>
+							<!--Shop  list E -->
+							<!--Shop  list S -->
+							<li>
+								<div class="shopname">
+									<input name="" type="checkbox" value="" class="child_check_all" />
+									<strong class="margin_l20">武汉名仕装饰设计有限公司</strong>
+								</div>
+								<div class="col_list">
+									<!-- list S -->
+									<ul class="content clearfix">
+										<li class="shop_col_1 clearfix check_product">
+											<input name="id[]" type="checkbox" value="<?=$v_product['id']?>" class="ids" />
+											<img onerror="nofind();" src="http://test.cnsunrun.com/baiji/Public/Home/img/shop/single_list.jpg" width="100%" height="100%" alt="" />
+										</li>
+										<li class="shop_col_2 pr_desc">
+											<div class="name">绿诺 NANOLEAF boom LED球灯泡</div>
+											<div class="desc">造型奇特新颖、光线明亮柔和、使用方便节能。</div>
+										</li>
+										<li class="shop_col_3 attribute">
+											<div><span>型号：</span>石墨黑1200流明  白光</div>
+										</li>
+										<li class="shop_col_4 align_c js_singel">￥<span>178</span></li>
+										<li class="shop_col_6 number" style="padding-left:19px;">
+											<ul class="clearfix" data-id="<?=$v_product['id']?>" data-url="<?=U('/Cart/Cart/edit')?>">
+												<span class="reduce<?=$num_class?> js_reduce pull-left">-</span>
+												<input name="count" type="text" value="3" />
+												<span class="add js_add">+</span>
+											</ul>
+										</li>
+										<li class="shop_col_7 align_c js_price">￥<span>534</span></li>
+										<li class="shop_col_8 align_c">
+											<div><a class="js_collect" href="<?=U('collect', array('id'=> $v_product['id']))?>">移入收藏夹</a></div>
+											<div><a class="ajax-get" href="<?=U('delete', array('id'=> $v_product['id']))?>">删除</a></div>
+										</li>
+									</ul>
+									<!-- list E -->
+								</div>
+							</li>
+							<!--Shop  list E -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- 去结算 S -->
+		<div class="acountbox f14">
+			<div class="container pad_lr0 clearfix">
+				<div class="pull-left">
+					<label style="margin:0;display:inline;">
+						<input name="" type="checkbox" value="" class="check_all" />
+						<span>全选</span>
+					</label>
+					<a href="javascript:;" data-url="<?=U('delete')?>" class="click_all">删除</a>
+					<a href="javascript:;" data-url="<?=U('collect')?>" class="click_all">移入收藏夹</a>
+				</div>
+				<div class="pull-right">
+					<ul class="clearfix">
+						<li>已选商品<span class="js_number">0</span>件</li>
+						<li>应付总额<span class="js_count">￥0.00</span></li>
+						<li class="last"><input type="submit" class="btn btn-orange" value="去结算" ></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</form>
+	<!-- 去结算 E -->
+</block>
+<block name="script">
+	<script type="text/javascript">
+
+	var cartlist = function($){
+		function countPrice(){
+			var count = 0,temp = 0;
+			$('.shoplist').find('li').each(function(){
+				var _that = $(this);
+				_that.find('.col_list>ul').each(function(){
+					if($(this).hasClass('check')){
+						var price = Number($(this).find('.js_price>span').text());
+						count += price;
+						temp ++;
+					}
+				});
+			});
+			count = count.toFixed(2);
+			$('.js_all_num').text(temp);
+			$('.js_number').text(temp);
+			$('.js_count').text('￥'+ count);
+		};
+
+		function countSingelPrice(obj,val){
+			var price = Number(obj.find('.js_singel>span').text())+Number(obj.find('.js_custom>span').text());
+			
+			obj.find('.js_price>span').text(val*price);
+			obj = null;
+		};
+		return{
+			addEvent : function(){
+				/*-- 全选 & 反选事件 S --*/
+				$(document).on("click",".check_all",function(event){
+					$(".ids,.check_all,.child_check_all").prop("checked",this.checked);
+					if(this.checked){
+						$(".shoplist>li").find('ul').addClass("check");
+					}else{
+						$(".shoplist>li").find('ul').removeClass("check");
+					}
+					countPrice();
+				});
+
+				$(document).on("click",".child_check_all",function(event){
+					var _parent=$(this).parent().parent();
+					_parent.find('.col_list').find(".ids").prop("checked", this.checked);
+					if(this.checked){
+						_parent.find('ul').addClass("check");
+						if($("input[type=checkbox].ids:checked").length==$("input[type=checkbox].ids").length){
+							$(".check_all,.child_check_all").prop("checked",this.checked);
+						}
+					}else{
+						_parent.find('ul').removeClass("check");
+						$(".check_all").prop("checked",this.checked);
+					}
+					countPrice();
+				});
+				$(document).on("click",".ids",function(event){
+					var _this=$(this);
+					var _childParent=_this.parent().parent();
+					var option = $(".ids");
+					if(_this.prop("checked")){
+						_childParent.addClass("check");
+						if($("input[type=checkbox].ids:checked").length==$("input[type=checkbox].ids").length){
+							$(".check_all,.child_check_all").prop("checked",this.checked);
+							$(".shoplist>li>ul").addClass("check")
+						}else{
+							if(_childParent.find("input[type=checkbox].ids:checked").length==_childParent.find("input[type=checkbox].ids").length){
+								_childParent.find("input.child_check_all").prop("checked",this.checked);
+							}
+						}
+					}else{
+						_childParent.removeClass("check");
+						$(".check_all").prop("checked",this.checked);
+						_childParent.find("input.child_check_all").prop("checked",this.checked);
+					}
+					countPrice();
+				});
+				/*-- 全选 & 反选事件 S --*/
+
+				/*--商品数量  S--*/ 
+				$('.js_add').on('click',function(){
+					var cart_id = $(this).parents('ul').data('id');
+					var _input = $(this).parent().find('input');
+					var _obj = $(this).parent().parent().parent();
+					var _remove = $(this).parent().find('.js_reduce');
+					var val = Number(_input.val()) + 1;
+					//发送post请求
+					var url = $(this).parent().attr('data-url'); //请求路径
+					var data = {'id': cart_id,'num': val};
+					$.post(url, data, function(data) {
+						if(data.status == 1) {
+							_input.val(val);
+							if(val > 1){
+								_remove.removeClass('bggray');
+							}
+							countSingelPrice(_obj, val);
+							if(_obj.hasClass('check')){
+								countPrice();
+							};
+						}else {
+							tips(data.info, 1000, 'error');
+						}
+					});
+				});
+				
+				$(document).on('focusout','input[name=count]',function(){
+					var url = $(this).parent().attr('data-url'); //请求路径
+
+					var cart_id = $(this).parents('ul').data('id');
+					var _obj = $(this).parent().parent().parent();
+					var val = $(this).val();
+
+					var data = {num:val,id:cart_id}
+					if(data.num < 1){
+						return ;
+					}
+
+					$.post(url, data, function(data) {
+						if(data.status == 1) {
+							countSingelPrice(_obj, val);
+							if(_obj.hasClass('check')){
+								countPrice();
+							};
+						}else {
+							tips(data.info, 1000, 'error');
+						}
+					});
+				});
+
+				$('.js_reduce').on('click',function(){
+					var cart_id = $(this).parents('ul').data('id');
+					var _input = $(this).parent().find('input');
+					var _obj = $(this).parent().parent().parent();
+					var _remove = $(this);
+					var val = Number(_input.val()) - 1;
+					//发送post请求
+					var url = $(this).parent().attr('data-url'); //请求路径
+					var data = {'id': cart_id,'num': val};
+					if(val > 0) {
+						$.post(url, data, function(data) {
+							if(data.status == 1) {
+								_input.val(val);
+								if(val < 2){
+									_remove.removeClass('bggray');
+								}
+								countSingelPrice(_obj, val);
+								if(_obj.hasClass('check')){
+									countPrice();
+								};
+							}else {
+								tips(data.info, 1000, 'error');
+							}
+						});
+					}
+				});
+				/*--商品数量  E--*/ 
+				
+				/* 移入收藏夹 */
+				$('.js_collect').on('click', function() {
+					event.preventDefault();
+					var _this = $(this);
+					var url = $(this).attr('href');
+					$.ajax({
+						type: 'get',
+						url: url,
+						dateType: 'json',
+		    			success:function(data){
+							if(data.status == 0) {
+								tips(data.info, 1500, 'error');
+		    					return ;
+		    				}
+							window.location.reload();
+		    			}
+					});
+				});
+
+				$('.click_all').on('click',function(){
+					var url = $(this).data('url');
+					var idArr = array();					$('.js_shop').find('ul').each(function(){
+						if($(this).find('.ids').prop('checked') == true){
+							idArr.push($(this).find('.ids').val());
+						}
+					});
+					if(idArr.length <= 0){
+						return;
+					}
+					$.ajax({
+		    			type:'post',
+		    			url	: url, //请求地址
+		    			dataType :'json',
+		    			data : {'id':idArr},
+		    			success:function(data){
+							if(data.status == 0) {
+								tips(data.info, 1500, 'error');
+		    					return ;
+		    				}
+							window.location.reload();
+		    			}
+		    		});
+				});
+			}
+		}
+	}(jQuery);
+
+	$(window).load(function(){
+		cartlist.addEvent();
+	});
+	</script>
+</block>

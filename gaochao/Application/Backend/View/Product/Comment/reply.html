@@ -1,0 +1,17 @@
+<form action="<?=U('reply')?>" name="stock_form" class="pull-left  stock_form js_form" method="post" enctype="multipart/form-data" >
+	<label class="form-group">
+		<div class="control-label">
+			系统回复：
+		</div>
+		<div>
+			<textarea class="form-control width_auto" name="reply"><?=$info['reply']?></textarea>
+		</div>
+	</label>
+	<input type="hidden" name="comment_id" value="<?=$info['id']?>" />
+	<div class="form-btn clearfix">
+		<input type="submit" class="pull-right btn btn-primary ajax-post" target-form="stock_form" value="提交" />
+		<div class="js_validTips pull-left" style="height:34px;line-height:34px;">
+			<span class="js_tipContent Validform_checktip"></span>
+		</div>
+	</div>
+</form>

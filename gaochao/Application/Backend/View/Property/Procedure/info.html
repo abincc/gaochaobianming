@@ -1,0 +1,189 @@
+<extend name="Public/body" />
+<block name="body">
+	<style>
+		.detail_title { font-size: 20px;text-align: center;line-height: 40px; }
+		.detail_content { font-size: 14px;text-indent: 2em;line-height: 24px;margin-top: 20px; }
+		.detail_rank { margin:20px 50px;height: 6px;border-radius: 3px;background-color: red; }
+		.detail_agree { float: left;width:100px;height: 6px;border-radius: 3px 0 0 3px;background-color: green; }
+		.detail_waiver { float: left;width:100px;height: 6px;background-color: #ddd; }
+		.detail_tip { margin-right: 20px; }
+		.detail_tip span { display: inline-block;width:20px;height: 6px;margin-left: 5px; }
+		.bg_red { background-color: red; }
+		.bg_green { background-color: green; }
+		.bg_ddd { background-color: #ddd; }
+		.ml-50 { margin-left: 50px;margin-bottom: 20px; }
+
+.ry_div{ margin: 0 -10px; }
+.ry_div a{ display: block; width:184px; height: 184px; line-height: 160px; text-align: center; position: relative; padding: 10px; border: 1px solid #ddd; float: left; margin: 8px; }
+.ry_div a .img{ max-width: 100%; max-height: 100%;  }
+.ry_div a .name{ width: 100%; height: 100%; transition: 0.5s; -webkit-transition: 0.5s; transform: scale(0); -webkit-transform: scale(0); opacity: 0; filter:alpha(opacity=0); padding: 0 15px; padding-top: 60px; position: absolute; left: 0; top: 0; background: #000; background: rgba(0,0,0,0.6); line-height: 30px; color: #fff; }
+.ry_div a .name img{ height: 30px; }
+.ry_div a .name div{ padding-top: 10px; font-size: 14px; }
+.ry_div a:hover .name{ transform: scale(1); -webkit-transform: scale(1); opacity: 1;filter:alpha(opacity=100);  }
+
+
+.big_imgs{display:none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 500; }
+.big_imgs .box_div{ width: 100%; height: 100%; position: relative; overflow: hidden; }
+.big_imgs .boxs{ text-align: center; height: 80%; color: #fff; transform: scale(0.8); -webkit-transform: scale(0.8); opacity: 0; filter:alpha(opacity=0); margin-top: -300px; }
+.big_imgs_show .boxs{transform: scale(1); -webkit-transform: scale(1); opacity: 1; filter:alpha(opacity=100);}
+.big_imgs .boxs p{ line-height: 24px; font-size: 14px; padding:10px 0; margin: 0 auto; max-width: 600px; }
+.big_imgs .boxs img{ max-height: 100%; max-width: 100% }
+.big_imgs .btns{ width: 46px; height: 63px; transition: 0.3s; display: block; position: absolute; top: 50%; margin-top: -31px; z-index: 501 }
+.big_imgs .btns:hover{ opacity: 0.8 }
+.big_imgs .right_btn{ right: 15px; }
+.big_imgs .left_btn{ left: 15px; }
+.big_imgs .close_btn{ display: block; width: 30px; height: 30px; position: absolute; z-index: 501; right: 20px; top: 20px; }
+.big_imgs .close_btn img{ width: 100% }
+.big_imgs .close_btn:hover{ transform: rotate(180deg); }
+.imgmarks{ display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 400; background: #000;opacity: 0.8; filter:alpha(opacity=80); }
+.transition5{ transition: 0.5s; -webkit-transition: 0.5s; }
+	</style>
+	<div class="form-group">
+		<div class="detail_title"><?=$info['title']?></div>
+
+		<!-- <div class="detail_content">我发加了咖啡就打算了放假 经理说会计分录刷卡缴费 删掉了会计分录山东矿机， 手机就福利科技第三方来看积分第三垃圾分类是否离开家飞洒大立科技拉解放东路萨克解放东路ask交付了刷卡缴费拉克丝激发路口解放拉精神分裂加了罚款经理说开发阶段说了开发。</div> -->
+		    <!-- <div class="ry_div clearfix js_pics_div"> -->
+        <?php
+        	$images = [];
+            foreach ($images as $k => $v) {
+        ?>
+        <a href="javascript:;" class="boxs">
+            <img class="img" src="__ROOT__/<?=$v['image']?>" alt="">
+            <div class="text-center name">
+                <img src="__IMG__/icon2.png" alt="">
+                <div><?=$v['title']?></div>
+            </div>
+        </a>
+        <?php
+            }
+        ?>
+   		<!-- </div> -->
+	</div>
+	<table class="table js_table table-bordered">
+		<thead>
+			<tr>
+				<th colspan="20" class="clearfix">
+					<form action="<?=U('info');?>" class="form-inline pull-left" method="get">
+						<input type="text" class="form-control input-sm" style="width: 160px;" placeholder="用户昵称 | 手机号" name="keywords" value="<?=$keywords?>">
+
+						<select name="type" class="form-control input-sm">
+							<option value=''>意见类型</option>
+							<?php
+								$type2 = $type;
+								array_shift($type2);
+								foreach ($type2 as $k => $v) {
+							?>
+							<option value="<?=$v['r_value']?>" <?=(I('type') == $v['r_value'])?'selected="selected"':''?> ><?=$v['title']?></option>
+							<?php
+								}
+							?>
+						</select>
+						<input type="start_date" style="min-width:auto;width:140px!important" onclick="WdatePicker({skin:'backend',dateFmt:'yyyy-MM-dd'})" class="form-control input-sm wdate" placeholder="开始时间" name="start_date" value="<?=$start_date?>">
+						<input type="stop_date" style="min-width:auto;width:140px!important" onclick="WdatePicker({skin:'backend',dateFmt:'yyyy-MM-dd'})" class="form-control input-sm wdate" placeholder="结束时间" name="stop_date" value="<?=$stop_date?>">
+						<button type="submit" class="btn btn-default btn-sm" target-form="operate_form">搜索</button>
+						<input type="hidden" name="ids" value="<?=$info['id']?>" />
+					</form>
+					<div class="pull-right">
+					<a href="<?=U('export',I())?>" class="btn btn-sm bg-purple" target-form="ids" title="导出">导出</a>
+					<a href="<?=U('index',I())?>" class="btn btn-default cancel">返回列表</a>
+					</div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr role="row">
+				<th width="26%">投票用户</th>
+				<th width="26%">用户手机号</th>
+				<th width="28%" class="text-center">意见</th>
+				<th width="18%" class="text-center">投票时间</th>
+			</tr>
+			<?php
+				if(!$list){
+			?>
+			<tr>
+				<td colspan="80"><include file="Public/nodata" text="暂无投票数据" /></td>
+			</tr>
+			<?php
+				}
+			?>
+			<?php
+				foreach($list as $row){
+			?>
+			<tr>
+				<td><?=$row['username']?></td>
+				<td><?=$row['mobile']?></td>
+				<?php
+					$color = array(1=>'#4fa76b',2=>'red',3=>'#919a9a');
+				?>
+				<td class="text-center"><span style="color:<?=$color[$row['type']]?>;"><?=$type[$row['type']]['title']?></span></td>
+				<td class="text-center"><?=$row['add_time']?></td>
+			</tr>
+			<?php
+				}
+			?>
+		</tbody>
+	</table>
+    <div class="big_imgs js_big_imgs" style="display: none;">
+        <a href="javascript:;" class="btns right_btn"><img src="__IMG__/banner_rightarrow_hover.png" alt=""></a>
+        <a href="javascript:;" class="btns left_btn"><img src="__IMG__/banner_leftarrow_hover.png" alt=""></a>
+        <a href="javascript:;" class="close_btn transition5"><img src="__IMG__/close2.png" alt=""></a>
+        <div class="box_div">
+            <div class="boxs transition5">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="imgmarks js_marks" style="display: none;"></div>
+	<div class="pages">
+		<?=$page?>
+	</div>
+	<js href="__PLUGIN__/select2/select2.full.js" />
+	<js href="__PLUGIN__/select2/super_select2.js" />
+	<script type="text/javascript">
+		$(function(){
+			$('.super_select2').super_select2();
+
+
+            var pic_now=0;
+            $('.js_big_imgs .boxs').css('margin-top',$(window).height()*0.1).css('line-height',$(window).height()*0.8+"px");
+            $(document).on('click','.js_pics_div a',function(){
+
+                var index=$(".js_pics_div a").index(this);
+                var _this=$(this);
+                pic_now=index;
+                $('.js_big_imgs .boxs img').attr('src',$('.js_pics_div a').eq(pic_now).find('img').attr('src'));
+                $('.js_big_imgs .boxs p').html($('.js_pics_div a').eq(pic_now).find('p').html());
+                $('.js_marks').fadeIn(300);
+                $('.js_big_imgs').fadeIn(300).addClass('big_imgs_show');
+            })
+
+            $('.js_big_imgs .close_btn').click(function(){
+                $('.js_marks').fadeOut(300);
+                $('.js_big_imgs').fadeOut(300).removeClass('big_imgs_show');
+            })
+
+            $('.js_big_imgs .right_btn').click(function(){
+                pic_now++;
+                if(pic_now>=$('.js_pics_div a').length){
+                    pic_now=0;
+                }
+                pic_fun();
+            })
+            $('.js_big_imgs .left_btn').click(function(){
+                pic_now--;
+                if(pic_now<=-1){
+                    pic_now=$('.js_pics_div a').length-1;
+                }
+                pic_fun();
+            })
+            function pic_fun(){
+                $('.js_big_imgs').removeClass('big_imgs_show');
+                setTimeout(function(){
+                    $('.js_big_imgs .boxs img').attr('src',$('.js_pics_div a').eq(pic_now).find('img').attr('src'));
+                    $('.js_big_imgs .boxs p').html($('.js_pics_div a').eq(pic_now).find('p').html());
+                    $('.js_big_imgs').addClass('big_imgs_show');
+                },300)
+            }
+		});
+	</script>	
+</block>

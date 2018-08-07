@@ -1,0 +1,84 @@
+<extend name="Public/body" />
+<block name="body">
+	<table class="table js_table table-bordered">
+		<thead>
+			<tr>
+				<th colspan="9" class="text-right clearfix">
+					<form action="<?=U('index');?>" class="form-inline pull-left" method="get">
+						<input type="text" class="form-control input-sm" placeholder="标题关键字" aria-controls="example1" name="keywords" value="<?=$keywords?>">
+						
+						<select name="is_hid" class="form-control input-sm">
+							<option value=''>请选择状态</option>
+							<?php 
+								if($is_hid == 1){
+									$set ="selected='selected'";
+								}else{
+									$set ='';
+								}
+								if(is_numeric($is_hid) && $is_hid ==0){
+									$set_ls = "selected='selected'";
+								}else{
+									$set_ls ='';
+								}
+							?>
+							<option value="1" <?=$set?> >禁用</option>
+							<option value="0" <?=$set_ls?>>启用</option>
+						</select>
+						
+						<button type="submit" class="btn btn-default btn-sm" target-form="operate_form">搜索</button>
+					</form>
+					<div class="pull-right">
+					
+					<?=get_top_btn($menu_info['id'],I('pid'))?>
+					</div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr role="row">
+				<th width="20"><input type="checkbox" class="js_check_all" data-target="ids" value=""></th>
+				<th width="200">标题</th>
+				<th width="100" class="text-center">内容总数</th>
+				<th width="50" class="text-center">图标</th>
+				<th>样式</th>
+				<th>文字说明</th>
+				<th width="80" class="text-center">排序</th>
+				<th width="50" class="text-center">状态</th>
+				<th width="38" class="text-center">操作</th>
+			</tr>
+			<?php
+				if(!$list){
+			?>
+			<tr>
+				<td colspan="80"><include file="Public/nodata" text="没有数据" /></td>
+			</tr>
+			<?php
+				}
+			?>
+			<?php
+				foreach($list as $row){
+			?>
+			<tr>
+				<td><input type="checkbox" class="ids" data-child="ids" name="ids[]" value="<?=$row['id']?>"></td>
+				<td><?=$row['title']?></td>
+				<td class="text-center"><?=$row['num']?></td>
+				<td><i style="background:url(__ROOT__/<?=$row['icon'];?>) no-repeat center center;width:30px;height:30px;margin:0 auto;display:block;"></i></td>
+				<td><?=$row['class']?></td>
+				<td><?=$row['remarks']?></td>
+				<td class="text-center"><?=$row['sort']?></td>
+				<td class="text-center"><img src="__IMG__/status_<?=$row['is_hid']?>.png" alt=""></td>
+				<td class="text-center">
+					<?php
+						get_list_btn($menu_info['id'],$row);
+					?>
+				</td>
+			</tr>
+			<?php
+				}
+			?>
+		</tbody>
+	</table>
+	<div class="pages">
+		<?=$page?>
+	</div>
+</block>

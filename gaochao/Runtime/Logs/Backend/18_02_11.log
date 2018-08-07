@@ -1,0 +1,288 @@
+[ 2018-02-11T15:48:32+08:00 ] ::1 /gaochao/backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.192011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.117007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.138008s ]
+NOTIC: [8] Undefined index: backend_wuye C:\xampp\htdocs\gaochao\Core\Common\functions.php 第 1437 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.313018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.313018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.067004s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.051003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.118007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.033002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.033002s ]
+
+[ 2018-02-11T15:48:32+08:00 ] ::1 /gaochao/backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: backend_wuye C:\xampp\htdocs\gaochao\Core\Common\functions.php 第 1437 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.314018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.315018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.067004s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.051003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.118007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.033002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.033002s ]
+
+[ 2018-02-11T15:48:33+08:00 ] ::1 /gaochao/Backend/Base/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: backend_wuye C:\xampp\htdocs\gaochao\Core\Common\functions.php 第 1437 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-11T15:48:43+08:00 ] ::1 /gaochao/Backend/Base/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_admin` [ RunTime:0.9204s ]
+SQL: SELECT `id`,`email`,`mobile`,`nickname`,`username`,`role_id`,`department_id`,`password`,`salt`,`description`,`rules`,`add_time`,`update_time`,`admin_id`,`is_hid`,`is_del`,`login_ip`,`login_time`,`sort`,`last_login_ip`,`last_login_time`,`district_id` FROM `sr_admin` WHERE `username` = 'admin' AND `is_del` = 0 LIMIT 1   [ RunTime:0.1248s ]
+
+[ 2018-02-11T15:48:43+08:00 ] ::1 /gaochao/Backend/Base/Public/verify.html?0.10822566460224281
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-11T15:48:53+08:00 ] ::1 /gaochao/Backend/Base/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_admin` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`email`,`mobile`,`nickname`,`username`,`role_id`,`department_id`,`password`,`salt`,`description`,`rules`,`add_time`,`update_time`,`admin_id`,`is_hid`,`is_del`,`login_ip`,`login_time`,`sort`,`last_login_ip`,`last_login_time`,`district_id` FROM `sr_admin` WHERE `username` = 'admin' AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-11T15:48:53+08:00 ] ::1 /gaochao/Backend/Base/Public/verify.html?0.2794114847124014
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-11T15:49:03+08:00 ] ::1 /gaochao/Backend/Base/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_admin` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`email`,`mobile`,`nickname`,`username`,`role_id`,`department_id`,`password`,`salt`,`description`,`rules`,`add_time`,`update_time`,`admin_id`,`is_hid`,`is_del`,`login_ip`,`login_time`,`sort`,`last_login_ip`,`last_login_time`,`district_id` FROM `sr_admin` WHERE `username` = 'admin' AND `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sr_admin` SET `login_time`='2018-02-11 15:49:02',`login_ip`='0.0.0.0',`last_login_time`='2018-02-08 16:45:32',`last_login_ip`='192.168.1.113',`update_time`='2018-02-11 15:49:02' WHERE `id` = 1 [ RunTime:0.2646s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.1886s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Base/Public/login','admin','0','','登录','0.0.0.0','1','2018-02-11 15:49:03') [ RunTime:0.2496s ]
+
+[ 2018-02-11T15:49:04+08:00 ] ::1 /gaochao/Backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-11T15:49:07+08:00 ] ::1 /gaochao/Backend/Base/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_menu` [ RunTime:0.2330s ]
+SQL: SELECT `id`,`pid`,`path`,`level`,`title`,`url`,`description`,`class`,`display_position`,`sort`,`is_hid`,`is_del`,`is_dev`,`addtime`,`updatetime` FROM `sr_menu` WHERE `is_hid` = 0 AND `is_del` = 0 ORDER BY sort desc,id asc  [ RunTime:0.1100s ]
+SQL: SHOW COLUMNS FROM `sr_capital_record` [ RunTime:0.3050s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0110s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Base/Index/index','admin','359','平台管理 &gt; 系统首页 &gt; 系统首页','浏览','0.0.0.0','1','2018-02-11 15:49:05') [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `sr_order` [ RunTime:0.0960s ]
+SQL: SELECT count(id) tp_sum FROM `sr_order` WHERE `status` = 20 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.1090s ]
+SQL: SELECT SUM(`money_total`) tp_sum FROM `sr_order` WHERE `status` > 20 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.1770s ]
+SQL: SELECT count(id) tp_sum FROM `sr_member` LIMIT 1   [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.1250s ]
+SQL: SELECT count(id) tp_sum FROM `sr_product` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT o.id AS id,o.order_no AS order_no,o.money_total AS money_total,o.add_time AS add_time,o.status AS status,m.username AS username FROM sr_order o LEFT JOIN sr_member m ON m.id=o.member_id WHERE o.is_del = 0 AND o.is_hid = 0 AND o.status IN (10,20,40,70) ORDER BY o.add_time desc LIMIT 7   [ RunTime:0.0700s ]
+SQL: SELECT `id`,`username`,`mobile`,`register_ip`,`register_time` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY register_time desc LIMIT 7   [ RunTime:0.0020s ]
+SQL: SELECT count(*) as c,`status`,DATE_FORMAT(`add_time`, "%Y-%m-%d") as date FROM `sr_order` WHERE `is_del` = 0 AND `is_hid` = 0 AND `status` IN (5,10,20,30,40,50,60,70) AND (`add_time` LIKE '2018-01-12%' OR `add_time` LIKE '2018-01-13%' OR `add_time` LIKE '2018-01-14%' OR `add_time` LIKE '2018-01-15%' OR `add_time` LIKE '2018-01-16%' OR `add_time` LIKE '2018-01-17%' OR `add_time` LIKE '2018-01-18%' OR `add_time` LIKE '2018-01-19%' OR `add_time` LIKE '2018-01-20%' OR `add_time` LIKE '2018-01-21%' OR `add_time` LIKE '2018-01-22%' OR `add_time` LIKE '2018-01-23%' OR `add_time` LIKE '2018-01-24%' OR `add_time` LIKE '2018-01-25%' OR `add_time` LIKE '2018-01-26%' OR `add_time` LIKE '2018-01-27%' OR `add_time` LIKE '2018-01-28%' OR `add_time` LIKE '2018-01-29%' OR `add_time` LIKE '2018-01-30%' OR `add_time` LIKE '2018-01-31%' OR `add_time` LIKE '2018-02-01%' OR `add_time` LIKE '2018-02-02%' OR `add_time` LIKE '2018-02-03%' OR `add_time` LIKE '2018-02-04%' OR `add_time` LIKE '2018-02-05%' OR `add_time` LIKE '2018-02-06%' OR `add_time` LIKE '2018-02-07%' OR `add_time` LIKE '2018-02-08%' OR `add_time` LIKE '2018-02-09%' OR `add_time` LIKE '2018-02-10%' OR `add_time` LIKE '2018-02-11%') GROUP BY `date`,`status`  [ RunTime:0.0460s ]
+NOTIC: [8] Undefined index: 2018-01-12 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-13 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-21 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-22 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-23 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-24 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-25 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-26 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-27 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-28 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-29 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-03 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-08 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-09 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-11 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 5 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.963055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.963055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

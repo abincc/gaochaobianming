@@ -1,0 +1,59 @@
+[ 2018-07-19T11:45:00+08:00 ] 192.168.1.110 /gaochao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `sr_config` WHERE `name` = 'US_ADDRESS' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `sr_config` WHERE `name` = 'US_EMAIL' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `sr_config` WHERE `name` = 'US_TELPHONE' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `sr_config` WHERE `name` = 'CONTACT_NUMBER' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `sr_config` WHERE `name` = 'COPY_RIGHT' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `value` FROM `sr_config` WHERE `name` = 'WEB_URL' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2018-07-19T11:46:06+08:00 ] 192.168.1.110 /gaochao/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+ERR: 模板不存在:./Application/Home/View/Undefined/index.html
+
+[ 2018-07-19T11:46:36+08:00 ] 192.168.1.110 /gaochao/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003178s ]
+ERR: 模板不存在:./Application/Home/View/Undefined/index.html
+
+[ 2018-07-19T18:06:10+08:00 ] ::1 /gaochao/test/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002178s ]
+ERR: 模板不存在:./Application/Home/View/Test/index/index.html
+

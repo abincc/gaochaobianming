@@ -1,0 +1,819 @@
+[ 2018-07-09T10:44:20+08:00 ] ::1 /gaochao/Api/User/CkClock/checkClock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0107s ]
+NOTIC: [8] Undefined index: token C:\xampp\htdocs\gaochao\Application\Common\Model\CkMemberModel.class.php 第 193 行.
+
+[ 2018-07-09T10:44:34+08:00 ] ::1 /gaochao/Api/User/Coordinate/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001923s ]
+NOTIC: [8] Undefined variable: field C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 0 AND `district_id` = 0 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 0 AND `district_id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-09T10:44:51+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+NOTIC: [8] Undefined variable: field C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT * FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-09T10:47:20+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-09T10:50:34+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0067s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:50:55+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0071s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:50:55+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0061s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:50:56+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0072s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:50:56+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:50:56+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:50:56+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:51:00+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0061s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:51:01+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0061s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:51:01+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:51:02+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:51:15+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0066s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+
+[ 2018-07-09T10:52:31+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0069s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2018-07-09T10:52:33+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0064s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2018-07-09T10:52:49+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: info C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\gaochao\Application\Api\Controller\User\CoordinateController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-07-09T10:53:26+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0071s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-09T11:02:41+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_member_message` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=74 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=73 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=271 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=209 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=111 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=221 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=258 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=285 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=217 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=253 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=215 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=260 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-09T11:20:33+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0071s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_member_room` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '74' ) OR (  `mid` = '74' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '73' ) OR (  `mid` = '73' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '271' ) OR (  `mid` = '271' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '209' ) OR (  `mid` = '209' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '111' ) OR (  `mid` = '111' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '221' ) OR (  `mid` = '221' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '258' ) OR (  `mid` = '258' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '285' ) OR (  `mid` = '285' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '217' ) OR (  `mid` = '217' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '253' ) OR (  `mid` = '253' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '215' ) OR (  `mid` = '215' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 0 AND `oid` = '260' ) OR (  `mid` = '260' AND `oid` = 0 ) ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-09T11:21:02+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0071s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_member_room` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '74' ) OR (  `mid` = '74' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '73' ) OR (  `mid` = '73' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '271' ) OR (  `mid` = '271' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '209' ) OR (  `mid` = '209' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '111' ) OR (  `mid` = '111' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '221' ) OR (  `mid` = '221' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '258' ) OR (  `mid` = '258' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '285' ) OR (  `mid` = '285' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '217' ) OR (  `mid` = '217' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '253' ) OR (  `mid` = '253' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '215' ) OR (  `mid` = '215' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '260' ) OR (  `mid` = '260' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-09T11:21:04+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0062s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_member_room` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '74' ) OR (  `mid` = '74' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '73' ) OR (  `mid` = '73' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '271' ) OR (  `mid` = '271' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '209' ) OR (  `mid` = '209' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '111' ) OR (  `mid` = '111' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '221' ) OR (  `mid` = '221' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '258' ) OR (  `mid` = '258' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '285' ) OR (  `mid` = '285' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '217' ) OR (  `mid` = '217' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '253' ) OR (  `mid` = '253' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '215' ) OR (  `mid` = '215' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '260' ) OR (  `mid` = '260' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-09T11:21:10+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_member_room` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '74' ) OR (  `mid` = '74' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '73' ) OR (  `mid` = '73' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '271' ) OR (  `mid` = '271' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '209' ) OR (  `mid` = '209' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '111' ) OR (  `mid` = '111' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '221' ) OR (  `mid` = '221' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '258' ) OR (  `mid` = '258' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '285' ) OR (  `mid` = '285' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '217' ) OR (  `mid` = '217' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '253' ) OR (  `mid` = '253' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '215' ) OR (  `mid` = '215' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '260' ) OR (  `mid` = '260' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-09T11:21:15+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_member_room` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '74' ) OR (  `mid` = '74' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '73' ) OR (  `mid` = '73' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '271' ) OR (  `mid` = '271' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '209' ) OR (  `mid` = '209' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '111' ) OR (  `mid` = '111' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '221' ) OR (  `mid` = '221' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '258' ) OR (  `mid` = '258' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '285' ) OR (  `mid` = '285' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '217' ) OR (  `mid` = '217' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '253' ) OR (  `mid` = '253' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '215' ) OR (  `mid` = '215' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '260' ) OR (  `mid` = '260' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-09T11:21:19+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0067s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_member_room` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '74' ) OR (  `mid` = '74' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '73' ) OR (  `mid` = '73' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '271' ) OR (  `mid` = '271' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '209' ) OR (  `mid` = '209' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '111' ) OR (  `mid` = '111' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '221' ) OR (  `mid` = '221' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '258' ) OR (  `mid` = '258' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '285' ) OR (  `mid` = '285' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '217' ) OR (  `mid` = '217' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '253' ) OR (  `mid` = '253' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '215' ) OR (  `mid` = '215' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '260' ) OR (  `mid` = '260' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-09T11:22:27+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0065s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,100   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 201 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_member_room` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '74' ) OR (  `mid` = '74' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '73' ) OR (  `mid` = '73' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '271' ) OR (  `mid` = '271' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '209' ) OR (  `mid` = '209' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '111' ) OR (  `mid` = '111' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '221' ) OR (  `mid` = '221' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '258' ) OR (  `mid` = '258' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '285' ) OR (  `mid` = '285' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '217' ) OR (  `mid` = '217' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '253' ) OR (  `mid` = '253' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '215' ) OR (  `mid` = '215' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '260' ) OR (  `mid` = '260' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '264' ) OR (  `mid` = '264' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '262' ) OR (  `mid` = '262' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '261' ) OR (  `mid` = '261' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '247' ) OR (  `mid` = '247' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '223' ) OR (  `mid` = '223' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '257' ) OR (  `mid` = '257' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '256' ) OR (  `mid` = '256' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '255' ) OR (  `mid` = '255' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '254' ) OR (  `mid` = '254' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '252' ) OR (  `mid` = '252' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '251' ) OR (  `mid` = '251' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '250' ) OR (  `mid` = '250' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '249' ) OR (  `mid` = '249' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '248' ) OR (  `mid` = '248' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '225' ) OR (  `mid` = '225' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '246' ) OR (  `mid` = '246' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '245' ) OR (  `mid` = '245' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '244' ) OR (  `mid` = '244' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '243' ) OR (  `mid` = '243' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '242' ) OR (  `mid` = '242' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '241' ) OR (  `mid` = '241' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '240' ) OR (  `mid` = '240' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '239' ) OR (  `mid` = '239' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '238' ) OR (  `mid` = '238' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '237' ) OR (  `mid` = '237' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '236' ) OR (  `mid` = '236' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '235' ) OR (  `mid` = '235' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '234' ) OR (  `mid` = '234' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '233' ) OR (  `mid` = '233' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '232' ) OR (  `mid` = '232' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '231' ) OR (  `mid` = '231' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '230' ) OR (  `mid` = '230' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '229' ) OR (  `mid` = '229' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '228' ) OR (  `mid` = '228' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '227' ) OR (  `mid` = '227' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '226' ) OR (  `mid` = '226' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '224' ) OR (  `mid` = '224' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '222' ) OR (  `mid` = '222' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '216' ) OR (  `mid` = '216' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '214' ) OR (  `mid` = '214' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '213' ) OR (  `mid` = '213' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '211' ) OR (  `mid` = '211' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '193' ) OR (  `mid` = '193' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '175' ) OR (  `mid` = '175' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '71' ) OR (  `mid` = '71' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '174' ) OR (  `mid` = '174' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '173' ) OR (  `mid` = '173' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '172' ) OR (  `mid` = '172' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '171' ) OR (  `mid` = '171' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '170' ) OR (  `mid` = '170' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '169' ) OR (  `mid` = '169' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '166' ) OR (  `mid` = '166' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '165' ) OR (  `mid` = '165' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '164' ) OR (  `mid` = '164' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '163' ) OR (  `mid` = '163' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '162' ) OR (  `mid` = '162' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 201 AND `oid` = '161' ) OR (  `mid` = '161' AND `oid` = 201 ) ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-09T13:45:53+08:00 ] ::1 /gaochao/Api/User/Coordinate/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001981s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: token C:\xampp\htdocs\gaochao\Application\Common\Model\MemberModel.class.php 第 238 行.
+
+[ 2018-07-09T13:46:28+08:00 ] ::1 /gaochao/Api/Common/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: mobile C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\UserController.class.php 第 20 行.
+NOTIC: [8] Undefined index: password C:\xampp\htdocs\gaochao\Application\Api\Controller\Common\UserController.class.php 第 20 行.
+
+[ 2018-07-09T13:46:49+08:00 ] ::1 /gaochao/Api/Common/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`type`,`password`,`is_hid`,`is_del` FROM `sr_member` WHERE `mobile` = '15170255838' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT id as member_id,`type`,`state`,`username`,`nickname`,`mobile`,`sex`,`district_id` FROM `sr_member` WHERE `id` = 209 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `sr_member` SET `login_time`='2018-07-09 13:46:49' WHERE ( id=209 ) [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `sr_district` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sr_district` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-07-09T13:47:17+08:00 ] ::1 /gaochao/Api/Common/Public/get_token
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0078s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-09T13:47:41+08:00 ] ::1 /gaochao/Api/User/Coordinate/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0025s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 209 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,100   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` = 2 AND `id` <> 209 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_member_room` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '74' ) OR (  `mid` = '74' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '73' ) OR (  `mid` = '73' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_member_message` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=100 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '271' ) OR (  `mid` = '271' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=102 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '111' ) OR (  `mid` = '111' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '221' ) OR (  `mid` = '221' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '258' ) OR (  `mid` = '258' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '285' ) OR (  `mid` = '285' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '217' ) OR (  `mid` = '217' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '253' ) OR (  `mid` = '253' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '215' ) OR (  `mid` = '215' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '260' ) OR (  `mid` = '260' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '264' ) OR (  `mid` = '264' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '262' ) OR (  `mid` = '262' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '261' ) OR (  `mid` = '261' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '247' ) OR (  `mid` = '247' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '223' ) OR (  `mid` = '223' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '257' ) OR (  `mid` = '257' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '256' ) OR (  `mid` = '256' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '255' ) OR (  `mid` = '255' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '254' ) OR (  `mid` = '254' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '252' ) OR (  `mid` = '252' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '251' ) OR (  `mid` = '251' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '250' ) OR (  `mid` = '250' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '249' ) OR (  `mid` = '249' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '248' ) OR (  `mid` = '248' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '225' ) OR (  `mid` = '225' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '246' ) OR (  `mid` = '246' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '245' ) OR (  `mid` = '245' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '244' ) OR (  `mid` = '244' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '243' ) OR (  `mid` = '243' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '242' ) OR (  `mid` = '242' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '241' ) OR (  `mid` = '241' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '240' ) OR (  `mid` = '240' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '239' ) OR (  `mid` = '239' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '238' ) OR (  `mid` = '238' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '237' ) OR (  `mid` = '237' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '236' ) OR (  `mid` = '236' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '235' ) OR (  `mid` = '235' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '234' ) OR (  `mid` = '234' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '233' ) OR (  `mid` = '233' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '232' ) OR (  `mid` = '232' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '231' ) OR (  `mid` = '231' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '230' ) OR (  `mid` = '230' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '229' ) OR (  `mid` = '229' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '228' ) OR (  `mid` = '228' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '227' ) OR (  `mid` = '227' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '226' ) OR (  `mid` = '226' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '224' ) OR (  `mid` = '224' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '222' ) OR (  `mid` = '222' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '216' ) OR (  `mid` = '216' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '214' ) OR (  `mid` = '214' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '213' ) OR (  `mid` = '213' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '211' ) OR (  `mid` = '211' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '193' ) OR (  `mid` = '193' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '175' ) OR (  `mid` = '175' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '71' ) OR (  `mid` = '71' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '174' ) OR (  `mid` = '174' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '173' ) OR (  `mid` = '173' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '172' ) OR (  `mid` = '172' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '171' ) OR (  `mid` = '171' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '170' ) OR (  `mid` = '170' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '169' ) OR (  `mid` = '169' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '166' ) OR (  `mid` = '166' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '165' ) OR (  `mid` = '165' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '164' ) OR (  `mid` = '164' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '163' ) OR (  `mid` = '163' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '162' ) OR (  `mid` = '162' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '161' ) OR (  `mid` = '161' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-09T14:00:06+08:00 ] ::1 /gaochao/Api/User/Coordinate/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+ERR: syntax error, unexpected ';', expecting ')'
+
+[ 2018-07-09T14:00:19+08:00 ] ::1 /gaochao/Api/User/Coordinate/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0020s ]
+SQL: SELECT `login_time` FROM `sr_member` WHERE ( id=209 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\gaochao\Application\Common\Controller\ApiController.class.php 第 37 行.
+SQL: SELECT id as member_id,`mobile`,`nickname`,`sex`,`headimg`,`district_id` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` IN ('0','2') AND `id` <> 209 AND `district_id` = 13 ORDER BY type desc, login_time desc LIMIT 0,100   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 AND `state` IN ('0','2') AND `id` <> 209 AND `district_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sr_member_room` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '74' ) OR (  `mid` = '74' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '73' ) OR (  `mid` = '73' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sr_member_message` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=100 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '271' ) OR (  `mid` = '271' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`content` FROM `sr_member_message` WHERE ( rid=102 ) ORDER BY time desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '111' ) OR (  `mid` = '111' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '221' ) OR (  `mid` = '221' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '258' ) OR (  `mid` = '258' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '285' ) OR (  `mid` = '285' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '217' ) OR (  `mid` = '217' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '253' ) OR (  `mid` = '253' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '215' ) OR (  `mid` = '215' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '260' ) OR (  `mid` = '260' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '264' ) OR (  `mid` = '264' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '262' ) OR (  `mid` = '262' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '261' ) OR (  `mid` = '261' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '247' ) OR (  `mid` = '247' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '223' ) OR (  `mid` = '223' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '257' ) OR (  `mid` = '257' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '256' ) OR (  `mid` = '256' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '255' ) OR (  `mid` = '255' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '254' ) OR (  `mid` = '254' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '252' ) OR (  `mid` = '252' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '251' ) OR (  `mid` = '251' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '250' ) OR (  `mid` = '250' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '249' ) OR (  `mid` = '249' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '248' ) OR (  `mid` = '248' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '225' ) OR (  `mid` = '225' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '246' ) OR (  `mid` = '246' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '245' ) OR (  `mid` = '245' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '244' ) OR (  `mid` = '244' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '243' ) OR (  `mid` = '243' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '242' ) OR (  `mid` = '242' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '241' ) OR (  `mid` = '241' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '240' ) OR (  `mid` = '240' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '239' ) OR (  `mid` = '239' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '238' ) OR (  `mid` = '238' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '237' ) OR (  `mid` = '237' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '236' ) OR (  `mid` = '236' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '235' ) OR (  `mid` = '235' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '234' ) OR (  `mid` = '234' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '233' ) OR (  `mid` = '233' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '232' ) OR (  `mid` = '232' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '231' ) OR (  `mid` = '231' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '230' ) OR (  `mid` = '230' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '229' ) OR (  `mid` = '229' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '228' ) OR (  `mid` = '228' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '227' ) OR (  `mid` = '227' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '226' ) OR (  `mid` = '226' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '224' ) OR (  `mid` = '224' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '222' ) OR (  `mid` = '222' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '216' ) OR (  `mid` = '216' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '214' ) OR (  `mid` = '214' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '213' ) OR (  `mid` = '213' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '211' ) OR (  `mid` = '211' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '193' ) OR (  `mid` = '193' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '175' ) OR (  `mid` = '175' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '71' ) OR (  `mid` = '71' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '174' ) OR (  `mid` = '174' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '173' ) OR (  `mid` = '173' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '172' ) OR (  `mid` = '172' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '171' ) OR (  `mid` = '171' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '170' ) OR (  `mid` = '170' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '169' ) OR (  `mid` = '169' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '166' ) OR (  `mid` = '166' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '165' ) OR (  `mid` = '165' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '164' ) OR (  `mid` = '164' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '163' ) OR (  `mid` = '163' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '162' ) OR (  `mid` = '162' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sr_member_room` WHERE (  (  `mid` = 209 AND `oid` = '161' ) OR (  `mid` = '161' AND `oid` = 209 ) ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-07-09T18:02:39+08:00 ] ::1 /gaochao/Api/User/Coordinate/index?district_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002801s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006541s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0343s ]
+NOTIC: [8] Undefined index: token C:\xampp\htdocs\gaochao\Application\Common\Model\MemberModel.class.php 第 238 行.
+
+[ 2018-07-09T18:42:46+08:00 ] ::1 /gaochao/Api/User/Coordinate/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0067s ]
+NOTIC: [8] Undefined index: token C:\xampp\htdocs\gaochao\Application\Common\Model\MemberModel.class.php 第 238 行.
+

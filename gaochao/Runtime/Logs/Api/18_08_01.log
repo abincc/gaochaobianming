@@ -1,0 +1,106 @@
+[ 2018-08-01T09:25:53+08:00 ] 192.168.1.102 /gaochao/Api/User/CkClock/banner
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002208s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0374s ]
+
+
+
+[ 2018-08-01T09:25:53+08:00 ] 192.168.1.102 /gaochao/Api/User/CkClock/getHomeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0036s ]
+
+[ 2018-08-01T10:15:55+08:00 ] 192.168.1.102 /gaochao/Api/User/CkClock/banner
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003370s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0058s ]
+
+[ 2018-08-01T10:15:55+08:00 ] 192.168.1.102 /gaochao/Api/User/CkClock/ckHomeType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0093s ]
+
+[ 2018-08-01T10:15:55+08:00 ] 192.168.1.102 /gaochao/Api/User/CkClock/getHomeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0039s ]
+
+[ 2018-08-01T10:18:50+08:00 ] 192.168.1.102 /gaochao/Api/User/CkClock/banner
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002218s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005321s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0022s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0051s ]
+
+[ 2018-08-01T10:18:50+08:00 ] 192.168.1.102 /gaochao/Api/User/CkClock/ckHomeType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0031s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-08-01T10:18:50+08:00 ] 192.168.1.102 /gaochao/Api/User/CkClock/getHomeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0032s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id`,`company_id` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_home` [ RunTime:0.0102s ]
+SQL: SELECT `id`,`type`,`district_id`,`title`,`desc`,`cover`,`add_time` FROM `sr_ck_home` WHERE `is_del` = 0 AND `is_hid` = 0 AND `type` = 1 AND `company_id` = 200 AND `district_id` = 0  [ RunTime:0.0008s ]
+
+[ 2018-08-01T10:18:52+08:00 ] 192.168.1.102 /gaochao/Api/User/CkClock/home_detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.1439s ]
+SQL: SHOW COLUMNS FROM `sr_ck_member` [ RunTime:0.0039s ]
+SQL: SELECT `login_time` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`district_id` FROM `sr_ck_member` WHERE ( id=202 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sr_ck_home` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`type`,`district_id`,`title`,`desc`,`cover`,`add_time`,`remark` FROM `sr_ck_home` WHERE `is_del` = 0 AND `is_hid` = 0 AND `id` = 102 LIMIT 1   [ RunTime:0.0043s ]
+

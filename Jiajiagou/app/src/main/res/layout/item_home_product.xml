@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:background="@drawable/selector_base_item"
+>
+
+	<ImageView android:id="@+id/iv_img"
+	           android:layout_width="120dp"
+	           android:layout_height="90dp"
+	           android:scaleType="centerCrop"
+	           android:layout_centerVertical="true"
+	           android:layout_marginRight="11dp"
+	           android:src="@color/gray999"/>
+
+	<TextView android:id="@+id/tv_name"
+	          style="@style/baseTextView"
+	          android:layout_marginTop="5dp"
+	          android:layout_toRightOf="@id/iv_img"
+	          android:ellipsize="end"
+	          android:maxLines="1"
+	          android:text="商品名称"
+	          android:textColor="@color/black"
+	          android:textSize="14sp"/>
+
+	<TextView android:id="@+id/tv_desc"
+	          style="@style/baseTextView"
+	          android:layout_below="@id/tv_name"
+	          android:layout_marginTop="5dp"
+	          android:layout_toRightOf="@id/iv_img"
+	          android:lineSpacingExtra="3dp"
+	          android:ellipsize="end"
+	          android:maxLines="2"
+	          android:minLines="2"
+	          android:text="这里是商品描述这里是商品描述这里是商品描述这里是商品描述"
+	          android:textSize="@dimen/tv_s_12"/>
+
+	<TextView android:id="@+id/tv_price"
+	          style="@style/baseTextView"
+	          android:layout_alignBottom="@id/iv_img"
+	          android:layout_marginBottom="3dp"
+	          android:layout_toRightOf="@id/iv_img"
+	          android:text="￥49.90"
+	          android:textColor="#ff5438"
+	          android:textSize="15sp"
+	          android:textStyle="bold"/>
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:com.cnsunrun.jiajiagou.common.widget.CircleImageViewandroid="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grayF4"
+			  android:id="@+id/ll_root_layout"
+              android:orientation="vertical">
+	<include layout="@layout/layout_header"/>
+	<RelativeLayout style="@style/baseRelative_item"
+	                android:layout_height="wrap_content"
+	                android:padding="@dimen/dp_15"
+	                android:id="@+id/rl_pic"
+	>
+
+		<TextView style="@style/textView_personal_item"
+		          android:text="头像"
+		/>
+		<ImageView android:id="@+id/iv_arrow"
+		           style="@style/imageView_next"/>
+		<ImageView android:layout_width="50dp"
+		           android:layout_height="50dp"
+		           android:layout_marginRight="10dp"
+		           android:layout_toLeftOf="@+id/iv_arrow"
+		           android:id="@+id/iv_imv"
+		           android:src="@drawable/nav_btn_personal_nor"
+		/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/rl_input"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		style="@style/baseRelative_item"
+		android:layout_marginTop="@dimen/dp_1"
+		>
+
+		<TextView
+			style="@style/textView_personal_item"
+			android:focusable="true"
+			android:text="昵称"
+			/>
+
+		<com.cnsunrun.jiajiagou.common.widget.view.LeftEdittext
+			android:id="@+id/et_nick"
+			style="@style/editText_right"
+			android:layout_width="250dp"
+			android:hint="请输入昵称"
+			android:textColor="@color/gray666"
+			android:textColorHint="@color/gray666"
+			/>
+
+	</RelativeLayout>
+
+	<RelativeLayout style="@style/baseRelative_item"
+	                android:layout_marginTop="@dimen/dp_1"
+	                android:id="@+id/rl_loc"
+	>
+		<TextView style="@style/textView_personal_item"
+		          android:text="所在小区"
+		/>
+		<TextView style="@style/baseTextView"
+		          android:layout_alignParentRight="true"
+		          android:layout_centerVertical="true"
+		          android:text="请选择"
+		          android:textColor="@color/gray666"
+		          android:id="@+id/tv_loc"
+		/>
+	</RelativeLayout>
+
+	<RelativeLayout style="@style/baseRelative_item"
+	                android:layout_marginTop="@dimen/dp_1"
+	>
+		<TextView style="@style/textView_personal_item"
+		          android:text="楼号"
+		/>
+
+		<TextView style="@style/baseTextView"
+		          android:layout_alignParentRight="true"
+		          android:layout_centerVertical="true"
+		          android:text="暂无"
+		          android:textColor="@color/gray999"
+		          android:id="@+id/et_building_num"
+		/>
+	</RelativeLayout>
+
+	<RelativeLayout style="@style/baseRelative_item"
+	                android:layout_marginTop="@dimen/dp_1"
+	>
+		<TextView style="@style/textView_personal_item"
+		          android:text="房号"
+		/>
+
+		<TextView style="@style/baseTextView"
+		          android:layout_alignParentRight="true"
+		          android:layout_centerVertical="true"
+		          android:text="暂无"
+		          android:textColor="@color/gray999"
+		          android:id="@+id/et_room_num"
+		/>
+	</RelativeLayout>
+
+	<RelativeLayout style="@style/baseRelative_item"
+	                android:layout_marginTop="@dimen/dp_1">
+		<TextView style="@style/textView_personal_item"
+		          android:text="姓名"/>
+		<TextView
+			style="@style/baseTextView"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:text=""
+			android:id="@+id/tv_name"
+			android:textColor="@color/gray999"/>
+	</RelativeLayout>
+	<RelativeLayout style="@style/baseRelative_item"
+	                android:layout_marginTop="@dimen/dp_1"
+	>
+		<TextView style="@style/textView_personal_item"
+
+		          android:text="身份证"
+		/>
+		<TextView style="@style/baseTextView"
+		          android:layout_alignParentRight="true"
+		          android:layout_centerVertical="true"
+		          android:text=""
+				  android:textColor="@color/gray999"
+		          android:id="@+id/tv_identity_card"
+		/>
+	</RelativeLayout>
+	<RelativeLayout style="@style/baseRelative_item"
+	                android:layout_marginTop="@dimen/dp_1"
+	                android:id="@+id/rl_gender"
+	>
+		<TextView style="@style/textView_personal_item"
+		          android:text="性别"
+		/>
+		<TextView style="@style/baseTextView"
+		          android:layout_alignParentRight="true"
+		          android:layout_centerVertical="true"
+		          android:text="男"
+		          android:textColor="@color/gray666"
+		          android:id="@+id/tv_gender"
+		/>
+	</RelativeLayout>
+	<RelativeLayout style="@style/baseRelative_item"
+	                android:layout_marginTop="@dimen/dp_1"
+	>
+		<TextView style="@style/textView_personal_item"
+		          android:text="年龄"
+		/>
+		<com.cnsunrun.jiajiagou.common.widget.view.LeftEdittext
+			style="@style/editText_right"
+			android:maxLength="3"
+			android:layout_width="250dp"
+			android:hint="请输入年龄"
+			android:textColorHint="@color/gray666"
+			android:textColor="@color/gray666"
+			android:inputType="number"
+			android:id="@+id/et_age"
+		/>
+	</RelativeLayout>
+	<RelativeLayout style="@style/baseRelative_item"
+	                android:layout_marginTop="@dimen/dp_1"
+	>
+		<TextView style="@style/textView_personal_item"
+		          android:text="个性签名"
+		/>
+		<com.cnsunrun.jiajiagou.common.widget.view.LeftEdittext
+			style="@style/editText_right"
+			android:layout_width="250dp"
+			android:hint="请输入个性签名"
+			android:textColorHint="@color/gray666"
+			android:textColor="@color/gray666"
+			android:id="@+id/et_signature"
+			android:text=""/>
+	</RelativeLayout>
+	<RelativeLayout style="@style/baseRelative_item"
+					android:layout_marginTop="@dimen/dp_1"
+		android:id="@+id/rl_code_view">
+		<TextView style="@style/textView_personal_item"
+				  android:text="业主邀请码"/>
+		<TextView
+			style="@style/baseTextView"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:text=""
+			android:id="@+id/tv_code"
+			android:textColor="@color/gray999"/>
+	</RelativeLayout>
+
+</LinearLayout>

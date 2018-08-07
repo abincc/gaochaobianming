@@ -1,0 +1,78 @@
+<extend name="Common/body"/>
+<block name="head_change">
+<?php
+	$crumbs="分销系统";
+	$crumbs_array[]=array("title"=>"个人中心","url"=>U("Index/Index"));
+	$crumbs_array[]=array("title"=>"分销链接","url"=>U(""));
+?>
+<script>
+	var cur_url="<?=U('User/Index/Index/fenxiao')?>";
+</script>
+</block>
+<block name="body">
+	<div class="container clearfix " style="margin-left: -100px;">
+		<div class="text-center invite_div">
+			<h4>欢迎来到邀请页面，邀请更多好友，一起分享喜悦吧！</h4>
+			<h5>您的邀请链接已经生成，点击复制，快速分享</h5>
+			<div class="invite_link_div">
+				<span class="clone_text"><?="http://".$_SERVER['HTTP_HOST'].U('User/Member/Member/register/user_type/11',array('promoter_id'=>session('home_member_id')))?></span>
+				<a href="javascript:;" class="btn btn-orange js_clone_a">点击复制</a>
+			</div>
+			<!-- <div class="clearfix share_div js_url" data-url="<?=$url?>">
+				<span class="" style="display:inline-block;" >快速分享：</span>
+				<div class=" bdsharebuttonbox" style="display:inline-block;">
+					<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+					<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+					<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+					<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+					<a href="#" class="bds_ty" data-cmd="ty" title="分享到天涯社区"></a>
+					<a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+				</div>
+			</div> -->
+		</div>
+		
+	</div>
+</block>
+<block name="script">
+<script>
+$(function(){
+
+	// 点击复制功能 
+	$(".js_clone_a").each(function(){
+		$(this).on("click",function(){
+			var copy_span=$(this).parent().find(".clone_text");
+			var input_hidden='<input type="text" class="input_hidden" id="input_hidden" value=""/>';
+			copy_span.after($(input_hidden));
+			$("#input_hidden").val(copy_span.text());
+			var obj=document.getElementById("input_hidden");
+			obj.select(); // 选择对象
+			document.execCommand("Copy"); // 执行浏览器复制命令
+			$("#input_hidden").remove();
+			tips("复制成功，赶紧邀请吧！",1500,"success");
+		})
+	})
+})
+
+ function SetShareUrl(cmd,config) {
+        config.bdUrl = $('.js_url').attr('data-url');  
+        console.log(config.bdUrl);
+    return config;
+}
+       
+window._bd_share_config={
+	"common":{
+		onBeforeClick:SetShareUrl,
+		"bdSnsKey":{},
+		"bdText":"",
+		"bdMini":"2",
+		"bdMiniList":false,
+		"bdPic":"",
+		// "bdUrl":url,
+		"bdStyle":"0",
+		"bdSize":"24"
+	},
+	"share":{}
+};
+with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</block>

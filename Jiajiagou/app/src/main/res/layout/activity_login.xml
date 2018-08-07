@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<include layout="@layout/layout_header"/>
+
+	<ImageView android:layout_width="70dp"
+	           android:layout_height="70dp"
+	           android:layout_gravity="center_horizontal"
+	           android:layout_marginBottom="50dp"
+	           android:scaleType="centerCrop"
+	           android:layout_marginTop="57.5dp"
+	           android:src="@drawable/icon"/>
+
+	<com.cnsunrun.jiajiagou.common.widget.view.HighLightEditText
+		android:id="@+id/et_phone"
+		style="@style/etInput"
+		android:hint="请输入手机号"
+		android:inputType="phone"
+		android:maxLength="11"
+		app:highLightDrawable="@drawable/login_icon_phone_sel"
+		app:normalDrawable="@drawable/login_icon_phone_nor"
+	/>
+
+	<com.cnsunrun.jiajiagou.common.widget.view.HighLightEditText
+		android:id="@+id/et_psw"
+		style="@style/etInput"
+		android:layout_marginTop="12dp"
+		android:hint="请输入密码"
+		android:inputType="textPassword"
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp"
+		app:highLightDrawable="@drawable/login_icon_password_sel"
+		app:normalDrawable="@drawable/login_icon_password_nor"
+		app:rightDrawable="@drawable/login_icon_invisible_invisible"
+	/>
+
+	<Button android:id="@+id/btn_login"
+	        style="@style/btn_blue_match"
+	        android:layout_marginTop="20dp"
+	        android:text="登录"
+	/>
+
+	<TextView style="@style/baseTextView"
+	          android:id="@+id/tv_forget_psw"
+	          android:layout_gravity="center_horizontal"
+	          android:layout_marginTop="10dp"
+	          android:textColor="@color/selector_gray999_blue"
+	          android:padding="10dp"
+	          android:text="忘记密码"/>
+
+	<FrameLayout android:layout_width="match_parent"
+	             android:layout_height="match_parent">
+
+		<TextView style="@style/baseTextView"
+		          android:layout_gravity="bottom|center_horizontal"
+		          android:layout_marginBottom="15dp"
+		          android:padding="10dp"
+		          android:id="@+id/tv_register"
+		          android:drawableRight="@drawable/selector_tv_regist"
+		          android:drawablePadding="5dp"
+		          android:textSize="@dimen/tv_xm_14"
+		          android:textColor="@color/selector_gray333_blue"
+		          android:text="新用户注册"/>
+	</FrameLayout>
+</LinearLayout>

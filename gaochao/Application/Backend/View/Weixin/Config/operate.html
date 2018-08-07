@@ -1,0 +1,127 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<form action="" method="post" class="js_form">
+			<input type="hidden" name="id" value="<?=$info['id']?>" />
+			
+			<label class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					微信token
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto"
+						datatype="*" nullmsg="填写微信token"
+						name="token" value="<?=$info['token']?>"/>
+					<span class="Validform_checktip">微信公众号配置的token</span>
+				</div>
+			</label>
+			<label class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					微信appid
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto"
+						datatype="*" nullmsg="填写微信appid"
+						name="appid" value="<?=$info['appid']?>"/>
+					<span class="Validform_checktip">微信公众号配置的appid</span>
+				</div>
+			</label>
+			<label class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					微信appsecret
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto"
+						datatype="*" nullmsg="填写微信appid"
+						name="appsecret" value="<?=$info['appsecret']?>"/>
+					<span class="Validform_checktip">微信公众号配置的appsecret</span>
+				</div>
+			</label>
+			<label class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					微信encodingaeskey
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto"
+						datatype="*" nullmsg="填写微信encodingaeskey"
+						name="encodingaeskey" value="<?=$info['encodingaeskey']?>"/>
+					<span class="Validform_checktip">微信公众号配置的encodingaeskey</span>
+				</div>
+			</label>
+			<label class="form-group">
+				<div class="control-label">
+					微信mch_id
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto"
+						name="mch_id" value="<?=$info['mch_id']?>"/>
+					<span class="Validform_checktip">微信支付，商户ID（可选）</span>
+				</div>
+			</label>
+			<label class="form-group">
+				<div class="control-label">
+					微信partnerkey
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto"
+						name="partnerkey" value="<?=$info['partnerkey']?>"/>
+					<span class="Validform_checktip">微信支付，密钥（可选）</span>
+				</div>
+			</label>
+			<label class="form-group">
+				<div class="control-label">
+					微信ssl_cer
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto"
+						name="ssl_cer" value="<?=$info['ssl_cer']?>"/>
+					<span class="Validform_checktip">微信支付，双向证书（可选，操作退款或打款时必需）</span>
+				</div>
+			</label>
+			<label class="form-group">
+				<div class="control-label">
+					微信ssl_key
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto"
+						name="ssl_key" value="<?=$info['ssl_key']?>"/>
+					<span class="Validform_checktip">微信支付，双向证书（可选，操作退款或打款时必需）</span>
+				</div>
+			</label>
+			<label class="form-group col-sm-12 col-xs-12">
+				<div class="clearfix row">
+					<div class="control-label col-xs-3 align_r">
+						微信公众号二维码
+					</div>
+					<div class="col-xs-9">
+						<div>
+						<input type="hidden" name="qrc_img" value="<?=$info['qrc_img']?>" />
+						<?php
+							$config = array (
+										'index'     =>1,         // 在当前页面中，调用的第几个文件上传插件，默认为1
+										'table'     =>'wechat_config', // 数据保存在哪张表，此项必填
+										'table_id'  =>'id',      // 数据所在表的主键，默认为id
+										'name'      =>'qrc_img',   // 此配置项主要用于设置表单提交时的name，非特殊情况下可以和val_key的配置值保持一致
+										'multi'     =>'false',   // 是否允许多文件上传，允许为true（前后需要添加引号），不允许为false（默认）
+										'val_key'   =>'qrc_img'    // 存储在数据表中的字段
+										);
+							echo W("Common/Img/index",array($config,$info['id']));
+						?>
+						</div>
+					</div>
+				</div>
+			</label>
+			<div class="form-btn clearfix">
+				<input type="submit" class="pull-left btn btn-primary" value="提交" />
+				<a href="<?=U('index')?>" class="pull-left btn btn-default">取消并返回</a>
+				<div class="js_validTips pull-left" style="height:34px;line-height:34px;">
+					<span class="js_tipContent Validform_checktip"></span>
+				</div>
+			</div>
+		</form>
+	</div>
+</block>

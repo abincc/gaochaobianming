@@ -1,0 +1,51 @@
+<extend name="Public/body" />
+<extend name="Public/body" />
+<block name="script">
+	<js href="__PLUGIN__/ueditor/third-party/SyntaxHighlighter/shCore.js" />
+	<css href="__PLUGIN__/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" />
+</block>
+<block name="body">
+	<section class="content-header">
+		<h1>
+			下载文件
+		</h1>
+		<ol class="breadcrumb">
+			<li><a href="<?=U('/Backend')?>"><i class="iconfont">&#xe678;</i> 首页</a></li>
+			<li class="active">下载文件</li>
+		</ol>
+	</section>
+
+	<!-- Main content -->
+	<section class="content">
+		<div class="box">
+			<div class="box-body">
+				<a href="<?=U('Backend/Demo/Index/down')?>" class="btn">下载文件</a>
+				<p>调用ThinkPHP的Http类</p>
+				<table border="0" cellpadding="0" cellspacing="0"
+					class="syntaxhighlighter  php">
+					<tbody>
+						<tr>
+							<td class="code">
+								<div class="container">
+									<div class="line number1 index0 alt2">
+										<code class="php variable">$http</code>
+										<code class="php plain">=</code>
+										<code class="php keyword">new</code>
+										&nbsp;
+										<code class="php plain">\Org\Net\Http();</code>
+									</div>
+									<div class="line number2 index1 alt1">
+										<code class="php variable">$http</code>
+										<code class="php plain">-&gt;download(</code>
+										<code class="php variable">$filepath</code>
+										<code class="php plain">);</code>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+</block>

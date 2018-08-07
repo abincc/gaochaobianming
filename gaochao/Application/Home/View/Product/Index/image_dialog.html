@@ -1,0 +1,85 @@
+<!-- 评装修首页 > 查看大图弹窗 -->
+<block name="style">
+	<style>
+		.modal-dialog,
+		.modal-content.bg_none{
+			width: 700px;
+			background:none;
+			box-shadow: none!important;
+			border:none!important;
+		}
+		.modal-content.bg_none{
+			margin-top:100px;
+		}
+		.modal-content.bg_none .outer{
+			height: auto!important;
+			max-height: 530px;
+			overflow: hidden;
+			margin-left:0!important;
+		}
+		.js_enlarge a{
+			width: 100%;
+			padding:0!important;
+		}
+		.modal-content.bg_none .imagebox{
+			height: auto!important;
+		}
+		.modal-content.bg_none .imagelist li{
+			float: left;
+			width:700px;
+			margin-left:0;
+		}
+		.modal-content.bg_none .imagelist li a.imgbox{
+			width: 700px;
+			height: 530px;
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.modal-content.bg_none .imageCheck{
+			display: block!important;
+		}
+		.modal-content.bg_none .imagelist img{
+			width: 698px;
+			max-width:100%!important;
+		}
+		.modal-content.bg_none .js_number{
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			bottom:-40px;
+			width: 100%;
+			display: block;
+			background:none!important;
+			text-align: center;
+			color: #fff;
+			font-size: 14px;
+		}
+	</style>
+</block>
+<div class="bs modal fade bs-example-modal-sm dialog_modal image_dialog" style="z-index:1041;">
+	<div class="js_modal-dialog modal-dialog">
+		<div class="modal-content bg_none">
+			<!-- insert image content -->
+		</div>
+	</div>
+</div>
+<block name="script">
+	<script>
+		function getImageOrder(){
+			var len = $('.js_enlarge').find('li').length;
+			var _num = $('.js_enlarge').find('li:first').find('img').attr('alt');
+			$('.js_number').find('span').text(_num +'/'+len);
+		};
+
+		$(window).load(function(){
+			$(document).on('click','.prev',function(){
+				getImageOrder();
+			});
+
+			$(document).on('click','.next',function(){
+				getImageOrder();
+			});
+		});
+	</script>
+</block>

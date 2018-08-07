@@ -1,0 +1,68 @@
+<extend name="Common/body"/>
+<block name="style">
+<css href="__PLUGIN__/avatar/css/jcrop-min.css" />
+<css href="__PLUGIN__/avatar/css/upload_head.css" />
+<css href="__PLUGIN__/uploadify/uploadify.css" />
+<script>
+var cur_url="<?=U('User/Set/Account/login')?>";
+</script>
+</block>
+<block name="head_change">
+<?php
+$crumbs="账号认证";
+$crumbs_array[]=array("title"=>"个人中心","url"=>U("Index/Index"));
+//$crumbs_array[]=array("title"=>"账号管理","url"=>U("Account/Account/index"));
+$crumbs_array[]=array("title"=>"账号认证","url"=>U(""));
+?>
+</block>
+<block name="body">
+	<!-- 个人信息 S-->
+	<div class="nav_zzypt">
+		<!-- 页面主体 S -->
+		<ul class="nav nav-tabs">
+			<li><a href="<?=U("login")?>">修改登录密码</a></li>
+			<li><a href="<?=U("pay")?>">交易密码</a></li>
+			<li class="active"><a href="<?=U("safe")?>">账号认证</a></li>
+		</ul>
+		<div class="content_box">
+			<form class="col-xs-8 js_form" style="float:none;">
+				<div class="form-group clearfix">
+					<label class="col-xs-3 control-label">真实姓名</label>
+					<div class="col-xs-9">
+						<input type="text" class="form-control name_input pull-left" name="name" datatype="z2-4" errormsg="中文名为2到4个中文字符" nullmsg="请输入中文名">
+						<span class="help-block pull-left">为确保您的账户安全，请填写您真实姓名 </span>
+					</div>
+				</div>
+				<div class="form-group clearfix">
+					<label class="col-xs-3 control-label">身份证号</label>
+					<div class="col-xs-9">
+						<input type="text" class="form-control" datatype="n18" placeholder="请输入身份证号" nullmsg="请输入身份证号" errormsg="请输入正确身份证号">
+					</div>
+				</div>
+				<div class="form-group clearfix">
+					<label class="col-xs-3 control-label">手机号</label>
+					<div class="col-xs-9">
+						<input type="text" class="form-control" datatype="m" placeholder="请输入手机号" nullmsg="请输入手机号" errormsg="请输入正确手机号">
+					</div>
+				</div>
+				<div class="form-group clearfix">
+					<label class="col-xs-3 control-label">短信验证</label>
+					<div class="col-xs-9">
+						<div class="input-group w100">
+							<input type="text" class="input form-control code_input" datatype="m" placeholder="验证码">
+							<input type="button" class="code_btn btn btn-default" value="获取验证码">
+						</div>						
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-offset-3 col-xs-9">
+						<input type="submit" class="btn btn-orange pull-left" value="保存" />
+						<a href="#" class="btn btn-default pull-left">取消并返回</a>
+						<div class=" pull-left js_validTips" style="display:none;"><span class="js_tipContent Validform_checktip"></span></div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 个人信息 E-->
+</block>

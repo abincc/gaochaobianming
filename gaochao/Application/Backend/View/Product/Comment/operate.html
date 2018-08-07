@@ -1,0 +1,83 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+        <div class="col-md-12">
+			<table class="table invoice-table">
+                <thead>
+                    <tr>
+                        <th width="10%" class="text-right"></th>
+                        <th width="80%" class="text-left"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div><strong>评价商品：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['product_info']['title']?></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><strong>评价用户：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['member_info']['username']?></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><strong>评价内容：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['content']?></td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <div><strong>评价时间：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['add_time']?></td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <div><strong>评价星数：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['star']?></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><strong>评价图片：</strong>
+                            </div>
+                        </td>
+                        <td>
+						<div class="row" >
+						<?php
+							foreach ($info['images'] as $k => $v) {
+						?>
+						<div class="col-xs-6 col-md-3">
+						<a href="#" class="thumbnail">
+						  <img data-src="holder.js/100%x180" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="<?=thumb($v['image'], 171, 180, 'M')?>" data-holder-rendered="true">
+						</a>
+						</div>		
+						<?php
+							}
+						?>
+						</div>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <div><strong>系统回复：</strong>
+                            </div>
+                        </td>
+                        <td><?=$info['reply']?></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+	</div>
+	<div class="form-group">
+		<a href="<?=U('index',I())?>" class="btn btn-default cancel">返回列表</a>
+	</div>
+</block>

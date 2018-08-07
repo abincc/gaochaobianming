@@ -1,0 +1,47 @@
+<!-- 付款成功 S -->
+<extend name="Mall@Common/cart_top"/>
+<block name="body">
+	<css href="__CSS__/cart.css" />
+	<div class="container">
+		<!-- 购买 Step 4 -->
+		<div class="cart_top clearfix">
+			<div class="pull-left">
+				<a href="<?=U('/Index/index')?>"><img src="__IMG__/logo.png"></a>
+				<span>装修订单</span>
+			</div>
+		</div>
+
+		<div class="shopbox f14">
+			<div class="toptitle clearfix">
+				<span class="pull-left">付款成功</span>
+			</div>
+			<div class="paysuccess clearfix">
+				<i class="bg_success" style="background-image: url(__IMG__/pay_success.jpg);"></i>
+				<div class="messagebox">
+				<?php 
+					$tips_msg = '您的订单支付成功！';
+					if($info['type'] == 1){
+						$tips_msg = '充值成功';
+					}
+				?>
+					<div class="wait"><span><?=get_name($member_info['mobile'],session('home_nickname'))?></span>，<?=$tips_msg?></div>
+					<div class="links clearfix">
+					<?php
+						if($info['type']=='1'){
+					?>
+						<a href="<?=U('User/Capital/Capital/record',array('orderid'=>$info['id']))?>" class="detial">查看详情 >></a>
+						<a href="<?=U('User/Capital/Capital/recharge')?>" class="btn-orange">继续充值</a>
+					<?php
+						}else{
+					?>
+						<a href="<?=U('User/Order/Order/renovation')?>" class="detial">查看订单详情 >></a>
+						<a href="<?=U('Mall/Index/Index/index')?>" class="btn btn-sm btn-orange">继续购物</a>
+					<?php
+						}
+					?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</block>

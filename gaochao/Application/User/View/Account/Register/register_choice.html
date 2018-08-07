@@ -1,0 +1,41 @@
+<extend name="base" />
+<block name="body">
+	<!--	登录  S-->
+	<div class="container">
+		<div class="pull-left top_log">
+			<a href="<?=U('/')?>"><!-- <img src="__IMG__/logo.png"> -->LOGO</a>
+			<span>欢迎注册</span>
+		</div>
+	</div>
+	<div class="container user_choice clearfix">
+		<ul class="clearfix">
+			<li>
+				<a href="<?=U('register',array("user_type"=>23))?>"><img src="__USER__/img/public/reg_icons2.png" alt="">
+					<div class="h3 hover">工长注册</div>
+					<p>有技能，线上接单，点这里！</p>
+				</a>
+			</li>
+			<li>
+				<a href="<?=U('register',array("user_type"=>21))?>"><img src="__USER__/img/public/reg_icons3.png" alt="">
+					<div class="h3 hover">装饰公司注册</div>
+					<p>公司入驻，扩展市场，点这里！</p>
+				</a>
+			</li>
+			<li>
+				<a href="<?=U('register',array("user_type"=>31))?>"><img src="__USER__/img/public/reg_icons4.png" alt="">
+					<div class="h3 hover">材料商注册</div>
+					<p>扩大销售，点这里</p>
+				</a>
+			</li>
+			<li>
+				<a href="<?=U('register',array("user_type"=>22))?>"><img src="__USER__/img/public/reg_icons5.png" alt="">
+					<div class="h3 hover">设计师注册</div>
+					<p>扩大销售，点这里</p>
+				</a>
+			</li>
+		</ul>
+		<a href="<?=U('login')?>" class="btn btn-orange">已有账户，直接登录&gt;&gt;</a>
+
+	</div>
+	<!--	登录  E-->
+</block>

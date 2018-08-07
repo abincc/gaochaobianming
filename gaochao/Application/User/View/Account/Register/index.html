@@ -1,0 +1,127 @@
+<extend name="Account/base" />
+<block name="body">
+	<!--	登录  S-->
+	<div class="container">
+		<div class="pull-left top_log">
+			<a href="<?=U('/')?>"><!-- <img src="__IMG__/logo.png"> -->LOGO</a><span>新用户注册</span>
+		</div>
+		<div class="top_log_right pull-right">已有账号 <a href="<?=U('User/Account/Login/index')?>" class="hover">请登录</a></div>
+	</div>
+	<div class="container">
+		<div class=" register_box bg_login clearfix" style="background-image: url(__USER__/img/public/register_bg.png);">
+			<div class="col-xs-4 pull-right outer">
+				<!--登入页面表单 S-->
+				<div class="loginbox js_check">
+					<div class="topbox clearfix">
+						<div class="title pull-left">欢迎注册</div>
+					</div>
+					<div class="loginbox_con">
+						<form class="js_form" action="" method="post" func="Reader">
+							<div class="form-group frame  clearfix">
+								<div class="icon" style="background-image:url(__USER__/img/public/icons/persons.png);"></div>
+								<input type="text" name="account" class="form-control js_account" placeholder="手机号" datatype="m" nullmsg="请填写手机号" errormsg="请输入正确的手机号" ajaxurl="<?=U('check_username')?>" value="" />
+							</div>
+							<div class="form-group frame clearfix">
+								<div class="icon" style="background-image:url(__USER__/img/public/icons/locks.png);"></div>
+								<input type="password" name="password" class="form-control" placeholder="密码" value="" datatype="*6-16" nullmsg="请输入密码" errormsg="密码长度需要再6-16位之间" />
+							</div>
+							<div class="form-group frame clearfix">
+								<div class="icon" style="background-image:url(__USER__/img/public/icons/locks.png);"></div>
+								<input type="password" name="repassword" class="form-control" placeholder="确认密码" recheck="password" datatype="*6-16" nullmsg="请再次输入密码" errormsg="确认密码请与密码保持一致" />
+							</div>
+							<div class="form-group clearfix">
+								<div class="frame pull-left code_div" >
+									<div class="icon" style="background-image:url(__USER__/img/public/icons/phone_icon.png);"></div>
+									<input type="text" name="verify" class="form-control" value="" datatype="*" nullmsg="请输入验证码" errormsg="验证码错误" placeholder="请输入验证码" />
+								</div>
+								<div class="pull-right get_code_div">
+									<a href="#" class="js_getcode btn btn-success btn-block" url="<?=U('',['operate'=>'get_mobile_code'])?>">发送验证码到手机</a>
+								</div>
+							</div>
+							<div class="form-group text reader clearfix">
+								<label>
+									<input name="reader" type="checkbox" value="1" />
+									<span class="text js_checkbox remember">
+										我已阅读，并同意<a href="<?=U('Account/user')?>" title="用户服务协议" class="dialog">《用户服务协议》</a>
+									</span>
+								</label>
+							</div>
+							<div style="height:20px;">
+								<div class="js_validTips" style="display:none;"><span class="js_tipContent Validform_checktip" style="line-height:normal;"></span></div>
+							</div>
+							<div>
+								<input type="submit" class="btn btn-orange btn-block btn-md" value="立即注册" />
+							</div>
+							<div class="form-group others">
+								<div class="top">
+									<span>其他方式登录</span>
+								</div>
+								<div class="links clearfix">
+									<a href="<?=U('User/Account/Login/sdk_login',['type' => 'qq'])?>"><img src="__USER__/img/public/icons/qq_logo.png"></a>
+									<a href="<?=U('User/Account/Login/sdk_login',['type' => 'weixin'])?>"><img src="__USER__/img/public/icons/weixin_logo.png"></a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--登入页面表单 E-->
+			</div>
+		</div>
+	</div>
+	<!--	登录  E-->
+</block>
+<block name="script">
+<script type="text/javascript">
+$(function(){
+	//延时重置表单
+	setTimeout(function(){$('.js_form')[0].reset()},100);
+	
+	// $('.js_checkbox').on('click',function(){
+	// 	var obj = $(this).find('i');
+	// 	if(obj.hasClass('hover')){
+	// 		obj.removeClass('hover').html("&#xe607;");
+	// 		$(this).find("input").val(0);
+	// 	}else{
+	// 		obj.addClass('hover').html("&#xe609;");
+	// 		$(this).find("input").val(1);
+	// 	}
+	// 	obj = null;
+	// });
+
+	$('.js_check').on('click','li',function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		var index = $(this).index();
+		if(index == 0){
+			$('.js_type').val('user');
+			// $('.others').css({'display':'block'});
+		}else if(index == 1){
+			$('.js_type').val('business');
+			// $('.others').css({'display':'none'});
+		}
+	});
+	$(".js_verifyimg").click(function(){
+		var obj=$(this);
+		if($(this).is("img")==false){
+			obj=$(this).find("img");
+		}
+		var verifyimg = obj.attr("src");
+		if( verifyimg.indexOf('?')>0){
+			obj.attr("src", verifyimg+'&random='+Math.random());
+		}else{
+			obj.attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+		}
+	});
+})
+
+function beforeCallbackReader(curform){
+	// var reader=$("input[name=reader]").val();
+	if($("input[name=reader]").prop("checked")==false){
+		$(curform).find(".js_validTips").stop(true,true).fadeIn(500).find(".js_tipContent").addClass("error").removeClass("success").html('不同意用户服务协议无法注册');
+		return false;
+	}
+	return true;
+}
+</script>
+</block>
+

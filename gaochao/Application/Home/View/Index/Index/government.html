@@ -1,0 +1,31 @@
+
+<extend name="Home@Common/body"/>
+<block name="body">
+<style>
+.text_detail .content p{ font-size: 14px; color: #333;line-height: 20px; }
+</style>
+<div class="text_detail">
+    <div class="content">
+    <h4 style="    font-size: 22px;    text-align: center;    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;    letter-spacing: 1.04px;
+    padding-top: .20rem;
+    margin: 0 0 .20rem 0 !important;"><?=$info['title']?></h4>
+<?=html_entity_decode($info['content'])?>
+    </div>
+</div>
+</block>
+<block name="script">
+    <script>
+        $(function(){
+            var val=$(window).width()/7.5;
+            $('html').css('font-size',val);
+            $(window).resize(function(event) {
+               var val=$(window).width()/7.5;
+                $('html').css('font-size',val);
+            });
+                   
+        })
+    </script>
+</block>

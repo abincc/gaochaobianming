@@ -1,0 +1,16 @@
+<extend name="User@Common/body"/>
+<block name="style">
+<script>
+var cur_url="<?=U('User/Service/Service/index')?>";
+</script>
+</block>
+<block name="head_change">
+<?php
+	$crumbs="商城订单售后详情";
+	$crumbs_array[]=array("title"=>"商城订单售后","url"=>U("index"));
+	$crumbs_array[]=array("title"=>"商城订单售后详情","url"=>U(""));
+?>
+</block>
+<block name="body">
+	<?=W('Mall/Refund/detail',array('config'=>'member_id','tpl'=>'detail'))?>
+</block>

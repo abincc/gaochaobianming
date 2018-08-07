@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<include layout="@layout/layout_header"/>
+	<com.cnsunrun.jiajiagou.common.base.CZSwipeRefreshLayout android:layout_width="match_parent"
+	                                                         android:layout_height="match_parent"
+	                                                         android:id="@+id/swipe_refresh_layout"
+	>
+	<RelativeLayout android:layout_width="match_parent"
+	                android:layout_height="match_parent">
+		<android.support.v7.widget.RecyclerView android:layout_width="match_parent"
+		                                        android:layout_height="match_parent"
+		                                        android:id="@+id/recycle"
+		                                        android:layout_above="@+id/btn_confirm"
+		/>
+		<Button style="@style/btn_blue_match"
+		        android:id="@+id/btn_confirm"
+		        android:layout_marginLeft="0dp"
+		        android:layout_marginRight="0dp"
+		        android:layout_alignParentBottom="true"
+		        android:text="新增地址"
+		/>
+
+	</RelativeLayout>
+	</com.cnsunrun.jiajiagou.common.base.CZSwipeRefreshLayout>
+</LinearLayout>

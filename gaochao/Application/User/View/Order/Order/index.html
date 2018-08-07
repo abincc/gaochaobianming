@@ -1,0 +1,19 @@
+<extend name="Common/body"/>
+<block name="style">
+<css href="__PLUGIN__/My97dp/My97DatePicker/skin/new.css" />
+<script>
+var cur_url="<?=U('User/Order/Order/index')?>";
+</script>
+</block>
+<block name="head_change">
+<?php
+	$crumbs="商城订单";
+	$crumbs_array[]=array("title"=>"商城订单","url"=>U("index"));
+?>
+</block>
+<block name="body">
+	<?=W('Mall/Order/index',$config=array('type'=>'member_id','tpl'=>'index'))?>
+</block>
+<block name="script">
+<js href="__PLUGIN__/My97dp/My97DatePicker/WdatePicker.js"/>
+</block>

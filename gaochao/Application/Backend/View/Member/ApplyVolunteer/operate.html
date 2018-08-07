@@ -1,0 +1,46 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<table class="table table-bordered">
+			<tbody><tr>
+				<th colspan="20" class="clearfix" style="background:#eee">
+					社区志愿服务申请信息
+				</th>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					个人技能：<?=$info['skill']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					服务意向：<?=$info['intention']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					志愿时间：<?=$info['start_date']?>~~~<?=$info['end_date']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					提交时间：<?=$info['add_time']?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					申请用户：<?=$info['username']?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					联系电话：<?=$info['mobile']?> 
+				</td>
+			</tr>		
+	    	</tbody>
+    	</table>
+	</div>
+	<div class="form-btn clearfix">
+		<a href="<?=U('index')?>" class="pull-left btn btn-default">取消返回</a>
+	</div>
+</block>

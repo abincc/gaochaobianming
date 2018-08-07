@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+	>
+
+		<RelativeLayout android:layout_width="match_parent"
+		                android:layout_height="0dp"
+		                android:id="@+id/empty_view"
+		                android:layout_weight="1"
+		                android:background="@color/trans4cBlack">
+
+			<RelativeLayout android:layout_width="match_parent"
+			                android:id="@+id/rl_1"
+			                android:layout_height="50dp"
+			                android:layout_alignParentBottom="true"
+			                android:background="@color/white"
+			>
+
+				<!--<FrameLayout android:layout_width="match_parent"-->
+				<!--android:layout_height="match_parent"-->
+				<!--android:layout_below="@id/fl_1"-->
+				<!--android:background="@color/white"-->
+				<!--/>-->
+
+				<TextView android:id="@+id/tv_price"
+				          style="@style/baseTextView"
+				          android:layout_marginLeft="122dp"
+				          android:text="￥49.90"
+				          android:textColor="#ff5438"
+				          android:layout_marginTop="10dp"
+				          android:textSize="14sp"
+				          android:textStyle="bold"
+				          android:layout_height="wrap_content"
+				/>
+				<TextView style="@style/baseTextView"
+				          android:text="库存 : "
+				          android:id="@+id/tv_count"
+				          android:textColor="@color/gray666"
+				          android:textSize="@dimen/tv_xs_11"
+				          android:layout_marginBottom="5dp"
+				          android:layout_alignParentBottom="true"
+				          android:layout_alignLeft="@+id/tv_price"
+				          android:layout_alignStart="@+id/tv_price"/>
+
+			</RelativeLayout>
+			<ImageView android:id="@+id/iv_imv"
+			           android:layout_width="100dp"
+			           android:layout_height="75dp"
+			           android:layout_alignBottom="@id/rl_1"
+			           android:layout_marginLeft="15dp"
+			           android:scaleType="fitXY"
+			           android:background="#c3c3c3"
+			/>
+		</RelativeLayout>
+
+		<LinearLayout android:layout_width="match_parent"
+		              android:layout_height="wrap_content"
+		              android:id="@+id/ll_parent_view"
+		              android:background="@color/white"
+		              android:orientation="vertical"
+
+		>
+
+			<View android:layout_width="match_parent"
+			      android:layout_height="1dp"
+			      android:layout_marginLeft="@dimen/dp_15"
+			      android:layout_marginRight="@dimen/dp_15"
+			      android:layout_marginTop="17dp"
+			      android:background="@color/grayF4"/>
+			<LinearLayout android:layout_width="match_parent"
+			              android:layout_height="wrap_content"
+			              android:layout_marginLeft="@dimen/dp_15"
+			              android:layout_marginRight="@dimen/dp_15"
+			              android:minHeight="70dp"
+			              android:orientation="vertical"
+			              android:id="@+id/ll_container"
+			>
+
+			</LinearLayout>
+
+
+			<View android:layout_width="match_parent"
+			      android:layout_height="1dp"
+			      android:layout_marginTop="20dp"
+			      android:layout_marginLeft="@dimen/dp_15"
+			      android:layout_marginRight="@dimen/dp_15"
+			      android:background="@color/grayF4"/>
+
+			<TextView style="@style/baseTextView"
+			          android:layout_marginBottom="18dp"
+			          android:layout_marginTop="18dp"
+			          android:layout_marginLeft="@dimen/dp_15"
+			          android:layout_marginRight="@dimen/dp_15"
+			          android:text="数量"
+			          android:textColor="@color/gray333"
+			          android:textSize="@dimen/tv_m_13"/>
+
+			<com.cnsunrun.jiajiagou.common.widget.view.AddSubView
+				android:layout_width="match_parent"
+				android:id="@+id/subview"
+				android:layout_marginLeft="@dimen/dp_15"
+				android:layout_marginRight="@dimen/dp_15"
+				android:layout_marginBottom="28dp"
+				android:layout_height="wrap_content"/>
+			<Button android:id="@+id/btn_confirm"
+			        style="@style/btn_blue_match"
+			        android:layout_gravity="bottom"
+			        android:layout_margin="0dp"
+			        android:text="立即购买"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>

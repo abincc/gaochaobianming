@@ -1,0 +1,502 @@
+[ 2018-02-03T09:05:13+08:00 ] ::1 /gaochao/backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.211012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.077005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.101006s ]
+NOTIC: [8] Undefined index: backend_wuye C:\xampp\htdocs\gaochao\Core\Common\functions.php 第 1437 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.631036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.631036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.110006s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.113006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.061003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.061003s ]
+
+[ 2018-02-03T09:05:14+08:00 ] ::1 /gaochao/Backend/Base/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: backend_wuye C:\xampp\htdocs\gaochao\Core\Common\functions.php 第 1437 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-03T09:05:36+08:00 ] ::1 /gaochao/Backend/Base/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_admin` [ RunTime:3.8506s ]
+SQL: SELECT `id`,`email`,`mobile`,`nickname`,`username`,`role_id`,`department_id`,`password`,`salt`,`description`,`rules`,`add_time`,`update_time`,`admin_id`,`is_hid`,`is_del`,`login_ip`,`login_time`,`sort`,`last_login_ip`,`last_login_time`,`district_id` FROM `sr_admin` WHERE `username` = 'admin' AND `is_del` = 0 LIMIT 1   [ RunTime:0.3648s ]
+SQL: UPDATE `sr_admin` SET `login_time`='2018-02-03 09:05:34',`login_ip`='0.0.0.0',`last_login_time`='2018-02-02 10:52:24',`last_login_ip`='0.0.0.0',`update_time`='2018-02-03 09:05:34' WHERE `id` = 1 [ RunTime:0.5926s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.2942s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Base/Public/login','admin','0','','登录','0.0.0.0','1','2018-02-03 09:05:35') [ RunTime:0.1466s ]
+
+[ 2018-02-03T09:05:37+08:00 ] ::1 /gaochao/Backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-03T09:05:42+08:00 ] ::1 /gaochao/Backend/Base/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_menu` [ RunTime:0.2170s ]
+SQL: SELECT `id`,`pid`,`path`,`level`,`title`,`url`,`description`,`class`,`display_position`,`sort`,`is_hid`,`is_del`,`is_dev`,`addtime`,`updatetime` FROM `sr_menu` WHERE `is_hid` = 0 AND `is_del` = 0 ORDER BY sort desc,id asc  [ RunTime:0.2040s ]
+SQL: SHOW COLUMNS FROM `sr_capital_record` [ RunTime:0.2410s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0110s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Base/Index/index','admin','359','平台管理 &gt; 系统首页 &gt; 系统首页','浏览','0.0.0.0','1','2018-02-03 09:05:38') [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `sr_order` [ RunTime:0.3200s ]
+SQL: SELECT count(id) tp_sum FROM `sr_order` WHERE `status` = 20 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.5800s ]
+SQL: SELECT SUM(`money_total`) tp_sum FROM `sr_order` WHERE `status` > 20 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.3680s ]
+SQL: SELECT count(id) tp_sum FROM `sr_member` LIMIT 1   [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.2640s ]
+SQL: SELECT count(id) tp_sum FROM `sr_product` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT o.id AS id,o.order_no AS order_no,o.money_total AS money_total,o.add_time AS add_time,o.status AS status,m.username AS username FROM sr_order o LEFT JOIN sr_member m ON m.id=o.member_id WHERE o.is_del = 0 AND o.is_hid = 0 AND o.status IN (10,20,40,70) ORDER BY o.add_time desc LIMIT 7   [ RunTime:0.0660s ]
+SQL: SELECT `id`,`username`,`mobile`,`register_ip`,`register_time` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY register_time desc LIMIT 7   [ RunTime:0.0010s ]
+SQL: SELECT count(*) as c,`status`,DATE_FORMAT(`add_time`, "%Y-%m-%d") as date FROM `sr_order` WHERE `is_del` = 0 AND `is_hid` = 0 AND `status` IN (5,10,20,30,40,50,60,70) AND (`add_time` LIKE '2018-01-04%' OR `add_time` LIKE '2018-01-05%' OR `add_time` LIKE '2018-01-06%' OR `add_time` LIKE '2018-01-07%' OR `add_time` LIKE '2018-01-08%' OR `add_time` LIKE '2018-01-09%' OR `add_time` LIKE '2018-01-10%' OR `add_time` LIKE '2018-01-11%' OR `add_time` LIKE '2018-01-12%' OR `add_time` LIKE '2018-01-13%' OR `add_time` LIKE '2018-01-14%' OR `add_time` LIKE '2018-01-15%' OR `add_time` LIKE '2018-01-16%' OR `add_time` LIKE '2018-01-17%' OR `add_time` LIKE '2018-01-18%' OR `add_time` LIKE '2018-01-19%' OR `add_time` LIKE '2018-01-20%' OR `add_time` LIKE '2018-01-21%' OR `add_time` LIKE '2018-01-22%' OR `add_time` LIKE '2018-01-23%' OR `add_time` LIKE '2018-01-24%' OR `add_time` LIKE '2018-01-25%' OR `add_time` LIKE '2018-01-26%' OR `add_time` LIKE '2018-01-27%' OR `add_time` LIKE '2018-01-28%' OR `add_time` LIKE '2018-01-29%' OR `add_time` LIKE '2018-01-30%' OR `add_time` LIKE '2018-01-31%' OR `add_time` LIKE '2018-02-01%' OR `add_time` LIKE '2018-02-02%' OR `add_time` LIKE '2018-02-03%') GROUP BY `date`,`status`  [ RunTime:0.1870s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: order_5 C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 392 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 392 行.
+NOTIC: [8] Undefined index: order_10 C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 406 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 406 行.
+NOTIC: [8] Undefined index: order_20 C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 420 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 420 行.
+NOTIC: [8] Undefined index: order_30 C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 434 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 434 行.
+NOTIC: [8] Undefined index: order_40 C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 448 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 448 行.
+NOTIC: [8] Undefined index: order_50 C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 462 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 462 行.
+NOTIC: [8] Undefined index: order_60 C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 476 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 476 行.
+NOTIC: [8] Undefined index: order_70 C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 490 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\32f31cafcace70025c62f10a867e9d20.php 第 490 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.797102s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.797102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-02-03T09:05:49+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0930s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0110s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Tbook/Tbook/index','admin','860','平台管理 &gt; 电话本 &gt; 电话列表 &gt; ','浏览','0.0.0.0','1','2018-02-03 09:05:48') [ RunTime:0.0430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_tbook` WHERE `is_del` = 0 AND `add_time` BETWEEN 0 AND '2018-02-03 09:05:48' LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`title`,`number`,`is_hid`,`is_del`,`sort`,`add_time`,`address` FROM `sr_tbook` WHERE `is_del` = 0 AND `add_time` BETWEEN 0 AND '2018-02-03 09:05:48' ORDER BY sort desc,add_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\ff9d2712b95994b38aa019297c5f0ac9.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-03T09:05:52+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-03T09:06:17+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0160s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+
+[ 2018-02-03T09:07:13+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-03T09:07:28+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0350s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+
+[ 2018-02-03T09:08:06+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-03T09:08:24+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0090s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined variable: options C:\xampp\htdocs\gaochao\Core\Library\Vendor\PHPEXCEL\PHPExcel\Settings.php 第 384 行.
+
+[ 2018-02-03T09:10:09+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.036003s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.048003s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.184010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.184010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014001s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.025001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.039002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026002s ]
+
+[ 2018-02-03T09:10:24+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0090s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: callback C:\xampp\htdocs\gaochao\Application\Common\Controller\ExcelController.class.php 第 195 行.
+NOTIC: [8] Undefined index: callback C:\xampp\htdocs\gaochao\Application\Common\Controller\ExcelController.class.php 第 195 行.
+NOTIC: [8] Undefined index: callback C:\xampp\htdocs\gaochao\Application\Common\Controller\ExcelController.class.php 第 195 行.
+NOTIC: [8] Undefined index: callback C:\xampp\htdocs\gaochao\Application\Common\Controller\ExcelController.class.php 第 195 行.
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0190s ]
+SQL: INSERT INTO `sr_tbook` (`title`,`number`,`sort`,`address`,`add_time`) VALUES ('吉安中南大酒店','15170255838','7999','江西省吉安市泰和县','2018-02-03 09:10:23') [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-02-03T09:10:29+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Tbook/Tbook/index','admin','860','平台管理 &gt; 电话本 &gt; 电话列表 &gt; ','浏览','0.0.0.0','1','2018-02-03 09:10:28') [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_tbook` WHERE `is_del` = 0 AND `add_time` BETWEEN 0 AND '2018-02-03 09:10:29' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`number`,`is_hid`,`is_del`,`sort`,`add_time`,`address` FROM `sr_tbook` WHERE `is_del` = 0 AND `add_time` BETWEEN 0 AND '2018-02-03 09:10:29' ORDER BY sort desc,add_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\ff9d2712b95994b38aa019297c5f0ac9.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-03T09:13:21+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-03T09:13:31+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0150s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string C:\xampp\htdocs\gaochao\Core\Library\Vendor\PHPEXCEL\PHPExcel\Shared\String.php 第 386 行.
+NOTIC: [2] Use of undefined constant s - assumed 's' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Core\Library\Vendor\PHPEXCEL\PHPExcel\Cell\DefaultValueBinder.php 第 63 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string C:\xampp\htdocs\gaochao\Core\Library\Vendor\PHPEXCEL\PHPExcel\Shared\String.php 第 386 行.
+NOTIC: [2] Use of undefined constant s - assumed 's' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Core\Library\Vendor\PHPEXCEL\PHPExcel\Cell\DefaultValueBinder.php 第 63 行.
+NOTIC: [8] Undefined index: callback C:\xampp\htdocs\gaochao\Application\Common\Controller\ExcelController.class.php 第 195 行.
+ERR: 导入数据内容未空或导入文件解析失败
+
+[ 2018-02-03T09:30:56+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031200s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2018-02-03T09:31:09+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0090s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+ERR: Class 'Common\Controller\PHPExcel_IOFactory' not found
+
+[ 2018-02-03T09:32:07+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-03T09:32:21+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/import.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0100s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\gaochao\Core\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: callback C:\xampp\htdocs\gaochao\Application\Common\Controller\ExcelController.class.php 第 195 行.
+NOTIC: [8] Undefined index: callback C:\xampp\htdocs\gaochao\Application\Common\Controller\ExcelController.class.php 第 195 行.
+NOTIC: [8] Undefined index: callback C:\xampp\htdocs\gaochao\Application\Common\Controller\ExcelController.class.php 第 195 行.
+NOTIC: [8] Undefined index: callback C:\xampp\htdocs\gaochao\Application\Common\Controller\ExcelController.class.php 第 195 行.
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0190s ]
+SQL: INSERT INTO `sr_tbook` (`title`,`number`,`sort`,`address`,`add_time`) VALUES ('吉安中南大酒店','15170255838','7999','江西省吉安市泰和县','2018-02-03 09:32:21') [ RunTime:0.0430s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-03T09:32:26+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_tbook` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Tbook/Tbook/index','admin','860','平台管理 &gt; 电话本 &gt; 电话列表 &gt; ','浏览','0.0.0.0','1','2018-02-03 09:32:25') [ RunTime:0.0470s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_tbook` WHERE `is_del` = 0 AND `add_time` BETWEEN 0 AND '2018-02-03 09:32:25' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`number`,`is_hid`,`is_del`,`sort`,`add_time`,`address` FROM `sr_tbook` WHERE `is_del` = 0 AND `add_time` BETWEEN 0 AND '2018-02-03 09:32:25' ORDER BY sort desc,add_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: keywords C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\ff9d2712b95994b38aa019297c5f0ac9.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.206012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.206012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-02-03T22:50:45+08:00 ] ::1 /gaochao/Backend/Tbook/Tbook/index.html?keywords=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.067004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.449026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.475027s ]
+

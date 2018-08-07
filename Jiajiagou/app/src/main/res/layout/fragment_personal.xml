@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+	<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	             android:id="@+id/fr_header"
+	             android:layout_width="match_parent"
+	             android:layout_height="@dimen/header_height"
+	             android:background="@color/colorPrimary"
+	             android:paddingTop="@dimen/header_padding"
+	>
+
+		<RelativeLayout
+			android:id="@+id/rl_header_50"
+			android:layout_width="match_parent"
+			android:layout_height="50dp">
+
+			<TextView
+				android:id="@+id/tv_setting"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:paddingLeft="13dp"
+				android:paddingRight="13dp"
+				android:scaleType="center"
+				android:text="设置"
+				android:textColor="@color/white"
+				android:textSize="13sp"
+			/>
+
+			<TextView
+				android:layout_width="220dp"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:gravity="center"
+				android:singleLine="true"
+				android:text="个人中心"
+				android:textColor="@color/white"
+				android:textSize="15sp"/>
+
+			<TextView
+				android:id="@+id/tv_notice"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:paddingLeft="13dp"
+				android:paddingRight="13dp"
+				android:gravity="center"
+				android:text="公告"
+				android:textColor="@color/white"
+				android:textSize="13sp"
+			/>
+		</RelativeLayout>
+	</FrameLayout>
+	<com.cnsunrun.jiajiagou.common.base.CZSwipeRefreshLayout android:layout_width="match_parent"
+	                                                         android:layout_height="match_parent"
+	                                                         android:id="@+id/swipe_refresh_layout"
+	>
+	<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+	                                            android:layout_height="match_parent">
+		<LinearLayout android:layout_width="match_parent"
+		              android:layout_height="wrap_content"
+		              android:gravity="center_horizontal"
+		              android:orientation="vertical"
+		              android:paddingBottom="@dimen/mainTabHeight"
+		>
+			<LinearLayout android:layout_width="match_parent"
+			              android:layout_height="wrap_content"
+			              android:background="@color/colorPrimary"
+			              android:gravity="center_horizontal"
+			              android:orientation="vertical">
+
+				<ImageView
+					android:id="@+id/iv_imv"
+					android:layout_width="63dp"
+					android:layout_height="63dp"
+					android:layout_marginTop="9dp"
+				/>
+
+				<TextView
+					android:id="@+id/textView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="17dp"
+					android:text=""
+					android:textColor="@color/white"
+					android:textSize="18sp"/>
+
+				<LinearLayout android:layout_width="match_parent"
+				              android:layout_height="wrap_content"
+				              android:layout_marginTop="24dp"
+				              android:orientation="horizontal"
+				>
+
+					<!--论坛消息-->
+					<LinearLayout
+						android:id="@+id/ll_forum"
+						style="@style/linearLayout_personal"
+					>
+						<TextView android:id="@+id/tv_forum_count"
+						          android:layout_width="wrap_content"
+						          android:layout_height="wrap_content"
+						          android:text="0"
+						          android:textColor="@color/white"
+						          android:textSize="@dimen/sp_16"
+						/>
+						<TextView
+							style="@style/textView_Classify"
+							android:text="论坛消息"/>
+					</LinearLayout>
+
+					<!--物业消息-->
+					<LinearLayout
+						android:id="@+id/ll_tenement"
+						style="@style/linearLayout_personal">
+						<TextView android:id="@+id/tv_tenement_count"
+						          android:layout_width="wrap_content"
+						          android:layout_height="wrap_content"
+						          android:text="0"
+						          android:textColor="@color/white"
+						          android:textSize="@dimen/sp_16"
+						/>
+						<TextView
+							style="@style/textView_Classify"
+							android:text="物业消息"/>
+
+					</LinearLayout>
+
+					<!--订单消息-->
+					<LinearLayout
+						android:id="@+id/ll_order"
+						style="@style/linearLayout_personal">
+						<TextView android:id="@+id/tv_order_count"
+						          android:layout_width="wrap_content"
+						          android:layout_height="wrap_content"
+						          android:text="0"
+						          android:textColor="@color/white"
+						          android:textSize="@dimen/sp_16"
+						/>
+						<TextView
+							style="@style/textView_Classify"
+							android:text="订单消息"/>
+
+					</LinearLayout>
+
+					<!--欠费消息-->
+					<LinearLayout
+						android:id="@+id/ll_overdue"
+						style="@style/linearLayout_personal">
+						<TextView android:id="@+id/tv_overdue_count"
+						          android:layout_width="wrap_content"
+						          android:layout_height="wrap_content"
+						          android:text="0"
+						          android:textColor="@color/white"
+						          android:textSize="@dimen/sp_16"
+						/>
+						<TextView
+							style="@style/textView_Classify"
+							android:text="欠费消息"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent"
+			              android:layout_height="match_parent"
+			              android:background="@color/grayF4"
+			              android:orientation="vertical"
+			>
+				<!--我的 订单-->
+				<RelativeLayout
+
+					style="@style/baseRelative_item"
+					android:background="@color/white"
+				>
+					<TextView
+						style="@style/textView_personal_item"
+						android:text="我的订单"
+						android:textSize="@dimen/sp_15"/>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="match_parent"
+			              android:layout_height="65dp"
+			              android:layout_marginTop="@dimen/dp_1"
+			              android:background="@color/white"
+			              android:orientation="horizontal"
+			>
+				<TextView
+					android:id="@+id/tv_pay_for"
+					style="@style/textView_Personal_Order"
+					android:text="待付款"/>
+
+				<TextView
+					android:id="@+id/tv_await"
+					style="@style/textView_Personal_Order"
+					android:drawableTop="@drawable/ic_cente_await"
+					android:text="待收货"
+				/>
+				<TextView
+					android:id="@+id/tv_evaluate"
+					style="@style/textView_Personal_Order"
+					android:drawableTop="@drawable/ic_center_evaluation"
+					android:text="待评价"
+				/>
+				<TextView
+					android:id="@+id/tv_all_order"
+					style="@style/textView_Personal_Order"
+					android:drawableTop="@drawable/ic_center_order"
+					android:text="全部订单"
+				/>
+			</LinearLayout>
+
+			<!--附近的人-->
+			<RelativeLayout
+				android:id="@+id/rl_nearby"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="@dimen/dp_8">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="邻聊"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+
+			<!--我要收藏-->
+			<RelativeLayout
+				android:id="@+id/rl_collect"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="@dimen/dp_8">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="我的收藏"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+			<RelativeLayout
+				android:id="@+id/rl_coupon"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="@dimen/dp_1">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="我的卡券"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+			<!--我要开店-->
+			<RelativeLayout
+				android:id="@+id/rl_set_up_shop"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="@dimen/dp_1">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="我要开店"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+			<!--帖子-->
+			<RelativeLayout
+				android:id="@+id/rl_invitation"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="1dp">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="帖子"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+			<!--保洁维修-->
+			<RelativeLayout
+				android:id="@+id/rl_clean"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="@dimen/dp_8">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="保洁维修"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+			<!--小事帮忙-->
+			<RelativeLayout
+				android:id="@+id/rl_help"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="@dimen/dp_1">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="小事帮忙"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+			<!--车位管理-->
+			<RelativeLayout
+				android:id="@+id/rl_parking_manager"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="@dimen/dp_1">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="车位管理"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+			<!--投诉建议-->
+			<RelativeLayout
+				android:id="@+id/rl_advice"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="@dimen/dp_1">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="投诉建议"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+			<!--物流管理-->
+			<RelativeLayout
+				android:id="@+id/rl_logistics_manager"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="@dimen/dp_1">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="物业管理"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+
+			<!--物业小程序唤起-->
+			<RelativeLayout
+				android:id="@+id/rl_wuye_xcx"
+				style="@style/baseRelative_item"
+				android:layout_marginTop="@dimen/dp_1">
+				<TextView
+					style="@style/textView_personal_item"
+					android:text="小程序"/>
+				<ImageView
+					style="@style/imageView_next"/>
+			</RelativeLayout>
+		</LinearLayout>
+
+	</android.support.v4.widget.NestedScrollView>
+	</com.cnsunrun.jiajiagou.common.base.CZSwipeRefreshLayout>
+</LinearLayout>

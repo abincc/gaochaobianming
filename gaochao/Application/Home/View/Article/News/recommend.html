@@ -1,0 +1,36 @@
+<div class="right_hot_head">
+	<h4>热门文章</h4>
+</div>
+<div class="article_list">
+<?php
+	foreach($recommend as $row){
+		if(file_exists($row['cover'])){
+?>
+	<div class="media">
+		<div class="media-left">
+			<a href="<?=U('detail', array('id'=>$row['id']))?>" title="<?=$row['title']?>">
+				<img class="media-object" src="<?=thumb($row['cover'],160,100)?>" alt="<?=$row['title']?>">
+			</a>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+				<a href="<?=U('detail', array('id'=>$row['id']))?>" class="f20" title="<?=$row['title']?>"><?=msubstr($row['title'],0,7)?></a>
+			</h4>
+			<div class="f16"><?=msubstr($row['content'],0,45)?></div>
+		</div>
+	</div>
+<?php
+		}
+		else{
+?>
+	<div class="media">
+		<h4 class="media-heading">
+			<a href="<?=U('detail', array('id'=>$row['id']))?>" class="f20" title="<?=$row['title']?>"><?=msubstr($row['title'],0,15)?></a>
+		</h4>
+		<p class="f16"><?=msubstr($row['content'],0,80)?></p>
+	</div>
+<?php
+		}
+	}
+?>
+</div>

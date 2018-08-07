@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+	<FrameLayout android:layout_width="match_parent"
+	             android:layout_height="0dp"
+	             android:layout_weight="1"
+	             android:id="@+id/fl_empty"
+	             android:background="@color/trans4cBlack"
+	/>
+	<RelativeLayout android:layout_width="match_parent"
+	                android:background="@color/white"
+	                android:layout_height="300dp">
+		<LinearLayout android:layout_width="match_parent"
+		              android:layout_height="wrap_content"
+		              android:layout_marginTop="@dimen/dp_20"
+		              android:weightSum="4"
+		              android:id="@+id/ll1"
+		>
+			<TextView style="@style/baseTextView"
+			          android:text="QQ"
+			          android:layout_width="0dp"
+			          android:layout_weight="1"
+			          android:drawablePadding="5dp"
+			          android:id="@+id/qq"
+			          android:drawableTop="@drawable/qq"
+			          android:gravity="center"
+			/>
+			<TextView style="@style/baseTextView"
+			          android:text="QQ空间"
+			          android:layout_width="0dp"
+			          android:layout_weight="1"
+			          android:id="@+id/qzone"
+			          android:drawablePadding="5dp"
+			          android:drawableTop="@drawable/qzone"
+			          android:gravity="center"
+			/>
+			<TextView style="@style/baseTextView"
+			          android:text="微信"
+			          android:layout_width="0dp"
+			          android:id="@+id/weixin"
+			          android:layout_weight="1"
+			          android:drawablePadding="5dp"
+			          android:drawableTop="@drawable/wechat"
+			          android:gravity="center"
+			/>
+			<TextView style="@style/baseTextView"
+			          android:text="微信朋友圈"
+			          android:layout_width="0dp"
+			          android:id="@+id/weixin_friend"
+			          android:layout_weight="1"
+			          android:drawablePadding="5dp"
+			          android:drawableTop="@drawable/wechat_moment"
+			          android:gravity="center"
+			/>
+
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent"
+		              android:layout_height="wrap_content"
+		              android:layout_below="@id/ll1"
+		              android:weightSum="4"
+		              android:layout_marginTop="20dp"
+		              android:orientation="horizontal"
+		>
+			<TextView style="@style/baseTextView"
+			          android:text="微信收藏"
+			          android:layout_width="0dp"
+			          android:id="@+id/weixin_collect"
+			          android:layout_weight="1"
+			          android:drawablePadding="5dp"
+			          android:drawableTop="@drawable/wechat_fav"
+			          android:gravity="center"
+			/>
+			<TextView style="@style/baseTextView"
+			          android:text="微博"
+			          android:layout_width="0dp"
+			          android:layout_weight="1"
+			          android:id="@+id/weibo"
+			          android:drawablePadding="5dp"
+			          android:drawableTop="@drawable/weibo"
+			          android:gravity="center"
+			/>
+			<TextView style="@style/baseTextView"
+			          android:text="微博私信"
+			          android:layout_width="0dp"
+			          android:layout_weight="1"
+			          android:drawablePadding="5dp"
+			          android:id="@+id/weibo_sixin"
+			          android:drawableTop="@drawable/weibo"
+			          android:gravity="center"
+			/>
+
+		</LinearLayout>
+
+		<TextView style="@style/baseTextView"
+		          android:layout_width="match_parent"
+		          android:text="取消"
+		          android:gravity="center"
+		          android:padding="10dp"
+		          android:id="@+id/tv_cancel"
+		          android:layout_alignParentBottom="true"
+		          android:background="@drawable/selector_base_item"
+		          android:layout_marginBottom="20dp"
+		/>
+
+	</RelativeLayout>
+
+</LinearLayout>

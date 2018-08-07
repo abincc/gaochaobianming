@@ -1,0 +1,49 @@
+<extend name="Common/body"/>
+<block name="body">
+<!-- 中间模块 S-->
+<!-- 地址管理 S -->
+<div class="manage_box">
+	<div class="clearfix">
+		<span class="pull-left add_title">我的收货地址</span>
+		<!-- 弹框触发按钮 S -->
+		<a  class="btn btn-orange btn-xs pull-right dialog" href="<?=U('add')?>" title="添加收货地址"><i class="iconfont">+</i>添加</a>
+		<!-- 弹框触发按钮 E -->
+	</div>
+	<div class="table-responsive manage_table">
+		<table class="table table-hover">
+			<thead>
+				<tr class="tab_title">
+					<th width="12%">收货人</th>
+					<th width="15%">手机号码</th>
+					<th width="32%">收货地址</th>
+					<th width="13%">邮政编码</th>
+					<th width="28%">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+
+
+<?php foreach($address['list'] as $v):?>
+	
+				<tr>
+					<td class="name"><?=$v['full_name']?></td>
+					<td><?=$v['mobile']?></td>
+					<td class="name"><?=msubstr($v['province'].$v['city'].$v['area'].$v['address'],80)?></td>
+					<!-- <td>湖北省武汉市武昌区XX栋XX室</td> -->
+					<td><?=$v['zipcode']?></td>
+					<td>
+						<a class="edit dialog " href="<?=U('edit',array('address_id'=>$v['id']))?>" title="姓名">修改</a> / <a class="confirm ajax-get" href="<?=U('del',array('address_id'=>$v['id']))?>">删除</a>&nbsp;&nbsp;&nbsp;
+	<?php if($v['is_default']){?>
+					<span style="color:#EE7700;" >默认地址</span>
+	<?php }else{?>
+					<a class="ajax-get" href="<?=U('set_default',array('id'=>$v['id']))?>">设为默认地址</a>
+	<?php } ?>
+					</td>
+				</tr>
+<?php endforeach;?>	
+			</tbody>
+		</table>
+	</div>
+</div>
+<!-- 地址管理 E -->
+</block>

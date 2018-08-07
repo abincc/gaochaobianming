@@ -1,0 +1,88 @@
+<!-- 购物车 在线支付   -->
+<extend name="Mall@Common/cart_top"/>
+<block name="body">
+	<css href="__CSS__/cart.css" />
+	<div class="container">
+		<!-- 购买 Step 3 -->
+		<div class="cart_top clearfix">
+			<div class="pull-left">
+				<a href="<?=U('/Index/index')?>"><img onerror="nofind();" src="__IMG__/logo.png"></a>
+				<span>装修订单</span>
+			</div>
+		<!-- 	<div class="pull-right">
+				<ul class="clearfix">
+					<li>我的购物车</li>
+					<li>核对订单信息</li>
+					<li>确认并支付</li>
+				</ul>
+				<img onerror="nofind();" src="__IMG__/buy_step_3.jpg" width="100%" height="100%"/>
+			</div> -->
+		</div>
+		<div class="shopbox">
+			<div class="toptitle clearfix">
+				<span class="pull-left">订单提交成功，请尽快支付！</span>
+			</div>
+
+			<div class="nav_top">
+				<ul class="clearfix paymode">
+					<li><a href="<?=U('User/Order/Pay/pay',I())?>">余额支付</a></li>
+					<li class="active"><a href="javascript:void(0);">在线支付</a></li>
+				</ul>
+				<ul class="paybox onlinebox js_online clearfix">
+					<li data-type="alipay" class="check"><img onerror="nofind();" src="__IMG__/paymode_ali.png" width="100%" height="100%" /></li>
+					<li data-type="wxpay"><img onerror="nofind();" src="__IMG__/paymode_wx.png" width="100%" height="100%" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 去支付 S -->
+	<div class="acountbox">
+		<div class="container clearfix">
+			<form action="<?=U('Mall/Order/Order/pay_online')?>" class="js_recharge" data-paytip="<?=U('promot')?>" method="post" target="_blank">
+				<div class="pull-right">
+					<input class="js_type" name="pay_type" type="hidden" value="alipay" />
+					<input name="orderid" type="hidden" value="<?=I('get.orderid', 0, 'int')?>" />
+					<ul class="clearfix f14">
+						<li>应付总额：<span>¥ <?=$total?></span></li>
+						<li class="last"><input type="submit" class="btn btn-orange" data-toggle="modal" data-target=".promot" value="去支付" ></li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 去支付 E -->
+
+	<!-- 请付款提示框  -->
+</block>
+<block name="script">
+	<script>
+		$(function(){
+			$('.js_online').on('click','li',function(){
+				$(this).addClass('check');
+				$(this).siblings().removeClass('check');
+				var type = $(this).attr('data-type');
+				$('.js_type').val(type);
+			});
+			$(".js_recharge").Validform({
+		        tiptype:5,
+		        ajaxPost:false,
+		        beforeSubmit:function(curform){
+					var payDialog = dialog({
+						title:"支付提示",
+						lock:true,
+					});
+					payDialog.showModal();
+					$.ajax({
+						url:$(curform).attr('data-paytip'),
+						success: function(data) {
+							payDialog.content(data);// 填充对话框内容
+						}
+					});
+					return true;
+		        }
+		    })
+		});
+		
+	</script>
+</block>

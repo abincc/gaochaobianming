@@ -1,0 +1,62 @@
+<extend name="Public/body" />
+<block name="body">
+	<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap-clockpicker.min.css">
+	<link rel="stylesheet" type="text/css" href="__CSS__/github.min.css">
+	<div class="box box-body">
+		<form action="" method="post" class="js_form">
+			<input type="hidden" name="ids" value="<?=$info['id']?>" />
+
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					小区
+				</div>
+				<div>
+					<select name="district_id" class="form-control width_auto super_select2" data-placeholder="请选择小区" datatype="n" nullmsg="请选择小区" errormsg="请选择小区">
+						<option value="">请选择小区</option>
+						<?=$pid?>
+					</select>
+					<span class="Validform_checktip"></span>
+				</div>
+			</div>
+
+			
+			<div class="control-label">
+				<span class="required">*</span>
+				打卡时间
+			</div>
+			<div>
+				<div class="input-group clockpicker" style="width: 10%">
+				    <input type="text" name="clock_time" class="form-control" value="<?=$info['clock_time']?>">
+				    <span class="input-group-addon">
+				        <span class="glyphicon glyphicon-time"></span>
+				    </span>
+				</div>
+				<span class="Validform_checktip">7-11个字符</span>
+			</div>
+			
+			<div class="form-btn clearfix">
+				<input type="submit" class="pull-left btn btn-primary" value="提交" />
+				<a href="<?=U('index')?>" class="pull-left btn btn-default">取消返回</a>
+				<div class="js_validTips pull-left" style="height:34px;line-height:34px;">
+					<span class="js_tipContent Validform_checktip"></span>
+				</div>
+			</div>
+		
+		</form>
+	</div>
+	<script type="text/javascript" src="__JS__/bootstrap-clockpicker.min.js"></script>
+	<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
+	<script type="text/javascript" src="__JS__/highlight.min.js"></script>
+	<js href="__PLUGIN__/select2/select2.full.js" />
+	<js href="__PLUGIN__/select2/super_select2.js" />
+	<script type="text/javascript">
+		$(function(){
+			$('.super_select2').super_select2();
+		});
+	</script>	
+	<script type="text/javascript">
+		$('.clockpicker').clockpicker();
+	</script>
+</block>

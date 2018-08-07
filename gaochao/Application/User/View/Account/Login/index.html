@@ -1,0 +1,18 @@
+<extend name="Account/base" />
+<block name="body">
+	<!--	登录  S-->
+	<div class="container clearfix">
+		<div class="pull-left top_log">
+			<a href="<?=U('/')?>"><!-- <img src="__IMG__/logo.png"> -->LOGO</a>
+			<span>欢迎登录</span>
+		</div>
+	</div>
+	<div class="container">
+		<div class="bg_login clearfix" style="background-image: url(__USER__/img/public/login_bg.png);">
+			<div class="col-xs-4 pull-right outer">
+				<include file="login" />
+			</div>
+		</div>
+	</div>
+	<!--	登录  E-->
+</block>

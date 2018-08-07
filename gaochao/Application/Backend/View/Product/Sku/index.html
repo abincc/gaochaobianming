@@ -1,0 +1,76 @@
+<extend name="Public/body" />
+<block name="body">
+	<table class="table js_table table-bordered product-table-list">
+		<thead>
+			<tr>
+				<th colspan="20" class="text-left clearfix">
+					<form action="<?=U('')?>" class="form-inline pull-left" method="get">
+						<input name="keywords" type="text" value="<?=I('get.keywords')?>" class="form-control" placeholder="商品名称" />
+						<select name="category_id" class="form-control input-sm super_select2" data-placeholder="选择商品分类">
+							<option value="">选择商品分类</option>
+							<?=$category?>
+						</select>
+						<input type="submit" class="btn btn-default btn-sm" value='搜索' />
+					</form>
+					<div class="pull-right">
+						<?=get_top_btn($menu_info['id'])?>
+					</div>
+				</th>
+			</tr>
+		</thead>						
+		<tbody>							
+			<tr role="row">
+				<th class="text-center" width="20">
+					<input type="checkbox" class="js_check_all" data-target="ids" />
+				</th>
+				<th >图片</th>
+				<th width="450">商品名称</th>
+				<th width="300">规格</th>
+				<th width="200">价格</th>
+				<th width="200">库存</th>
+
+			</tr>
+<?php
+		if(!$list) {
+?>
+			<tr>
+				<td colspan="20"><include file="Public/nodata" text="没有数据" /></td>
+			</tr>
+<?php
+		}
+		foreach($list as $row){
+?>
+			<tr>
+				<td><input type="checkbox" class="ids" name="ids[]" value="<?=$row['id']?>" data-child="ids" /></td>
+				<td class="title-border-right" width="120">
+					<img src="<?=_thumb($row['image'], 200, 200)?>" class="text-left" width="100" />
+				</td>
+				<td>
+					<?=$row['title']?>
+				</td>
+				<td>
+					<?=$row['spec_value_title']?>
+				</td>
+				<td>
+					<?=$row['price']?>
+				</td>
+				<td>
+					<?=$row['inventory']?>
+				</td>				
+			</tr>
+<?php
+		}
+?>
+		</tbody>
+	</table>
+	<div class="pages">
+		<?=$page?>
+	</div>
+	<js href="__PLUGIN__/select2/select2.full.js" />
+	<js href="__PLUGIN__/select2/super_select2.js" />
+	<script type="text/javascript">
+		$(function(){
+			$('.super_select2').super_select2();
+		});
+	</script>	
+</block>

@@ -1,0 +1,316 @@
+<extend name="Public/body" />
+<block name="body">
+	<section class="content">
+		<!-- 基本信息 S -->
+		<div class="row">
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="info-box">
+					<span class="info-box-icon bg-aqua"><img src="__IMG__/home/order.png" /></span>
+					<div class="info-box-content">
+						<span class="info-box-text">待发货订单</span>
+						<span class="info-box-number"><?=$order_num['tp_sum']?> 个</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="info-box">
+					<span class="info-box-icon bg-red"><img src="__IMG__/home/money.png" /></span>
+					<div class="info-box-content">
+						<span class="info-box-text">总收入</span>
+						<span class="info-box-number">¥ <?=$total['tp_sum']?></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="info-box">
+					<span class="info-box-icon bg-green"><img src="__IMG__/home/member.png" /></span>
+					<div class="info-box-content">
+						<span class="info-box-text">用户数量</span>
+						<span class="info-box-number"><?=$member_num['tp_sum']?></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="info-box">
+					<span class="info-box-icon bg-yellow"><img src="__IMG__/home/product.png" /></span>
+					<div class="info-box-content">
+						<span class="info-box-text">商品总数</span>
+						<span class="info-box-number"><?=$product_num['tp_sum']?> 个</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 基本信息 E -->
+		<!-- 月度订单报表 S -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box">
+					<!-- 报表 S -->
+					<div class="box-body">
+						<div class="row">
+							<!-- 报表曲线图 S -->
+							<div class="col-md-12">
+								<div class="chart">
+									<!-- 报表图  -->
+									<div id="echarts" style="height:260px;"></div>
+								</div>
+							</div>
+							<!-- 报表曲线图 S -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 月度订单报表 E -->
+		<div class="row">
+			<div class="col-md-6">
+				<!-- 最新订单 S -->
+				<div class="box box-info">
+					<div class="box-header with-border">
+						<h3 class="box-title">最新订单</h3>
+					</div>
+					<div class="box-body">
+						<div class="table-responsive">
+							<table class="table no-margin">
+								<thead>
+								<tr>
+									<th>订单号</th>
+									<th>订单金额</th>
+									<th>状态</th>
+									<th>下单时间</th>
+								</tr>
+								</thead>
+								<tbody>
+									<?php foreach($new_order as $row){ ?>
+										<tr>
+											<td><a href="<?=U('Backend/Order/Index/detail',array('ids'=>$row['id']))?>"><?=$row['order_no']?></a></td>
+											<td><?=$row['money_total']?></td>
+											<?php if($row['status'] == 10){ ?>
+												<td><span class="label label-info">待付款</span></td>
+											<?php }else if($row['status'] == 20){ ?>
+												<td><span class="label label-danger">已付款</span></td>
+											<?php }else if($row['status'] == 40){ ?>
+												<td><span class="label label-warning">已收货</span></td>
+											<?php }else if($row['status'] == 70){ ?>
+												<td><span class="label label-success">已退款</span></td>
+											<?php } ?>
+											<td><?=$row['add_time']?></td>
+										</tr>
+									<?php } ?>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="box-footer clearfix">
+						<a href="<?=U('Backend/Order/Index/index')?>" class="btn btn-sm btn-default btn-flat pull-right">查看所有</a>
+					</div>
+				</div>
+				<!-- 最新订单 E -->
+			</div>
+			<div class="col-md-6">
+				<!-- 最新订单 S -->
+				<div class="box box-info">
+					<div class="box-header with-border">
+						<h3 class="box-title">最新注册</h3>
+					</div>
+					<div class="box-body">
+						<div class="table-responsive">
+							<table class="table no-margin">
+								<thead>
+								<tr>
+									<th>手机号</th>
+									<th>姓名</th>
+									<th>注册地区</th>
+									<th>注册时间</th>
+								</tr>
+								</thead>
+
+								<tbody>
+									<?php foreach($near_register as $row){ ?>
+										<tr>
+											<td><a href="<?=U('Backend/Member/Member/detail',array('ids'=>$row['id']))?>"><?=$row['mobile']?></a></td>
+											<td><?=$row['username']?></td>
+											<td><?=ip_to_location($row['register_ip'])?></td>
+											<td><?=$row['register_time']?></td>
+										</tr>
+									<?php } ?>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="box-footer clearfix">
+						<a href="<?=U('Backend/Member/Member/index')?>" class="btn btn-sm btn-default btn-flat pull-right">查看所有</a>
+					</div>
+				</div>
+				<!-- 最新订单 E -->
+			</div>
+		</div>
+	</section>
+	<js href="__PLUGIN__/echarts/echarts.js" />
+	<script type="text/javascript">
+	var myChart = echarts.init(document.getElementById('echarts'));
+	var title = <?=json_encode(array_values($order_count_date['status']))?>;
+	var option = {
+	    title: {
+	        text: "月度订单报表",
+	        <?php
+				$date_line = array_values($order_count_date['date_line']);
+			?>
+	        subtext: "统计时间: <?=array_shift($date_line)?> -<?=end($date_line)?>"
+	    },
+		tooltip : {
+	        trigger: 'axis'
+	    },
+	    legend: {
+	        data: title,
+	        x: "right"
+	    },
+	    toolbox: {
+	        show : true,
+	        feature : {
+	        }
+	    },
+	    calculable: true,
+	    xAxis: [
+	        {
+	            type: "category",
+	            data: <?=json_encode(array_values($order_count_date['date_line']))?>,
+	            boundaryGap: false,
+	            splitLine: {
+	                show: false
+	            }
+	        }
+	    ],
+	    yAxis: [
+	        {
+	            type: "value",
+	            splitLine: {
+	                show: true
+	            }
+	        }
+	    ],
+	    series: [
+	        {
+	            name: title[0],
+	            type: "line",
+	            smooth:true,
+	            itemStyle: {
+	                normal: {
+	                    areaStyle: {
+	                        type: "default"
+	                    }
+	                }
+	            },
+	            data: <?=json_encode(array_values($order_count_date['order_5']))?>,
+	            smooth: true
+	        },
+	        {
+	            name: title[1],
+	            type: "line",
+	            smooth:true,
+	            itemStyle: {
+	                normal: {
+	                    areaStyle: {
+	                        type: "default"
+	                    }
+	                }
+	            },
+	            data: <?=json_encode(array_values($order_count_date['order_10']))?>,
+	            smooth: true
+	        },
+	        {
+	            name: title[2],
+	            type: "line",
+	            smooth:true,
+	            itemStyle: {
+	                normal: {
+	                    areaStyle: {
+	                        type: "default"
+	                    }
+	                }
+	            },
+	            data: <?=json_encode(array_values($order_count_date['order_20']))?>,
+	            smooth: true
+	        },
+	        {
+	            name: title[3],
+	            type: "line",
+	            smooth:true,
+	            itemStyle: {
+	                normal: {
+	                    areaStyle: {
+	                        type: "default"
+	                    }
+	                }
+	            },
+	            data: <?=json_encode(array_values($order_count_date['order_30']))?>,
+	            smooth: true
+	        },
+	        {
+	            name: title[4],
+	            type: "line",
+	            smooth:true,
+	            itemStyle: {
+	                normal: {
+	                    areaStyle: {
+	                        type: "default"
+	                    }
+	                }
+	            },
+	            data: <?=json_encode(array_values($order_count_date['order_40']))?>,
+	            smooth: true
+	        },
+	        {
+	            name: title[5],
+	            type: "line",
+	            smooth:true,
+	            itemStyle: {
+	                normal: {
+	                    areaStyle: {
+	                        type: "default"
+	                    }
+	                }
+	            },
+	            data: <?=json_encode(array_values($order_count_date['order_50']))?>,
+	            smooth: true
+	        },
+	        {
+	            name: title[6],
+	            type: "line",
+	            smooth:true,
+	            itemStyle: {
+	                normal: {
+	                    areaStyle: {
+	                        type: "default"
+	                    }
+	                }
+	            },
+	            data: <?=json_encode(array_values($order_count_date['order_60']))?>,
+	            smooth: true
+	        },
+	        {
+	            name: title[7],
+	            type: "line",
+	            smooth:true,
+	            itemStyle: {
+	                normal: {
+	                    areaStyle: {
+	                        type: "default"
+	                    }
+	                }
+	            },
+	            data: <?=json_encode(array_values($order_count_date['order_70']))?>,
+	            smooth: true
+	        } 
+	    ],
+	    grid: {
+	        x: 50,
+	        x2: 30,
+	        y2: 30,
+	        y: 60,
+	        borderWidth: 0
+	    }
+	};
+	myChart.setOption(option);
+	</script>
+</block>

@@ -1,0 +1,16 @@
+<extend name="User@Common/body"/>
+<block name="style">
+<script>
+var cur_url="<?=U('User/Service/Service/renovation')?>";
+</script>
+</block>
+<block name="head_change">
+<?php
+	$crumbs="装修订单售后详情";
+	$crumbs_array[]=array("title"=>"装修订单售后","url"=>U("renovation"));
+	$crumbs_array[]=array("title"=>"装修订单售后详情","url"=>U(""));
+?>
+</block>
+<block name="body">
+	<?=W('Service/Refund/detail',array('config'=>'member_id','tpl'=>'detail'))?>
+</block>

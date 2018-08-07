@@ -1,0 +1,93 @@
+<!--登入页面表单 S-->
+<div class="loginbox js_check">
+	<div class="topbox clearfix">
+		<div class="title pull-left">用户登录</div>
+		<a href="<?=U('User/Account/Register/index')?>" class="pull-right">免费注册 >></a>
+	</div>
+	<div class="loginbox_con">
+		<form class="js_form" action="" func="Login" method="post">
+			<input type="hidden" name="is_check_verify" class="is_check_verify" value="0">
+			<div class="form-group frame  clearfix">
+				<div class="icon" style="background-image:url(__USER__/img/public/icons/persons.png);"></div>
+				<input type="text" name="account" class="form-control" placeholder="手机号" datatype="m" nullmsg="请填写手机号" errormsg="请输入正确的手机号" value="<?=isset($cookie['account'])?$cookie['account']:''?>" />
+			</div>
+			<div class="form-group frame clearfix">
+				<div class="icon" style="background-image:url(__USER__/img/public/icons/locks.png);"></div>
+				<input type="password" name="password" class="form-control" placeholder="密码" value="<?=isset($cookie['password'])?$cookie['password']:''?>" datatype="*" nullmsg="请输入密码" />
+			</div>
+			<div class="form-group clearfix rember_password">
+				<label class="pull-left">
+					<input name="remember" type="checkbox" <?=isset($cookie['remember']) ? ' checked="checked" ' : ''?> value="1"/><span class="text js_checkbox remember">记住密码</span>
+				</label>
+				<div class="pull-right">
+					<a href="<?=U('User/Account/Forget/step_1')?>">忘记密码</a>
+				</div>
+			</div>
+			<div class="clearfix verify_box js_verify_box">
+				<input type="text" name="verify" class="frame pull-left form-control" value="" datatype="*" nullmsg="请输入验证码" errormsg="验证码错误" />
+				<div class="pull-left verifyimg js_verifyimg"><img src="<?=U('verify')?>" title="看不清楚换一张" alt="验证码" />看不清楚，换一张</div>
+			</div>
+			<div style="height:20px;">
+				<div class="js_validTips" style="display:none;"><span class="js_tipContent Validform_checktip" style="line-height:normal;"></span></div>
+			</div>
+			<div>
+				<input type="submit" class="btn btn-orange btn-block btn-md" value="立即登录" />
+			</div>
+			<div class="form-group others">
+				<div class="top">
+					<span>其他方式登录</span>
+				</div>
+				<div class="links clearfix">
+					<a href="<?=U('sdk_login',['type'=>'qq'])?>"><img src="__USER__/img/public/icons/qq_logo.png"></a>
+					<a href="<?=U('sdk_login',['type'=>'weixin'])?>"><img src="__USER__/img/public/icons/weixin_logo.png"></a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<!--登入页面表单 E-->
+<script type="text/javascript">
+
+$(function(){
+	$('.js_check').on('click','li',function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		var index = $(this).index();
+		if(index == 0){
+			$('.js_type').val('user');
+		}else if(index == 1){
+			$('.js_type').val('business');
+		}
+	});
+	$(".js_verifyimg").click(function(){
+		var obj=$(this);
+		if($(this).is("img")==false){
+			obj=$(this).find("img");
+		}
+		var verifyimg = obj.attr("src");
+		if( verifyimg.indexOf('?')>0){
+			obj.attr("src", verifyimg+'&random='+Math.random());
+		}else{
+			obj.attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+		}
+	});
+})
+
+var n=0;
+function afterCallbackLogin(curform,data){
+	if(data.status!=1){
+		if(n>=3){
+			$(".is_check_verify").val(1);
+			$(".js_verify_box").slideDown(100);
+		}else{
+			n++;
+		}
+		$(".js_verifyimg").click();
+		$(".js_tipContent").html(data.info);
+		$(".js_tips").fadeIn();
+		return true;
+	}else{
+		return true;
+	}
+}
+</script>

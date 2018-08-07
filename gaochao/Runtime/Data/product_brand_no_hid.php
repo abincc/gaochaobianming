@@ -1,0 +1,1 @@
+a:1:{i:1;a:11:{s:2:"id";s:1:"1";s:5:"title";s:12:"三只松鼠";s:7:"initial";s:0:"";s:11:"description";s:0:"";s:5:"image";s:39:"Uploads/Product/Brand/598bbbaab8ad9.jpg";s:3:"url";s:0:"";s:4:"sort";s:1:"0";s:6:"is_hid";s:1:"0";s:6:"is_del";s:1:"0";s:8:"add_time";s:19:"2017-08-10 09:49:32";s:11:"update_time";s:19:"2017-08-10 10:03:49";}}

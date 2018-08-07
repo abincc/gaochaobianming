@@ -1,0 +1,50 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<table class="table table-bordered">
+			<tbody><tr>
+				<th colspan="20" class="clearfix" style="background:#eee">
+					消息详情
+				</th>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					消息标题：<?=$info['title']?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					<blockquote class="text-info" >
+						<?=$info['content']?> 
+					</blockquote>
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					消息时间：<?=$info['add_time']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					消息类型：<?=$type[$info['type']]['title']?> 
+				</td>
+			</tr>	
+			<tr>
+				<td class="text-left" colsplan="2">
+					读取状态：<?=$info['is_read']?'已读':'未读'?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					接&ensp;收&ensp;人：<?=$info['username']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					联系电话：<?=$info['mobile']?> 
+				</td>
+			</tr>
+	    	</tbody>
+    	</table>
+	</div>
+</block>

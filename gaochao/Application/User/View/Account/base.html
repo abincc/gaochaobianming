@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<block name="head_change"></block>
+	<title>登录</title>
+	<meta name="keywords" content="登录" /> 
+	<meta name="description" content="登录" />
+	<script>
+	var _ROOT_='__ROOT__';
+	var _STATIC_='__STATIC__';
+	var _PLUGIN_='__PLUGIN__';
+	var _JS_='__JS__';
+	var _IMG_='__IMG__';
+	var _CSS_='__CSS__';
+	</script>
+	<css href="__STATIC__/css/common.css" />
+	<css href="__CSS__/common.css" />
+	<css href="__USER__/css/public.css" />
+	<!-- /* 全局JS调用、加载 */ -->
+	<js href="__STATIC__/js/common.js" />
+	<js href="__JS__/common.js" />
+	<!-- /* 全局JS调用、加载 */ -->
+	<block name="style"></block>
+</head>
+<body>
+<include file="Home@Common/top" />
+<block name="body"></block>
+<include file="Home@Common/footer" />
+
+<!--[if lte IE 6]>
+    <css href="__STATIC__/css/ie6.css" />
+    <js href="__STATIC__/js/ie6.js" />
+    <js href="__JS__/iepng.js" />
+    <script type="text/javascript">
+	    EvPNG.fix('div,ul,img,li,input,a,i');
+	    //EvPNG.fix('包含透明PNG图片的标签'); 多个标签之间用英文逗号隔开。
+	</script>
+<![endif]-->
+<!--[if lt IE 9]>
+    <js href="__STATIC__/js/ie9.js" />
+<![endif]-->
+<block name="script"></block>
+</body>
+</html>

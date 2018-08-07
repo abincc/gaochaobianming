@@ -1,0 +1,69 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<form action="" method="post" class="js_form">
+			<input type="hidden" name="ids" value="<?=$info['id']?>" />
+
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					所属小区
+				</div>
+				<div>
+					<select name="district_id" class="form-control width_auto super_select2" data-placeholder="请选择父级" datatype="n" nullmsg="请选择父级" errormsg="请选择父级">
+						<option value="">请选择小区</option>
+						<?=$pid?>
+					</select>
+					<span class="Validform_checktip"></span>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					车位名称
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto" name="title" value="<?=$info['title']?>" datatype="*1-20" nullmsg="请输入车位名称" errormsg="请输入车位名称" />
+					<span class="Validform_checktip">1-20个字符</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					车位/图片
+				</div>
+				<div>
+					<?php
+						$config = array(
+						    'index'     => 1,					// 在当前页面中，调用的第几个文件上传插件，默认为1
+						    'table'     => 'parking',		// 数据保存在哪张表，此项必填
+						    'table_id'  => 'id',				// 数据所在表的主键，默认为id
+						    'name'      => 'image',				// 此配置项主要用于设置表单提交时的name，非特殊情况下可以和val_key的配置值保持一致
+						    'multi'     => 'false',				// 是否允许多文件上传，允许为true（前后需要添加引号），不允许为false（默认）
+						    'val_key'   => 'image'				// 存储在数据表中的字段
+						);
+						echo W('Common/Img/index', array($config, $info['id']));
+					?>
+					<span class="Validform_checktip">图片尺寸：750 * 450</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="control-label">
+					排序
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto" name="sort" value="<?=$info['sort']?$info['sort']:'0'?>" datatype="n" nullmsg="请输入排序" errormsg="请输入排序" />
+					<span class="Validform_checktip">可空，正整数</span>
+				</div>
+			</div>			
+			<div class="form-btn clearfix">
+				<input type="submit" class="pull-left btn btn-primary" value="提交" />
+				<a href="<?=U('index')?>" class="pull-left btn btn-default">取消并返回</a>
+				<div class="js_validTips pull-left" style="height:34px;line-height:34px;">
+					<span class="js_tipContent Validform_checktip"></span>
+				</div>
+			</div>
+		</form>
+	</div>
+</block>

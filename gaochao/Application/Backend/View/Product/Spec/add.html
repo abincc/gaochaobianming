@@ -1,0 +1,114 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<form action="" method="post" class="js_form">
+			<input type="hidden" name="id" value="<?=$info['id']?>" />
+			
+			<div class="form-group">
+				<div class="control-label">
+					<span class="required">*</span>
+					名称
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto" name="title" value="<?=$info['title']?>" datatype="*1-20" nullmsg="请输入名称" errormsg="请输入名称" />
+					<span class="Validform_checktip">1-20个字符</span>
+				</div>
+			</div>
+
+
+			<div class="form-group">
+				<div class="control-label">
+					描述
+				</div>
+				<div>
+					<textarea class="form-control width_auto" name="description" datatype="*0-100" errormsg="请输入描述"><?=$info['description']?></textarea>
+					<span class="Validform_checktip">100字符以内</span>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="control-label">
+					排序
+				</div>
+				<div>
+					<input type="text" class="form-control width_auto" name="sort" value="<?=$info['sort']?>" datatype="n" nullmsg="请输入排序" errormsg="请输入排序" />
+					<span class="Validform_checktip">正整数</span>
+				</div>
+			</div>			
+			
+			<div class="form-group">
+				<div class="control-label">
+					支持图片：
+				</div>
+				<div>
+					<div class="checkbox">
+						<label><input type="checkbox" name="is_color" value="1" />支持</label>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="control-label">
+					规格值
+				</div>
+				<div>
+					<table class="table table-bordered table-spec">
+						<tbody>
+							<tr>
+								<th width="50%">规格值名称</th>
+								<th width="40%">排序</th>
+								<th class="text-center">操作</th>
+							</tr>
+							<tr class="js_before">
+								<td colspan="20">
+									<a href="javascript:void(0)" class="btn btn-sm bg-olive js_add">添加规格值</a>								
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>			
+
+			<div class="form-btn clearfix">
+				<input type="submit" class="pull-left btn btn-primary" value="提交" />
+				<a href="<?=U('index')?>" class="pull-left btn btn-default">取消并返回</a>
+				<div class="js_validTips pull-left" style="height:34px;line-height:34px;">
+					<span class="js_tipContent Validform_checktip"></span>
+				</div>
+			</div>
+		</form>
+	</div>
+	<table class="hide js_base">
+		<tbody>
+			<tr>
+				<td>
+					<input type="text" class="form-control width_auto" name="spec_val[%i%][title]" value="" datatype="*1-20" nullmsg="请输入规格值名称" errormsg="请输入规格值名称" />
+				</td>
+				<td>
+					<input type="text" class="form-control width_auto" name="spec_val[%i%][sort]" value="0" datatype="n" nullmsg="请输入排序" errormsg="请输入排序" />
+				</td>
+				<td class="text-center"><a href="javascript:void(0)" class="btn btn-sm btn-danger js_del">删除</a></td>
+			</tr>	
+		</tbody>
+	</table>
+	<script type="text/javascript">
+	    $(function() {
+	    	var i = 0;
+	        var base_html = $('.js_base tbody').html();
+	        $('.js_base').remove();	        
+
+			$('.js_form').on('click', '.js_add', function() {
+				$(this).siblings().remove();
+				html = base_html.replace(/%i%/g, i);
+				$('.js_before').before(html);
+				i++;
+			});						
+
+			$('.js_form').on('click', '.js_del', function() {
+				$(this).parents('tr').remove();
+				i--;
+			});			
+	    });	
+	</script>
+</block>

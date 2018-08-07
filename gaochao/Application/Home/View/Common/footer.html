@@ -1,0 +1,37 @@
+<?php
+	/*获取底部导航数据*/
+	$foot_link = get_result('navigation', array('type'=>'bottom'));
+	$foot_link = array_to_tree($foot_link);
+?>
+
+<div class="footer_box">
+	<div class="container clearfix">
+<?php
+	foreach($foot_link as $first){
+		/*只显示有子集的菜单*/
+		if(!$first['child']) continue;
+?>
+		<div class="col-xs-2">
+			<h5><?=$first['data']['title']?></h5>
+<?php
+		foreach($first['child'] as $second){
+			$s = $second['data'];
+			$s['url'] = strpos($s['url'],'.')?$s['url']:U($s['url']);
+			echo '<a href="' . $s['url'] . '" target="' . $s['target'] . '">' . $s['title'] . '</a>';
+		}
+?>
+		</div>
+<?php
+	}
+?>
+		<div class="col-xs-3 clearfix">
+			<h5>联系我们</h5>
+			<h5><?=C('CONTACT_NUMBER')?></h5>
+			<div><?=C('HOURS')?></div>
+		</div>
+		<div class="col-xs-1 text-center">
+			<div><img src="__ROOT__/<?=C('QR_CODE');?>" alt=""></div>
+			<div style="color:#666;">微信扫一扫<br />关注尚软科技</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center_horizontal"
+              android:layout_height="match_parent">
+<include layout="@layout/layout_header"/>
+	<ImageView android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+			android:src="@drawable/pay_icon_succeed_nor"
+	           android:layout_marginTop="164dp"
+	            android:id="@+id/iv_pay_result"
+	/>
+	<TextView style="@style/baseTextView"
+				android:text="支付成功"
+	          android:layout_marginTop="22.5dp"
+	          android:textSize="24sp"
+	          android:textColor="@color/gray333"
+	          android:textStyle="bold"
+	          android:id="@+id/tv_pay_result"
+		/>
+	<TextView style="@style/baseTextView"
+	          android:text="支付金额："
+	          android:layout_marginTop="11dp"
+	          android:textColor="@color/gray666"
+	          android:id="@+id/tv_pay_money"
+		/>
+	<Button style="@style/btn_blue_match"
+	        android:text="查看订单"
+	        android:layout_marginTop="22.5dp"
+	        android:id="@+id/btn_confirm"
+		/>
+</LinearLayout>

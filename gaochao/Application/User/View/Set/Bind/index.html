@@ -1,0 +1,45 @@
+<extend name="Common/body"/>
+<block name="style">
+<css href="__PLUGIN__/avatar/css/jcrop-min.css" />
+<css href="__PLUGIN__/avatar/css/upload_head.css" />
+<css href="__PLUGIN__/uploadify/uploadify.css" />
+</block>
+<block name="body">
+	<!-- 个人信息 S-->
+	<div class="account_bind">
+		<!-- 页面主体 S -->
+		<div class="content_box">
+			<ul class="list-group">
+				<li class="list-group-item qq clearfix">
+					<span class="pull-left">QQ登录</span>
+<?php
+	if($info['qq_open_id']){
+?>
+					<span class="bind pull-right">已绑定</span>
+<?php
+	}else{
+?>
+					<a href="<?=U('User/Account/Member/sdk_login/type/qq')?>" class="bind pull-right" style="color:#5599FF">绑定</a>
+<?php
+	}
+?>
+				</li>
+				<li class="list-group-item weixin clearfix">
+					<span class="pull-left">微信登录</span>
+<?php
+	if($info['weixin_open_id']){
+?>
+					<span class="bind pull-right">已绑定</span>
+<?php
+	}else{
+?>
+					<a href="<?=U('User/Account/Member/sdk_login/type/weixin')?>" class="bind" style="color:#5599FF">绑定</a>
+<?php
+	}
+?>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 个人信息 E-->
+</block>

@@ -1,0 +1,57 @@
+<extend name="Public/body" />
+<block name="body">
+	<div class="box box-body">
+		<table class="table table-bordered">
+			<tbody><tr>
+				<th colspan="20" class="clearfix" style="background:#eee">
+					意见反馈信息
+				</th>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					<blockquote class="text-info" >
+						<?=$info['content']?> 
+					</blockquote>
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					来源小区：<?=$info['title']?> 
+				</td>
+			</tr>
+			<tr>
+				<td class="text-left" colsplan="2">
+					提交时间：<?=$info['add_time']?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					提交用户：<?=$info['username']?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					联系电话：<?=$info['mobile']?> 
+				</td>
+			</tr>		
+			<tr>
+				<td class="text-left" colsplan="2">
+					<div class="row " >
+					  <?php
+					  		foreach ($info['images'] as $k => $v) {
+					  ?>
+				      <div class="col-xs-6 col-md-3">
+				        <a href="#" class="thumbnail">
+				          <img data-src="holder.js/100%x180" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="<?=thumb($v['image'], 171, 180, 'M')?>" data-holder-rendered="true">
+				        </a>
+				      </div>		
+					  <?php
+					  		}
+					  ?>
+    				</div>
+				</td>
+			</tr>
+	    	</tbody>
+    	</table>
+	</div>
+</block>

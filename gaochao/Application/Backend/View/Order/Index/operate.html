@@ -1,0 +1,141 @@
+<extend name="Public/body" />
+<block name="body"> <!-- Content Wrapper. Contains page content -->
+<div class="main">
+	<section class="content">
+		<table class="table table-bordered">
+		<tbody><tr>
+			<th colspan="20" class="clearfix" style="background:#eee">
+				订单编号&nbsp;&nbsp;&nbsp;<?=$info['order_no']?>						</th>
+		</tr>
+		<tr>
+			<td class="text-left">
+				订单总额：<?=$info['money_total']?> &nbsp;元
+			</td>
+			<td class="text-left">
+				购买用户：<?=$info['username']?>							
+			</td>
+		</tr>
+		<tr>
+			<td class="text-left">
+				订单优惠：<?=$info['money_reduction']?> &nbsp;元
+				
+			</td>
+			<td class="text-left">
+				用户手机：<?=$info['mobile']?>								</td>
+
+		</tr>
+		<tr>
+			<td class="text-left">
+				订单实付：<?=$info['money_real']?> &nbsp;元
+			</td>
+			<?php
+				$info['receipt_address'] = unserialize($info['receipt_address']);
+			?>
+			<td class="text-left">
+				收货&nbsp;&nbsp;&nbsp;人：<?=$info['receipt_address']['name']?>
+			</td>
+		</tr>
+		<tr>
+			<td class="text-left">
+				下单时间：<?=$info['add_time']?>
+			</td>
+			<td class="text-left">
+				收货地址：<?=$info['receipt_address']['province_title'].$info['receipt_address']['city_title'].$info['receipt_address']['area_title'].$info['receipt_address']['address_detail']?>
+			</td>
+		</tr>
+		<tr>
+			<td class="text-left">
+				订单状态：<?=$status[$info['status']]['remark']?>
+				<?php if(3 == $info['pay_type']){?>
+				<span style="color:red">(未实付)</span>
+				<?php } ?>				
+			</td>
+			<td class="text-left">
+				物流费用：<?=$info['freight']?> &nbsp;元
+			</td>
+		</tr>
+		<?php
+			if($info['status'] >= 20){
+		?>
+		<tr>
+			<td class="text-left">
+				支付方式：<?=$pay_type[$info['pay_type']]['title']?>			
+			</td>
+			<td class="text-left">
+				交&ensp;易&ensp;号：<?=$info['deal_no']?>
+			</td>
+		</tr>
+		<?php
+			}
+		?>
+    	</tbody>
+    	</table>
+		<table class="table table-bordered">
+            <tr ><th colspan="20">购买商品信息：</th></tr> 
+			<tr>
+				<th class="col-xs-3 text-center">名称</th>
+				<th class="col-xs-2 text-center">规格</th>
+				<th class="col-xs-2 text-center">单价</th>
+				<th class="col-xs-2 text-center">数量</th>
+				<th class="col-xs-3 text-center">合计</th>
+			</tr>
+			<?php
+				$total = 0.00;
+				foreach ($order_detail as $k => $v) {
+					$total = bcadd($total,($v['product_num']*$v['product_price']),2);
+			?>
+			<tr>
+				<td class="col-xs-3 text-center" >
+					<img src="<?=thumb($v['product_image'], 80, 80, 'S')?>" width="80" height="80" class="pull-left"/>
+					<span style="margin-left: 15px;display: block;margin-top: 30px;"><?=$v['product_title']?></span>
+				</td>
+				<td class="col-xs-2 text-center" >
+				<?=implode(' ',unserialize($v['product_spec_value']))?>
+				</td>
+				<td class="col-xs-2 text-center" >
+					<?=$v['product_price']?> ￥<br>
+				</td>
+                <td class="col-xs-2 text-center" >
+					x&nbsp;<?=$v['product_num']?> <br>
+                </td>
+                <td class="col-xs-3 text-center" >
+					<?=$v['product_num']*$v['product_price']?>&nbsp;元 <br>
+                </td>
+			</tr>
+			<?php
+				}
+			?>
+			 <tr ><th colspan="20" class="text-right">小计：<span style="color:#2ca251;"><?=$total?> &nbsp;元</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr> 
+		</table>
+		<div class="order_box">
+			<table class="table table-bordered">
+            <tr ><th colspan="20">订单日志：</th></tr> 
+				<tr>
+					<th class="text-center" >阶段</th>
+					<th >操作备注</th>
+					<th class="text-center" >此时订单状态</th>
+					<th class="text-center" >操作时间</th>
+				</tr>
+				<?php
+					foreach($order_log as $k=>$v){
+				?>
+				<tr>
+					<td class="text-center" width="8%" ><?=$k+1?></td>
+					<td width="60%" ><?=$v['remark']?></td>
+					<td class="text-center" width="16%" ><?=$status[$v['status']]['remark']?></td>
+					<td class="text-center" width="16%" ><?=$v['add_time']?></td>
+				</tr>
+				<?php
+					}
+				?>
+			</table>
+		</div>
+		<div class="form-btn clearfix">
+			<a href="<?=U('index',I())?>" class="pull-left btn btn-default">返回列表</a>
+		</div>
+	</section>
+	<!-- /.content -->
+</div>
+<script>
+</script>
+</block>

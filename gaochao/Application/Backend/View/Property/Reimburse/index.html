@@ -1,0 +1,85 @@
+<extend name="Public/body" />
+<block name="body">
+	<table class="table js_table table-bordered">
+		<thead>
+			<tr>
+				<th colspan="20" class="clearfix">
+					<form action="<?=U('index');?>" class="form-inline pull-left" method="get">
+						<input type="text" class="form-control input-md" style="width: 250px;" placeholder="用户姓名" name="keywords" value="<?=$keywords?>">
+						
+						<select name="district_id" class="form-control input-sm">
+							<option value="">请选择小区</option>
+							<?=$pid?>
+						</select>
+
+						<input type="start_date" style="min-width:auto;width:140px!important" onclick="WdatePicker({skin:'backend',dateFmt:'yyyy-MM-dd'})" class="form-control input-sm wdate" placeholder="开始时间" name="start_date" value="<?=$start_date?>">
+						<input type="stop_date" style="min-width:auto;width:140px!important" onclick="WdatePicker({skin:'backend',dateFmt:'yyyy-MM-dd'})" class="form-control input-sm wdate" placeholder="结束时间" name="stop_date" value="<?=$stop_date?>">
+					
+						<button type="submit" class="btn btn-default btn-sm" target-form="operate_form">搜索</button>
+					</form>
+					<div class="pull-right">
+					
+					<?=get_top_btn($menu_info['id'],I('pid'))?>
+					</div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr role="row">
+				<th width="2%"><input type="checkbox" class="js_check_all" data-target="ids" value=""></th>
+				<th width="8%" class="text-center">小区</th>
+				<th width="8%" class="text-center">用户名</th>
+				<th width="8%" class="text-center">联系方式</th>
+				<th width="10%" class="text-center">报销类型</th>
+				<th width="8%" class="text-center">报销事由</th>
+				<th width="6%" class="text-center">发生时间</th>
+				<th width="4%" class="text-center">费用</th>
+				<th width="4%" class="text-center">状态</th>
+				<th width="15%" class="text-center">操作</th>
+			</tr>
+			<?php
+				if(!$list){
+			?>
+			<tr>
+				<td colspan="80"><include file="Public/nodata" text="没有数据" /></td>
+			</tr>
+			<?php
+				}
+			?>
+			<?php
+				foreach($list as $row){
+			?>
+			<tr>
+				<td><input type="checkbox" class="ids" data-child="ids" name="ids[]" value="<?=$row['id']?>"></td>
+				<td class="text-center"><?=$row['district_title']?></td>
+				<td class="text-center"><?=$row['username']?></td>
+				<td class="text-center"><?=$row['mobile']?></td>
+				<td class="text-center"><?=$type_s[$row['type']]['remark']?></td>
+				<td class="text-center"><?=$row['reason']?></td>
+				<td class="text-center"><?=substr($row['occur_time'], 0, 10)?></td>
+				<td class="text-center"><?=$row['cost']?></td>
+				<td class="text-center">
+					<img src="__IMG__/status_<?=$row['is_confirm']?>.png" alt=<?=$row['is_confirm']==0?"未确认":"已确认"?> title=<?=$row['is_confirm']==0?"未确认":"已确认"?>>
+				</td>
+				<td class="text-center">
+				<?php
+					get_list_btn($menu_info['id'],$row);
+				?>
+				</td>
+			</tr>
+			<?php
+				}
+			?>
+		</tbody>
+	</table>
+	<div class="pages">
+		<?=$page?>
+	</div>
+	<js href="__PLUGIN__/select2/select2.full.js" />
+	<js href="__PLUGIN__/select2/super_select2.js" />
+	<script type="text/javascript">
+		$(function(){
+			$('.super_select2').super_select2();
+		});
+	</script>		
+</block>

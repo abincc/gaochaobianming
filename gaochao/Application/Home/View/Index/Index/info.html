@@ -1,0 +1,314 @@
+<extend name="Home@Common/body"/>
+<block name="body">
+<style type="text/css">
+    .text_detail .content p{ font-size: 14px; color: #333; line-height: 20px;}
+    .mui-preview-image.mui-fullscreen {
+        position: fixed;
+        z-index: 20;
+        background-color: #000;
+    }
+    .mui-preview-header,
+    .mui-preview-footer {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: 10;
+    }
+    .mui-preview-header {
+        height: 44px;
+        top: 0;
+    }
+    .mui-preview-footer {
+        height: 50px;
+        bottom: 0px;
+    }
+    .mui-preview-header .mui-preview-indicator {
+        display: block;
+        line-height: 25px;
+        color: #fff;
+        text-align: center;
+        margin: 15px auto 4;
+        width: 70px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 12px;
+        font-size: 16px;
+    }
+    .mui-preview-image {
+        display: none;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    .mui-preview-image.mui-preview-in {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+    .mui-preview-image.mui-preview-out {
+        background: none;
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+    }
+    .mui-preview-image.mui-preview-out .mui-preview-header,
+    .mui-preview-image.mui-preview-out .mui-preview-footer {
+        display: none;
+    }
+    .mui-zoom-scroller {
+        position: absolute;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        -webkit-backface-visibility: hidden;
+    }
+    .mui-zoom {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+    .mui-slider .mui-slider-group .mui-slider-item img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+        width: 100%;
+    }
+    .mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+        display: inline-table;
+    }
+    .mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .mui-preview-loading {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .mui-preview-loading.mui-active {
+        display: block;
+    }
+    .mui-preview-loading .mui-spinner-white {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        height: 50px;
+        width: 50px;
+    }
+    .mui-preview-image img.mui-transitioning {
+        -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    p img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<div class="banner_stage banner_stage_d js_banner_stage">
+    <ul class="imglist_3d js_imglist_3d">
+	<?php
+		foreach ($info['images'] as $k => $v) {
+	?>
+        <li>
+            <img src="<?=$v['image']?>" alt="">
+        </li>
+	<?php
+		}
+	?>
+    </ul>
+    <div class="banner_btns js_banner_btn">
+	<?php
+		foreach ($info['images'] as $k => $v) {
+	?>
+        <a href="javascript:;"></a>
+	<?php
+		}
+	?>
+    </div>
+    <!-- <div class="num_btn js_num_btn"><span>1</span>/3</div> --> 
+</div>
+<div class="details_info bg_fff clearfix">
+    <div class="f tt clearfix">
+        <?=$info['title']?>
+    </div>
+    <div class="f description"><?=$info['description']?></div>
+    <div class="price clearfix"><b>￥<?=$info['price']?></b></div>
+</div>
+<div class="pro_detail ">
+    <div class="pro_btns js_pro_btns clearfix bg_fff">
+        <a href="javascript:;" class="active">详情<span></span></a>
+        <a href="javascript:;">评论（<?=$info['comment_number']?$info['comment_number']:'0'?>）<span></span></a>
+    </div>
+    
+
+    <div class="pro_tab detail_div pro_tab_show bg_fff js_pro_tab">
+		<?=$info['content']?>
+    </div>
+    <div class="pro_tab comment_div js_pro_tab">
+    	<?php
+    		foreach ($info['comment'] as $k => $v) {
+    	?>
+        <div class="box clearfix bg_fff">
+            <div class="clearfix u_img">
+                <div class="img"><img src="<?=$v['headimg']?>" alt="<?=$v['nickname']?>"></div>
+                <span><?=$v['nickname']?></span>
+            </div>
+            <div class="content">
+            <?=$v['content']?>
+            </div>
+            <!-- 一行三张图片   imgs3   两张图片   imgs2    一张图片   imgs1 -->
+            <?php
+            	if( 1 == count($v['images'])){
+            ?>
+            <div class="imgs clearfix imgs1">
+                <div class="img_box">
+                    <img src="<?=$v['images'][0]?>" alt="" data-preview-src="" data-preview-group="1">
+                </div>
+            </div>
+			<?php
+				}
+			?>
+
+            <?php
+            	if( 2 == count($v['images'])){
+            ?>
+            <div class="imgs clearfix imgs2">
+                <div class="img_box">
+                    <img src="<?=$v['images'][0]?>" alt="" data-preview-src="" data-preview-group="2">
+                </div>
+				<div class="img_box">
+                    <img src="<?=$v['images'][1]?>" alt="" data-preview-src="" data-preview-group="2">
+                </div>
+            </div>
+			<?php
+				}
+			?>
+
+            <?php
+            	if( 3 == count($v['images'])){
+            ?>
+            <div class="imgs clearfix imgs3">
+                <div class="img_box">
+                    <img src="<?=$v['images'][0]?>" alt="" data-preview-src="" data-preview-group="3">
+                </div>
+				<div class="img_box">
+                    <img src="<?=$v['images'][1]?>" alt="" data-preview-src="" data-preview-group="3">
+                </div>
+				<div class="img_box">
+                    <img src="<?=$v['images'][2]?>" alt="" data-preview-src="" data-preview-group="3">
+                </div>
+            </div>
+			<?php
+				}
+			?>
+
+            <?php
+            	if( 3 < count($v['images'])){
+            ?>
+            <div class="imgs clearfix imgs3">
+            	<?php
+            		foreach ($v['images'] as $key => $val) {
+            	?>
+                <div class="img_box">
+                    <img src="<?=$val?>" alt="" data-preview-src="" data-preview-group="4">
+                </div>
+            	<?php
+            		}
+            	?>
+            </div>
+			<?php
+				}
+			?>
+            <?php
+            	if(!empty($v['reply'])){
+            ?>
+            <div class="re_answer">
+                <div class="tt">商家回复:</div>
+                <div class="re_con"><?=$v['reply']?></div>
+            </div>
+            <?php
+            	}
+            ?>
+        </div>
+    	<?php
+    		}
+    	?>
+
+    </div>
+</div>
+</block>
+<block name="script">
+	<js href="__JS__/banner.js" />
+    <js href="__JS__/mui.min.js" />
+    <js href="__JS__/mui.zoom.js" />
+    <js href="__JS__/mui.previewimage.js" />
+    <script>
+        mui.init();
+        mui.previewImage();
+        $(function(){
+            var val=$(window).width()/7.5;
+            $('html').css('font-size',val);
+            $(window).resize(function(event) {
+               var val=$(window).width()/7.5;
+                $('html').css('font-size',val);
+            });
+                    
+            $('.js_pro_btns a').click(function(event) {
+                var _index=$(this).index();
+                $(this).addClass('active').siblings('a').removeClass('active');
+                $('.js_pro_tab').eq(_index).addClass('pro_tab_show').siblings('.js_pro_tab').removeClass('pro_tab_show')
+            });
+        })
+    </script>
+</block>

@@ -1,0 +1,1079 @@
+[ 2018-02-16T21:20:09+08:00 ] ::1 /gaochao/backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.074004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.055003s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.131008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.187011s ]
+NOTIC: [8] Undefined index: backend_wuye C:\xampp\htdocs\gaochao\Core\Common\functions.php 第 1437 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.486028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.486028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.150008s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.012001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.169010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.042002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.042002s ]
+
+[ 2018-02-16T21:20:10+08:00 ] ::1 /gaochao/Backend/Base/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: backend_wuye C:\xampp\htdocs\gaochao\Core\Common\functions.php 第 1437 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-16T22:34:29+08:00 ] ::1 /gaochao/backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.297017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034002s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.188011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.223013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.531088s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.531088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.116006s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.014001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.130007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.126007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.126007s ]
+
+[ 2018-02-16T22:34:34+08:00 ] ::1 /gaochao/Backend/Base/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-16T22:34:44+08:00 ] ::1 /gaochao/Backend/Base/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sr_admin` [ RunTime:0.6240s ]
+SQL: SELECT `id`,`email`,`mobile`,`nickname`,`username`,`role_id`,`department_id`,`password`,`salt`,`description`,`rules`,`add_time`,`update_time`,`admin_id`,`is_hid`,`is_del`,`login_ip`,`login_time`,`sort`,`last_login_ip`,`last_login_time`,`district_id` FROM `sr_admin` WHERE `username` = 'admin' AND `is_del` = 0 LIMIT 1   [ RunTime:0.5026s ]
+SQL: UPDATE `sr_admin` SET `login_time`='2018-02-16 22:34:42',`login_ip`='0.0.0.0',`last_login_time`='2018-02-13 09:40:58',`last_login_ip`='192.168.1.103',`update_time`='2018-02-16 22:34:42' WHERE `id` = 1 [ RunTime:0.7280s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.4814s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Base/Public/login','admin','0','','登录','0.0.0.0','1','2018-02-16 22:34:43') [ RunTime:0.2682s ]
+
+[ 2018-02-16T22:34:45+08:00 ] ::1 /gaochao/Backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-16T22:34:53+08:00 ] ::1 /gaochao/Backend/Base/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_menu` [ RunTime:0.2560s ]
+SQL: SELECT `id`,`pid`,`path`,`level`,`title`,`url`,`description`,`class`,`display_position`,`sort`,`is_hid`,`is_del`,`is_dev`,`addtime`,`updatetime` FROM `sr_menu` WHERE `is_hid` = 0 AND `is_del` = 0 ORDER BY sort desc,id asc  [ RunTime:0.3060s ]
+SQL: SHOW COLUMNS FROM `sr_capital_record` [ RunTime:0.2670s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0180s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/Base/Index/index','admin','359','平台管理 &gt; 系统首页 &gt; 系统首页','浏览','0.0.0.0','1','2018-02-16 22:34:47') [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `sr_order` [ RunTime:0.3540s ]
+SQL: SELECT count(id) tp_sum FROM `sr_order` WHERE `status` = 20 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:1.4121s ]
+SQL: SELECT SUM(`money_total`) tp_sum FROM `sr_order` WHERE `status` > 20 AND `is_del` = 0 AND `is_hid` = 0 LIMIT 1   [ RunTime:0.0970s ]
+SQL: SHOW COLUMNS FROM `sr_member` [ RunTime:0.0330s ]
+SQL: SELECT count(id) tp_sum FROM `sr_member` LIMIT 1   [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `sr_product` [ RunTime:0.1580s ]
+SQL: SELECT count(id) tp_sum FROM `sr_product` LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT o.id AS id,o.order_no AS order_no,o.money_total AS money_total,o.add_time AS add_time,o.status AS status,m.username AS username FROM sr_order o LEFT JOIN sr_member m ON m.id=o.member_id WHERE o.is_del = 0 AND o.is_hid = 0 AND o.status IN (10,20,40,70) ORDER BY o.add_time desc LIMIT 7   [ RunTime:0.1030s ]
+SQL: SELECT `id`,`username`,`mobile`,`register_ip`,`register_time` FROM `sr_member` WHERE `is_del` = 0 AND `is_hid` = 0 ORDER BY register_time desc LIMIT 7   [ RunTime:0.0550s ]
+SQL: SELECT count(*) as c,`status`,DATE_FORMAT(`add_time`, "%Y-%m-%d") as date FROM `sr_order` WHERE `is_del` = 0 AND `is_hid` = 0 AND `status` IN (5,10,20,30,40,50,60,70) AND (`add_time` LIKE '2018-01-17%' OR `add_time` LIKE '2018-01-18%' OR `add_time` LIKE '2018-01-19%' OR `add_time` LIKE '2018-01-20%' OR `add_time` LIKE '2018-01-21%' OR `add_time` LIKE '2018-01-22%' OR `add_time` LIKE '2018-01-23%' OR `add_time` LIKE '2018-01-24%' OR `add_time` LIKE '2018-01-25%' OR `add_time` LIKE '2018-01-26%' OR `add_time` LIKE '2018-01-27%' OR `add_time` LIKE '2018-01-28%' OR `add_time` LIKE '2018-01-29%' OR `add_time` LIKE '2018-01-30%' OR `add_time` LIKE '2018-01-31%' OR `add_time` LIKE '2018-02-01%' OR `add_time` LIKE '2018-02-02%' OR `add_time` LIKE '2018-02-03%' OR `add_time` LIKE '2018-02-04%' OR `add_time` LIKE '2018-02-05%' OR `add_time` LIKE '2018-02-06%' OR `add_time` LIKE '2018-02-07%' OR `add_time` LIKE '2018-02-08%' OR `add_time` LIKE '2018-02-09%' OR `add_time` LIKE '2018-02-10%' OR `add_time` LIKE '2018-02-11%' OR `add_time` LIKE '2018-02-12%' OR `add_time` LIKE '2018-02-13%' OR `add_time` LIKE '2018-02-14%' OR `add_time` LIKE '2018-02-15%' OR `add_time` LIKE '2018-02-16%') GROUP BY `date`,`status`  [ RunTime:0.2500s ]
+NOTIC: [8] Undefined index: 2018-01-20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-21 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-22 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-23 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-24 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-25 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-26 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-27 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-28 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-01-29 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-03 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-08 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-09 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-11 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-12 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-13 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-14 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-15 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined index: 2018-02-16 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 145 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 5 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 10 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 20 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 30 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 40 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 50 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 60 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 70 C:\xampp\htdocs\gaochao\Application\Backend\Controller\Base\IndexController.class.php 第 149 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.378136s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.378136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-16T22:35:05+08:00 ] ::1 /gaochao/Backend/System/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.013001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `sr_menu` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0200s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Menu/index','admin','3','系统设置 &gt; 菜单管理 &gt; 菜单管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:35:04') [ RunTime:0.0480s ]
+SQL: SELECT `id`,`pid`,`path`,`level`,`title`,`url`,`description`,`class`,`display_position`,`sort`,`is_hid`,`is_del`,`is_dev`,`addtime`,`updatetime` FROM `sr_menu` WHERE `pid` = 0 AND `is_del` = 0 ORDER BY sort desc  [ RunTime:0.0640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index:  C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\3322c804277f7b3b885fa5133c82783b.php 第 194 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-02-16T22:35:09+08:00 ] ::1 /gaochao/Backend/System/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0220s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:35:08') [ RunTime:0.0830s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.271015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.271015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:35:12+08:00 ] ::1 /gaochao/Backend/System/Config/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0160s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','48','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; 添加','添加','0.0.0.0','1','2018-02-16 22:35:12') [ RunTime:0.0390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-02-16T22:35:19+08:00 ] ::1 /gaochao/Backend/System/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0180s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:35:19') [ RunTime:0.0190s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:35:21+08:00 ] ::1 /gaochao/Backend/System/Config/edit/ids/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0190s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','49','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; 修改','修改','0.0.0.0','1','2018-02-16 22:35:21') [ RunTime:0.0380s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `id` = 1 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:35:26+08:00 ] ::1 /gaochao/Backend/System/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0190s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:35:25') [ RunTime:0.0300s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-16T22:35:28+08:00 ] ::1 /gaochao/Backend/System/Config/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0200s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:35:28') [ RunTime:0.1950s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 10,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:35:30+08:00 ] ::1 /gaochao/Backend/System/Config/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0200s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:35:30') [ RunTime:0.0820s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 20,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-16T22:35:34+08:00 ] ::1 /gaochao/Backend/System/Config/edit/p/3/ids/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0210s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','49','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; 修改','修改','0.0.0.0','1','2018-02-16 22:35:34') [ RunTime:0.0550s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `id` = 43 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:35:45+08:00 ] ::1 /gaochao/Backend/System/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0210s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:35:45') [ RunTime:0.0320s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:35:47+08:00 ] ::1 /gaochao/Backend/System/Config/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0190s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','48','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; 添加','添加','0.0.0.0','1','2018-02-16 22:35:47') [ RunTime:0.0380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:36:38+08:00 ] ::1 /gaochao/Backend/System/Config/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `sr_config` WHERE `name` = 'APP_VERSION_NAME' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sr_config` (`id`,`title`,`name`,`groups`,`sort`,`type`,`options`,`description`,`updatetime`,`addtime`) VALUES ('0','安卓版本名称','APP_VERSION_NAME','','0','text','','','1518791798','1518791798') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0180s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','48','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; 添加','添加 | 45','0.0.0.0','1','2018-02-16 22:36:38') [ RunTime:0.0030s ]
+
+[ 2018-02-16T22:36:39+08:00 ] ::1 /gaochao/Backend/System/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0200s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:36:39') [ RunTime:0.0280s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-16T22:36:42+08:00 ] ::1 /gaochao/Backend/System/Config/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0220s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:36:41') [ RunTime:0.0460s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 20,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-16T22:36:48+08:00 ] ::1 /gaochao/Backend/System/Set/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0220s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Set/index','admin','47','系统设置 &gt; 站点设置 &gt; 站点设置','浏览','0.0.0.0','1','2018-02-16 22:36:47') [ RunTime:0.0380s ]
+SQL: SELECT * FROM `sr_config` WHERE `is_del` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: multi C:\xampp\htdocs\gaochao\Application\Common\Widget\ImgWidget.class.php 第 35 行.
+SQL: SELECT `value` FROM `sr_config` WHERE `id` = 2 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.230013s ]
+NOTIC: [2] Use of undefined constant name - assumed 'name' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\01077016f708a161e42f2b32e2c7c611.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.485028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.485028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: multi C:\xampp\htdocs\gaochao\Application\Common\Widget\ImgWidget.class.php 第 35 行.
+SQL: SELECT `value` FROM `sr_config` WHERE `id` = 13 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.685039s ]
+NOTIC: [2] Use of undefined constant name - assumed 'name' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\01077016f708a161e42f2b32e2c7c611.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.168009s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.169009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.169009s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.170009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-02-16T22:36:49+08:00 ] ::1 /gaochao/Backend/System/Set/ueditor.html?action=config&&noCache=1518791808759
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.1910s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0160s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Set/ueditor','admin','0','','浏览','0.0.0.0','1','2018-02-16 22:36:49') [ RunTime:0.1060s ]
+
+[ 2018-02-16T22:36:50+08:00 ] ::1 /gaochao/Backend/System/Set/ueditor.html?action=config&&noCache=1518791808820
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.068003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.070004s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0210s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Set/ueditor','admin','0','','浏览','0.0.0.0','1','2018-02-16 22:36:50') [ RunTime:0.1240s ]
+
+[ 2018-02-16T22:36:50+08:00 ] ::1 /gaochao/Backend/System/Set/ueditor.html?action=config&&noCache=1518791808820
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.060003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.061003s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0276s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Set/ueditor','admin','0','','浏览','0.0.0.0','1','2018-02-16 22:36:50') [ RunTime:0.0310s ]
+
+[ 2018-02-16T22:37:09+08:00 ] ::1 /gaochao/Backend/System/State/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sr_state_map` [ RunTime:0.1310s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0220s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/State/index','admin','139','系统设置 &gt; 站点设置 &gt; 状态管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:37:04') [ RunTime:0.0360s ]
+SQL: Select table_name,table_comment from INFORMATION_schema.tables where table_schema="wuye" [ RunTime:4.5653s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_state_map` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`r_table`,`r_field`,`r_value`,`title`,`remark` FROM `sr_state_map` ORDER BY r_table,r_field,r_value LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.398023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.398023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-16T22:37:18+08:00 ] ::1 /gaochao/Backend/System/Set/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Set/index','admin','47','系统设置 &gt; 站点设置 &gt; 站点设置','浏览','0.0.0.0','1','2018-02-16 22:37:18') [ RunTime:0.0190s ]
+SQL: SELECT * FROM `sr_config` WHERE `is_del` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: multi C:\xampp\htdocs\gaochao\Application\Common\Widget\ImgWidget.class.php 第 35 行.
+SQL: SELECT `value` FROM `sr_config` WHERE `id` = 2 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.066004s ]
+NOTIC: [2] Use of undefined constant name - assumed 'name' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\01077016f708a161e42f2b32e2c7c611.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: multi C:\xampp\htdocs\gaochao\Application\Common\Widget\ImgWidget.class.php 第 35 行.
+SQL: SELECT `value` FROM `sr_config` WHERE `id` = 13 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.082005s ]
+NOTIC: [2] Use of undefined constant name - assumed 'name' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\gaochao\Runtime\Cache\Backend\01077016f708a161e42f2b32e2c7c611.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:37:19+08:00 ] ::1 /gaochao/Backend/System/Set/ueditor.html?action=config&&noCache=1518791838894
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0180s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Set/ueditor','admin','0','','浏览','0.0.0.0','1','2018-02-16 22:37:19') [ RunTime:0.0180s ]
+
+[ 2018-02-16T22:37:19+08:00 ] ::1 /gaochao/Backend/System/Set/ueditor.html?action=config&&noCache=1518791838936
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0320s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Set/ueditor','admin','0','','浏览','0.0.0.0','1','2018-02-16 22:37:19') [ RunTime:0.0170s ]
+
+[ 2018-02-16T22:37:20+08:00 ] ::1 /gaochao/Backend/System/Set/ueditor.html?action=config&&noCache=1518791838947
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0190s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Set/ueditor','admin','0','','浏览','0.0.0.0','1','2018-02-16 22:37:20') [ RunTime:0.1512s ]
+
+[ 2018-02-16T22:37:44+08:00 ] ::1 /gaochao/Backend/System/App/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0250s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/App/index','admin','868','系统设置 &gt; APP下载 &gt; 安卓APP','浏览','0.0.0.0','1','2018-02-16 22:37:44') [ RunTime:0.0360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:38:05+08:00 ] ::1 /gaochao/Backend/System/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0240s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:38:05') [ RunTime:0.0360s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-02-16T22:38:10+08:00 ] ::1 /gaochao/Backend/System/Config/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0230s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:38:09') [ RunTime:0.2880s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 10,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:38:11+08:00 ] ::1 /gaochao/Backend/System/Config/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:38:11') [ RunTime:0.0610s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 20,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:38:16+08:00 ] ::1 /gaochao/Backend/System/Config/edit/p/3/ids/45.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','49','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; 修改','修改','0.0.0.0','1','2018-02-16 22:38:15') [ RunTime:0.2960s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `id` = 45 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-02-16T22:38:50+08:00 ] ::1 /gaochao/Backend/System/Config/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `sr_config` WHERE `name` = 'APP_VERSION_NAME' AND `id` <> '45' LIMIT 1   [ RunTime:0.0440s ]
+SQL: UPDATE `sr_config` SET `title`='安卓版本名称',`name`='APP_VERSION_NAME',`groups`='',`sort`='0',`type`='text',`options`='1.0.6',`description`='',`updatetime`='1518791929' WHERE `id` = 45 [ RunTime:0.0660s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0190s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','49','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; 修改','修改 | 45','0.0.0.0','1','2018-02-16 22:38:50') [ RunTime:0.0370s ]
+
+[ 2018-02-16T22:38:50+08:00 ] ::1 /gaochao/Backend/System/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0200s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:38:50') [ RunTime:0.0360s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-16T22:39:09+08:00 ] ::1 /gaochao/Backend/System/Config/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0970s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0200s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:39:09') [ RunTime:0.0950s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 20,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:39:11+08:00 ] ::1 /gaochao/Backend/System/Config/edit/p/3/ids/45.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0220s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','49','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; 修改','修改','0.0.0.0','1','2018-02-16 22:39:11') [ RunTime:0.0220s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `id` = 45 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-16T22:39:15+08:00 ] ::1 /gaochao/Backend/System/Config/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sr_config` WHERE `name` = 'APP_VERSION_NAME' AND `id` <> '45' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sr_config` SET `title`='安卓版本名称',`name`='APP_VERSION_NAME',`groups`='',`sort`='0',`type`='text',`options`='',`description`='',`updatetime`='1518791954' WHERE `id` = 45 [ RunTime:0.0624s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0332s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','49','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; 修改','修改 | 45','0.0.0.0','1','2018-02-16 22:39:15') [ RunTime:0.0780s ]
+
+[ 2018-02-16T22:39:15+08:00 ] ::1 /gaochao/Backend/System/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sr_config` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `sr_action_log` [ RunTime:0.0190s ]
+SQL: INSERT INTO `sr_action_log` (`url`,`username`,`menu_id`,`title`,`action`,`ip`,`admin_id`,`add_time`) VALUES ('Backend/System/Config/index','admin','46','系统设置 &gt; 站点设置 &gt; 配置管理 &gt; ','浏览','0.0.0.0','1','2018-02-16 22:39:15') [ RunTime:0.0470s ]
+NOTIC: [8] Undefined variable: map C:\xampp\htdocs\gaochao\Application\Backend\Controller\System\ConfigController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sr_config` WHERE `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`name`,`groups`,`type`,`options`,`value`,`description`,`is_hid`,`is_del`,`addtime`,`updatetime`,`sort` FROM `sr_config` WHERE `is_del` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

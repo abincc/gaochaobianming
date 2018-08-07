@@ -1,0 +1,218 @@
+<extend name="Home@Common/body"/>
+<block name="body">
+<style type="text/css">
+    .mui-preview-image.mui-fullscreen {
+        position: fixed;
+        z-index: 20;
+        background-color: #000;
+    }
+    .mui-preview-header,
+    .mui-preview-footer {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: 10;
+    }
+    .mui-preview-header {
+        height: 44px;
+        top: 0;
+    }
+    .mui-preview-footer {
+        height: 50px;
+        bottom: 0px;
+    }
+    .mui-preview-header .mui-preview-indicator {
+        display: block;
+        line-height: 25px;
+        color: #fff;
+        text-align: center;
+        margin: 15px auto 4;
+        width: 70px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 12px;
+        font-size: 16px;
+    }
+    .mui-preview-image {
+        display: none;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    .mui-preview-image.mui-preview-in {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+    .mui-preview-image.mui-preview-out {
+        background: none;
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+    }
+    .mui-preview-image.mui-preview-out .mui-preview-header,
+    .mui-preview-image.mui-preview-out .mui-preview-footer {
+        display: none;
+    }
+    .mui-zoom-scroller {
+        position: absolute;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        -webkit-backface-visibility: hidden;
+    }
+    .mui-zoom {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+    .mui-slider .mui-slider-group .mui-slider-item img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+        width: 100%;
+    }
+    .mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+        display: inline-table;
+    }
+    .mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .mui-preview-loading {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .mui-preview-loading.mui-active {
+        display: block;
+    }
+    .mui-preview-loading .mui-spinner-white {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        height: 50px;
+        width: 50px;
+    }
+    .mui-preview-image img.mui-transitioning {
+        -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    p img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<div class="tiezi_div bg_fff">
+    <div class="clearfix user_img">
+        <div class="time"><?=$add_time?></div>
+        <div class="img"><img src="<?=$avatar?>" alt=""></div>
+        <div class="text">
+            <div class="name"><?=$member_nickname?></div>
+            <div class="bk"><?=$forum_title?></div>
+        </div>
+    </div>
+</div>
+
+<div class="tz_detail bg_fff">
+    <div class="tt"><?=$title?></div>
+    <div class="content">
+    <?=$content?>
+    </div>
+</div>
+
+<div class="comment_tt clearfix bg_fff">
+    <div class="pull-right tj"><span>阅读 <?=$views?></span> | <span>点赞 <?=$likes?></span></div>
+    <span>评论 <?=count($post_list)?></span>
+</div>
+<div class="pro_tab pro_tab_show comment_div comment_div_tz">
+<?php
+    $post_list = [];
+    foreach ($post_list as $k => $v) {
+?>
+    <div class="box clearfix bg_fff">
+        <div class="clearfix u_img">
+            <div class="img"><img src="__IMG__/anonymous.png" alt=""></div>
+        </div>
+        <div class="right_div">
+            <div class="infos_div clearfix">
+                <div class="n clearfix"><span>1楼</span>陌上出黛</div>
+                <div class="t">2017-02-12</div>
+            </div>
+            <div class="content">
+                驼颈湾位于喀纳斯湖南面一公里位置，是喀纳斯湖的入水口，位于喀纳斯河发源地。喀纳斯河在这里形成了一个恰似驼颈的大拐弯。
+            </div>
+            <!-- 一行三张图片   imgs3   两张图片   imgs2    一张图片   imgs1 -->
+            <div class="imgs clearfix imgs1">
+                <div class="img_box">
+                    <!-- data-preview-group="1" 第几组评论图片 -->
+                    <img src="__IMG__/pro1.jpg" alt="" data-preview-src="" data-preview-group="1">
+                </div>
+            </div>
+        </div>
+    </div>
+<?php
+    }
+?>
+</div>
+</block>
+<block name="script">
+    <js href="__JS__/mui.min.js" />
+    <js href="__JS__/mui.zoom.js" />
+    <js href="__JS__/mui.previewimage.js" />
+    <script>
+        mui.init();
+        mui.previewImage();
+    </script>
+</block>
