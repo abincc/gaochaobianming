@@ -1,3 +1,0 @@
-<?php
-//000000000000a:4:{i:1;a:6:{s:2:"id";s:3:"121";s:7:"r_table";s:7:"ck_home";s:7:"r_field";s:4:"type";s:7:"r_value";s:1:"1";s:5:"title";s:12:"华庭物业";s:6:"remark";s:12:"华庭物业";}i:2;a:6:{s:2:"id";s:3:"122";s:7:"r_table";s:7:"ck_home";s:7:"r_field";s:4:"type";s:7:"r_value";s:1:"2";s:5:"title";s:9:"光荣榜";s:6:"remark";s:9:"光荣榜";}i:3;a:6:{s:2:"id";s:3:"123";s:7:"r_table";s:7:"ck_home";s:7:"r_field";s:4:"type";s:7:"r_value";s:1:"3";s:5:"title";s:12:"小区信息";s:6:"remark";s:12:"小区信息";}i:4;a:6:{s:2:"id";s:3:"124";s:7:"r_table";s:7:"ck_home";s:7:"r_field";s:4:"type";s:7:"r_value";s:1:"4";s:5:"title";s:12:"小区公告";s:6:"remark";s:12:"小区公告";}}
-?>
